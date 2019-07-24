@@ -15,16 +15,15 @@ export class BalanceFundComponent implements OnInit {
   currentRoute;
   selectedRoute;
   csvData;
+  getCurrentTab;
   constructor(private wpservice: WPAPIService, private router: Router) {}
 
   ngOnInit() {
-    /*this.wpservice.readCSVDataFromServer().subscribe(data => {
-      console.log("readCSVDataFromServer========", data);
-    });*/
     this.wpservice
-      .getCSVData("assets/images/balance_fund.csv")
+      .readCSVGraphDataServer(this.getBalancedData.acf.csv_file_graph)
       .subscribe(data => {
         this.csvData = data;
+        this.getCurrentTab = 5;
         this.getGraphData = this.makeDataSets(data);
         //console.log(this.getGraphData);
       });
@@ -34,6 +33,50 @@ export class BalanceFundComponent implements OnInit {
   getConditionalCSV(years = null) {
     if (years != null) {
       //this.createDataConditionalDataset(years);
+      switch (years) {
+        case 5:
+          this.getCurrentTab = 5;
+          this.wpservice
+            .readCSVGraphDataServer(this.getBalancedData.acf.csv_file_graph)
+            .subscribe(data => {
+              this.csvData = data;
+              this.getGraphData = this.makeDataSets(data);
+            });
+          break;
+        case 7:
+          this.getCurrentTab = 7;
+          this.wpservice
+            .readCSVGraphDataServer(this.getBalancedData.acf.csv_file)
+            .subscribe(data => {
+              this.csvData = data;
+              this.getGraphData = this.makeDataSets(data);
+            });
+          break;
+        case 10:
+          this.getCurrentTab = 10;
+          this.wpservice
+            .readCSVGraphDataServer(
+              "http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/fund_csv/10yearbalance_fund.csv"
+            )
+            .subscribe(data => {
+              this.csvData = data;
+
+              this.getGraphData = this.makeDataSets(data);
+              //console.log(this.getGraphData);
+            });
+        case "all":
+          this.getCurrentTab = "all";
+          this.wpservice
+            .readCSVGraphDataServer(
+              this.getBalancedData.acf.since_inception_csv
+            )
+            .subscribe(data => {
+              this.csvData = data;
+
+              this.getGraphData = this.makeDataSets(data);
+              //console.log(this.getGraphData);
+            });
+      }
       this.getGraphData = this.makeDataSets(this.csvData, years);
     }
   }
@@ -46,25 +89,25 @@ export class BalanceFundComponent implements OnInit {
     var showYear;
     var startingPoint;
     //console.log(lines);
-    if (cond) {
-      if (lines.length == yearCond) {
-        showYear = lines.length;
-      } else if (lines.length > yearCond) {
-        showYear = yearCond;
-        startingPoint = lines.length - yearCond;
-      } else {
-        showYear = lines.length;
-      }
-    } else {
-      showYear = lines.length;
-    }
+    // if (cond) {
+    //   if (lines.length == yearCond) {
+    //     showYear = lines.length;
+    //   } else if (lines.length > yearCond) {
+    //     showYear = yearCond;
+    //     startingPoint = lines.length - yearCond;
+    //   } else {
+    //     showYear = lines.length;
+    //   }
+    // } else {
+    //   showYear = lines.length;
+    // }
 
-    if (startingPoint) {
-      startingPoint = startingPoint - 1;
-    } else {
-      startingPoint = 1;
-    }
-    console.log(startingPoint);
+    // if (startingPoint) {
+    //   startingPoint = startingPoint - 1;
+    // } else {
+    //   startingPoint = 1;
+    // }
+    //console.log(startingPoint);
     var result = [];
     var headers = lines[0].split(",");
     var dates = [];
@@ -75,7 +118,7 @@ export class BalanceFundComponent implements OnInit {
       fundReturn: null,
       benchMark: null
     };
-    for (var i = startingPoint; i < lines.length - 1; i++) {
+    for (var i = 1; i < lines.length - 1; i++) {
       var currentline = lines[i].split(",");
       dates.push(currentline[0]);
       fundReturn.push(currentline[1]);

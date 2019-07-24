@@ -192,7 +192,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
   }
   ngOnChanges(changes: SimpleChanges) {
     this.newData = this.makeDataSet();
-    console.log(this.newData);
+    //console.log(this.newData);
     if (this.newData) {
       this.options = this.makeOptions(this.makeDataSet());
 
