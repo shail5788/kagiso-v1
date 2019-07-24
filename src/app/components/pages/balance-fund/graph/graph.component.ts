@@ -99,6 +99,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
       marginTop: 0,
       marginRight: 0,
       dataProvider: dataProvider,
+
       valueAxes: [
         {
           id: "v1",
@@ -109,13 +110,13 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
         {
           id: "g1",
           balloonText:
-            "<div style='font-size:14px; color:#333;'><strong><span style='color:#e2161a'>Fund Range</span> [[value]]</strong></div>",
+            "<div style='font-size:11px; color:#333;'><strong><span style='color:#e2161a'>FUND RETURN</span> [[value]]</strong></div>",
           bullet: "round",
           bulletBorderAlpha: 1,
           bulletColor: "#FFFFFF",
-          bulletSize: 5,
+          bulletSize: 2,
           hideBulletsCount: 50,
-          lineThickness: 2,
+          lineThickness: 1.5,
           useLineColorForBulletBorder: true,
           valueField: "value"
         },
@@ -123,13 +124,13 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
           id: "g2",
           bullet: "round",
           balloonText:
-            "<div style='font-size:14px; color:#333;'><strong><span style='color:#e2161a'>Bench Mark</span> [[value]]</strong></div>",
+            "<div style='font-size:11px; color:#333;'><strong><span style='color:#e2161a'>BENCHMARK</span> [[value]]</strong></div>",
           bulletBorderAlpha: 1,
           bulletColor: "#a11c0d",
-          bulletSize: 4,
-          lineColor: "#e84835",
+          bulletSize: 2,
+          lineColor: "#ba1f0d",
           hideBulletsCount: 50,
-          lineThickness: 2,
+          lineThickness: 1.5,
           useLineColorForBulletBorder: true,
           valueField: "value1"
         }
@@ -137,12 +138,20 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
 
       chartCursor: {
         cursorAlpha: 1,
-        cursorColor: "#258cbb",
-        valueLineAlpha: 0.1
+        cursorColor: "#80ada7",
+        valueLineAlpha: 1
       },
+
+      numberFormatter: {
+        precision: 2,
+        decimalSeparator: ".",
+        thousandsSeparator: ","
+      },
+
       categoryField: "month",
       categoryAxis: {
         parseDates: false,
+
         categoryFunction: function(category, dataItem, categoryAxis) {
           const m = getMonthNameByNum(dataItem.month.getMonth());
           return (
@@ -159,6 +168,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
             "" + parseInt(serialDataItem.dataContext.month.getFullYear(), 10)
           );
         },
+        fillColor: "red",
         showFirstLabel: false,
         startOnAxis: false,
         equalSpacing: true
@@ -193,10 +203,11 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     this.newData = this.makeDataSet();
     //console.log(this.newData);
-    if (this.newData) {
-      this.options = this.makeOptions(this.makeDataSet());
 
-      // Create chartdiv2
+    if (this.newData) {
+      //this.options = this.makeOptions(this.makeDataSet());
+
+      // // Create chartdiv2
       this.chart2 = this.AmCharts.makeChart(
         "chartdiv2",
         this.makeOptions(this.makeDataSet())

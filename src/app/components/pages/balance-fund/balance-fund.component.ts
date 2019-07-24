@@ -64,7 +64,9 @@ export class BalanceFundComponent implements OnInit {
               this.getGraphData = this.makeDataSets(data);
               //console.log(this.getGraphData);
             });
+          break;
         case "all":
+          console.log("all");
           this.getCurrentTab = "all";
           this.wpservice
             .readCSVGraphDataServer(
