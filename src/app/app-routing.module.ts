@@ -42,6 +42,10 @@ const routes: Routes = [
     component: PagesComponent
   },
   {
+    path: "institutional-investor/invest-with-us",
+    component: PagesComponent
+  },
+  {
     path: "institutional-investor/our-funds",
     component: PagesComponent
   },

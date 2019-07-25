@@ -32,7 +32,7 @@ export class HeaderComponent implements OnInit {
     {
       name: "Institutional Investor",
       slug: "institutional-investor",
-      defulturl: "institutional-investor/our-funds",
+      defulturl: "institutional-investor/invest-with-us",
       activeClass: ""
     }
     // {
@@ -219,7 +219,7 @@ export class HeaderComponent implements OnInit {
       //console.log(this.route.url);
 
       if (this.route.url.includes("institutional-investor")) {
-        this.childrenMenu[0]["display"] = false;
+        this.childrenMenu[0]["display"] = true;
       } else {
         this.childrenMenu[0]["display"] = true;
       }
