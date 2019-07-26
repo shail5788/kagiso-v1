@@ -285,7 +285,7 @@ export class PagesComponent implements OnInit {
                 this.page.getParent = "individual-investor";
                 console.log(this.page);
               });
-            }else if (
+            } else if (
               currentUrl.parent == "individual-investor" &&
               currentUrl.child == "our-funds" &&
               currentUrl.schild == "stable-fund"
@@ -297,9 +297,19 @@ export class PagesComponent implements OnInit {
                 this.page.getParent = "individual-investor";
                 console.log(this.page);
               });
-            }
-            
-            else if (
+            } else if (
+              currentUrl.parent == "institutional-investor" &&
+              this.page.slug == "invest-with-us"
+            ) {
+              this.page.id = 12678;
+              console.log("this institutional home page");
+              this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.investWithUs = true;
+                this.faq = this.page.acf["qa-ans"];
+                console.log(this.page);
+              });
+            } else if (
               currentUrl.parent == "institutional-investor" &&
               this.page.slug == "our-funds"
             ) {
