@@ -783,6 +783,29 @@
     </div>
     </section>    
 </div>
+<div class="container ">
+    <section class="margin-80px-top"  *ngIf="page && page.iscoredEquityFund">
+      <div class="get-view">
+          <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
+      </div>  
+      </section>    
+  </div>
+  
+  <div class="container ">
+      <section class="margin-80px-top"  *ngIf="page && page.isManagedEquityCappedFund">
+        <div class="get-view">
+            <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
+        </div>  
+        </section>    
+    </div>
+    <div class="container ">
+        <section class="margin-80px-top"  *ngIf="page && page.isManagedEquitySwixFund">
+          <div class="get-view">
+              <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
+          </div>  
+          </section>    
+      </div>
+    
 <!--Institutional Complete fund range-->
 
  <section class="wow fadeIn bg-medium-gray-light " style="margin-top:110px" *ngIf="page && page.isInstitutionalCompleteFundRange">

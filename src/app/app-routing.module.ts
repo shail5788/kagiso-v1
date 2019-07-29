@@ -110,6 +110,18 @@ const routes: Routes = [
     component: PagesComponent
   },
   {
+    path: "institutional-investor/our-funds/core-equity-fund",
+    component: PagesComponent
+  },
+  {
+    path: "institutional-investor/our-funds/managed-equity-fund-capped-swix",
+    component: PagesComponent
+  },
+  {
+    path: "institutional-investor/our-funds/managed-equity-fund-swix-index",
+    component: PagesComponent
+  },
+  {
     path: "institutional-investor/our-funds/protector-fund",
     component: PagesComponent
   },

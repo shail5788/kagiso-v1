@@ -332,6 +332,45 @@ export class PagesComponent implements OnInit {
               });
             } else if (
               currentUrl.parent == "institutional-investor" &&
+              currentUrl.child == "our-funds" &&
+              currentUrl.schild === "core-equity-fund"
+            ) {
+              this.page.id = 12736;
+
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.iscoredEquityFund = true;
+                this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "institutional-investor" &&
+              currentUrl.child == "our-funds" &&
+              currentUrl.schild === "managed-equity-fund-capped-swix"
+            ) {
+              this.page.id = 12728;
+
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isManagedEquityCappedFund = true;
+                this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "institutional-investor" &&
+              currentUrl.child == "our-funds" &&
+              currentUrl.schild === "managed-equity-fund-swix-index"
+            ) {
+              this.page.id = 12725;
+
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isManagedEquitySwixFund = true;
+                this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "institutional-investor" &&
               this.page.slug == "our-funds"
             ) {
               this.page.id = 351;
