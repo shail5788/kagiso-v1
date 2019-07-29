@@ -43,11 +43,20 @@
         <div class="col-md-8  col-xs-7">
           <div class="row top-nav">
             <div class="col-md-12">
-              <ul class="nav navbar-nav first pull-right" *ngIf="menuItems.primary">
+              <ul
+                class="nav navbar-nav first pull-right"
+                *ngIf="menuItems.primary"
+              >
                 <li *ngFor="let menu of parentMenu; let i = index">
                   <a
                     [routerLink]="'/' + menu.defulturl"
-                    [class]="route.url.includes(menu.slug) ? 'header-menu-selected' : ''">{{ menu.name }}</a>
+                    [class]="
+                      route.url.includes(menu.slug)
+                        ? 'header-menu-selected'
+                        : ''
+                    "
+                    >{{ menu.name }}</a
+                  >
                 </li>
                 <li class="invester-login-btn">
                   <a href="https://investoronline.kagisoam.co.za">
@@ -89,18 +98,29 @@
                     <a
                       *ngIf="
                         (menu.slug == 'invest-with-us' ||
-                          menu.slug == 'our-funds') &&
+                          menu.slug == 'our-funds' ||
+                          menu.slug == 'investment-approach') &&
                           menu.display;
                         else elseSection
                       "
                       [routerLink]="menu.parent + '/' + menu.slug"
-                      [class]="route.url.includes(menu.slug) ? 'header-menu-selected' : ''">{{ menu.name }}
+                      [class]="
+                        route.url.includes(menu.slug)
+                          ? 'header-menu-selected'
+                          : ''
+                      "
+                      >{{ menu.name }}
                     </a>
                     <ng-template #elseSection>
                       <a
                         *ngIf="menu.display"
                         [routerLink]="'/' + menu.slug"
-                        [class]="route.url.includes(menu.slug) ? 'header-menu-selected' : ''">{{ menu.name }}</a
+                        [class]="
+                          route.url.includes(menu.slug)
+                            ? 'header-menu-selected'
+                            : ''
+                        "
+                        >{{ menu.name }}</a
                       >
                     </ng-template>
                   </li>

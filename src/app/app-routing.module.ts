@@ -42,7 +42,7 @@ const routes: Routes = [
     component: PagesComponent
   },
   {
-    path: "institutional-investor/invest-with-us",
+    path: "institutional-investor/investment-approach",
     component: PagesComponent
   },
   {
