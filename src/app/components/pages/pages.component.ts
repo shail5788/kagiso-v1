@@ -307,7 +307,7 @@ export class PagesComponent implements OnInit {
               });
             } else if (
               currentUrl.parent == "institutional-investor" &&
-              this.page.slug == "invest-with-us"
+              this.page.slug == "investment-approach"
             ) {
               this.page.id = 12678;
               console.log("this institutional home page");
