@@ -55,15 +55,11 @@ export class BalanceFundComponent implements OnInit {
         case 10:
           this.getCurrentTab = 10;
           this.wpservice
-            .readCSVGraphDataServer(
-              "http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/fund_csv/10yearbalance_fund.csv"
-            )
-            .subscribe(data => {
-              this.csvData = data;
-
-              this.getGraphData = this.makeDataSets(data);
-              //console.log(this.getGraphData);
-            });
+          .readCSVGraphDataServer(this.getBalancedData.acf.ten_year_csv)
+          .subscribe(data => {
+            this.csvData = data;
+            this.getGraphData = this.makeDataSets(data);
+          });          
           break;
         case "all":
           console.log("all");
