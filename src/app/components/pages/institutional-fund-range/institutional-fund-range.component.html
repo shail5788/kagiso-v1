@@ -9,29 +9,43 @@
     >
       <a
         href="javascript:void(0);"
-        (click)="changeView()"
+        (click)="changeView(true, 'sa')"
         class="padding-10px-all block"
-        ><span [class]="viewSChangeFlag ? 'link_on' : 'link_off'">{{
+        ><span [class]="viewSChangeFlag == 'sa' ? 'link_on' : 'link_off'">{{
           saFund.title
         }}</span></a
       >
       |
       <a
         href="javascript:void(0);"
-        (click)="changeGView()"
+        (click)="changeView(true, 'ms')"
         class="padding-10px-all"
-        ><span [class]="!viewSChangeFlag ? 'link_on' : 'link_off'">{{
+        ><span [class]="viewSChangeFlag == 'ms' ? 'link_on' : 'link_off'">{{
+          msFund.title
+        }}</span></a
+      >
+      |
+      <a
+        href="javascript:void(0);"
+        (click)="changeView(true, 'gl')"
+        class="padding-10px-all"
+        ><span [class]="viewSChangeFlag == 'gl' ? 'link_on' : 'link_off'">{{
           glFund.title
         }}</span></a
       >
       <p
         class="padding-30px-top"
-        *ngIf="viewSChangeFlag"
+        *ngIf="viewSAChange"
         [innerHTML]="saFund.desc"
       ></p>
       <p
         class="padding-30px-top gl"
-        *ngIf="!viewSChangeFlag"
+        *ngIf="viewMSChange"
+        [innerHTML]="msFund.des"
+      ></p>
+      <p
+        class="padding-30px-top gl"
+        *ngIf="viewGLChange"
         [innerHTML]="glFund.desc"
       ></p>
     </div>
@@ -39,7 +53,7 @@
     <div
       class="fund-range-graph-area margin-45px-lr xs-margin-20px-lr margin-100px-lr xs-no-margin-lr"
     >
-      <div class="row" *ngIf="viewSChangeFlag">
+      <div class="row" *ngIf="viewSAChange">
         <div
           class="col-md-4 wow fadeInLeft"
           data-wow-delay="0.4s"
@@ -68,8 +82,37 @@
           </div> -->
         </div>
       </div>
+      <div class="row" *ngIf="viewMSChange">
+        <div
+          class="col-md-4 wow fadeInLeft"
+          data-wow-delay="0.4s"
+          *ngFor="let image of msFund.images; let i = index"
+          attr.data-aos="{{ animation[i] }}"
+          [ngStyle]="{
+            'margin-left': i == 3 && msfundLength < 5 ? '33.333%' : ''
+          }"
+        >
+          <div class="fund-range-graph-title">
+            {{ image["multi-asset_class_funds_image_title"] }}
+          </div>
+          <div
+            class="fund-range-graph bg-light-green"
+            [ngClass]="i != 4 ? 'margin-30px-bottom' : ''"
+          >
+            <a [routerLink]="'/' + image['multi-asset_class_funds_image_url']"
+              ><img [src]="image['multi-asset_class_funds_uplode'].url"
+            /></a>
+          </div>
+          <!-- <div
+              class="fund-range-graph-title last-grid text-title"
+              *ngIf="i == 4"
+            >
+              {{ image.south_african_fund_image_title }}
+            </div> -->
+        </div>
+      </div>
       <!-- for global fund range  -->
-      <div class="row" *ngIf="viewChangeflag">
+      <div class="row" *ngIf="viewGLChange">
         <div class="col-md-4" style="width:16.6%">&nbsp;</div>
         <div
           class="col-md-4 wow fadeInLeft"
@@ -114,7 +157,7 @@
           class="col-md-6 col-sm-6 col-xs-12 col-md-offset-2 text-right padding-5px-bottom"
         >
           <a
-            href="#"
+            routerLink="/institutional-investor/our-funds/complete-fund-range"
             class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom"
             ><span>PERFORMANCE SHEET</span></a
           >

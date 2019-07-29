@@ -106,6 +106,10 @@ const routes: Routes = [
     component: PagesComponent
   },
   {
+    path: "institutional-investor/our-funds/managed-equity-fund",
+    component: PagesComponent
+  },
+  {
     path: "institutional-investor/our-funds/protector-fund",
     component: PagesComponent
   },
@@ -123,6 +127,10 @@ const routes: Routes = [
   },
   {
     path: "institutional-investor/our-funds/domestic-balanced-fund",
+    component: PagesComponent
+  },
+  {
+    path: "institutional-investor/our-funds/complete-fund-range",
     component: PagesComponent
   },
 

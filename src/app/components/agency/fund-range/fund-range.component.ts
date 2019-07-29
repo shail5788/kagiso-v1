@@ -11,6 +11,7 @@ export class FundRangeComponent implements OnInit {
   glFund = { title: "", desc: "", images: [] };
   viewChangeflag = false;
   viewSChangeFlag = true;
+  isInstitutionalFund = false;
   animation = [
     "fade-left",
     "fade-up",
@@ -23,6 +24,8 @@ export class FundRangeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    console.log(this.FundRange);
+    this.isInstitutionalFund = this.FundRange.isInstitutionFundRange;
     this.saFund.title = this.FundRange.acf.south_african_fund_title;
     this.saFund.desc = this.FundRange.acf.south_african_fund_disc;
     this.saFund.images = this.FundRange.acf.south_african_fund_image;

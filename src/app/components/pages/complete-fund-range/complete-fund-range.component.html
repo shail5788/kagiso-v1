@@ -2,21 +2,34 @@
   <table border="0" cellpadding="0" cellspacing="0">
     <tr>
       <th></th>
-      <th>MONTHLY FACT SHEET</th>
+      <th *ngIf="isHideConditionOn"></th>
+      <th *ngIf="!isHideConditionOn">MONTHLY FACT SHEET</th>
       <th>QUARTERLY FACT SHEET</th>
-      <th>QUARTERLY COMMENTARY</th>
+      <th *ngIf="isHideConditionOn"></th>
+      <th *ngIf="!isHideConditionOn">QUARTERLY COMMENTARY</th>
       <th>ARCHIVE</th>
     </tr>
     <tr>
-      <td colspan="5" class="high-light">South African funds</td>
+      <td colspan="5" class="high-light">
+        <strong>{{
+          isHideConditionOn ? "Equity funds" : "South African funds"
+        }}</strong>
+      </td>
     </tr>
 
     <tr
-      *ngFor="let tdata of tableDate.acf.south_african_funds; let i = index"
+      *ngFor="
+        let tdata of isHideConditionOn
+          ? tableDate.acf.equity_funds
+          : tableDate.acf.south_african_funds;
+        let i = index
+      "
       [ngClass]="i % 2 == 0 ? 'bg-white' : 'light-bg'"
     >
       <td>{{ tdata.fund_name }}</td>
-      <td>
+      <td *ngIf="isHideConditionOn"></td>
+
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.monthly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
@@ -26,7 +39,8 @@
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
-      <td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.quarterly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
@@ -38,21 +52,40 @@
 
     <tr class="bg-white">
       <td></td>
+      <td *ngIf="isHideConditionOn"></td>
+
+      <td *ngIf="!isHideConditionOn">
+        <img src="assets/images/icon-3.png" /> full pack
+      </td>
       <td><img src="assets/images/icon-3.png" /> full pack</td>
-      <td><img src="assets/images/icon-3.png" /> full pack</td>
-      <td><img src="assets/images/icon-3.png" /> full pack</td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
+        <img src="assets/images/icon-3.png" /> full pack
+      </td>
       <td></td>
     </tr>
 
     <tr>
-      <td colspan="5" class="high-light">Sharia funds</td>
+      <td colspan="5" class="high-light">
+        <strong>
+          {{
+            isHideConditionOn ? "Multi-asset class funds" : "Sharia funds"
+          }}</strong
+        >
+      </td>
     </tr>
     <tr
-      *ngFor="let tdata of tableDate.acf.sharia_funds; let i = index"
+      *ngFor="
+        let tdata of isHideConditionOn
+          ? tableDate.acf['multi-asset_class_funds']
+          : tableDate.acf.sharia_funds;
+        let i = index
+      "
       [ngClass]="i % 2 == 0 ? 'bg-white' : 'light-bg'"
     >
       <td>{{ tdata.fund_name }}</td>
-      <td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.monthly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
@@ -62,11 +95,12 @@
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
-      <td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.quarterly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
+      <td *ngIf="isHideConditionOn"></td>
       <td>
         <a [href]="tdata.archive"><img src="assets/images/icon-2.png"/></a>
       </td>
@@ -75,21 +109,37 @@
     <tr></tr>
     <tr>
       <td></td>
+      <td *ngIf="!isHideConditionOn">
+        <img src="assets/images/icon-3.png" /> full pack
+      </td>
+      <td *ngIf="isHideConditionOn"></td>
       <td><img src="assets/images/icon-3.png" /> full pack</td>
-      <td><img src="assets/images/icon-3.png" /> full pack</td>
-      <td><img src="assets/images/icon-3.png" /> full pack</td>
+      <td *ngIf="!isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
+        <img src="assets/images/icon-3.png" /> full pack
+      </td>
       <td></td>
     </tr>
 
     <tr>
-      <td colspan="5" class="high-light">Tax free fund</td>
+      <td colspan="5" class="high-light">
+        <strong>{{
+          isHideConditionOn ? "Yield funds" : "Tax free fund"
+        }}</strong>
+      </td>
     </tr>
     <tr
-      *ngFor="let tdata of tableDate.acf.tax_free_funds; let i = index"
+      *ngFor="
+        let tdata of isHideConditionOn
+          ? tableDate.acf.yield_funds
+          : tableDate.acf.tax_free_funds;
+        let i = index
+      "
       [ngClass]="i % 2 == 0 ? 'bg-white' : 'light-bg'"
     >
       <td>{{ tdata.fund_name }}</td>
-      <td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.monthly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
@@ -99,7 +149,8 @@
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
-      <td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.quarterly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
@@ -111,39 +162,48 @@
 
     <tr class="bg-white">
       <td></td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
+        <img src="assets/images/icon-3.png" /> full pack
+      </td>
       <td><img src="assets/images/icon-3.png" /> full pack</td>
-      <td><img src="assets/images/icon-3.png" /> full pack</td>
-      <td><img src="assets/images/icon-3.png" /> full pack</td>
+      <td *ngIf="isHideConditionOn"></td>
+      <td *ngIf="!isHideConditionOn">
+        <img src="assets/images/icon-3.png" /> full pack
+      </td>
       <td></td>
     </tr>
-
-    <td colspan="5" class="high-light">Global Fund</td>
+    <tr>
+      <td *ngIf="!isHideConditionOn" colspan="5" class="high-light">
+        <strong>Global Fund</strong>
+      </td>
+    </tr>
 
     <tr
       *ngFor="let tdata of tableDate.acf.global_funds; let i = index"
       [ngClass]="i % 2 == 0 ? 'bg-white' : 'light-bg'"
     >
-      <td>{{ tdata.fund_name }}</td>
-      <td>
+      <td *ngIf="!isHideConditionOn">{{ tdata.fund_name }}</td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.monthly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
-      <td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.quarterly_commentary"
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
-      <td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.quarterly_fact_sheet"
           ><img src="assets/images/icon-1.png"
         /></a>
       </td>
-      <td>
+      <td *ngIf="!isHideConditionOn">
         <a [href]="tdata.archive"><img src="assets/images/icon-2.png"/></a>
       </td>
     </tr>
-    <tr>
+    <tr *ngIf="!isHideConditionOn">
       <td></td>
       <td><img src="assets/images/icon-3.png" /> full pack</td>
       <td><img src="assets/images/icon-3.png" /> full pack</td>

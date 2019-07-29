@@ -40,6 +40,7 @@ export class PagesComponent implements OnInit {
         child: urlArr.length > 2 ? urlArr[2] : urlArr[1],
         schild: urlArr.length > 3 ? urlArr[3] : ""
       };
+      // console.log(currentUrl);
       if (val.ID || currentUrl.child) {
         var slug = val.ID
           ? val.ID
@@ -47,7 +48,7 @@ export class PagesComponent implements OnInit {
           ? currentUrl.schild
           : currentUrl.child;
 
-        // console.log(slug);
+        console.log(slug);
         this.wpservice.pages(`?slug=${slug}`).subscribe(page => {
           this.page = page[0];
 
@@ -118,14 +119,18 @@ export class PagesComponent implements OnInit {
           // if (slug == "equity-alpha-fund") {
           //   this.page.equityAlphaStatus = true;
           // }
-          if (slug == "complete-fund-range") {
+          if (
+            slug == "complete-fund-range" &&
+            currentUrl.parent != "institutional-investor"
+          ) {
             // this.page.id = 11828;
+
             this.page.completeFundRangeStatus = true;
             // this.wpservice.pages(`${this.page.id}`).subscribe(page => {
             //   this.page = page;
             //   this.page.completeFundRangeStatus = true;
             //   this.page.getParent = "individual-investor";
-            //   console.log(this.page);
+            // console.log(this.page);
             // });
 
             //console.log(this.page);
@@ -150,6 +155,7 @@ export class PagesComponent implements OnInit {
               this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.ourfunds = true;
+                this.page.isInstitutionFundRange = false;
                 this.faq = this.page.acf["qa-ans"];
                 // console.log(this.page);
                 // console.log(this.faq);
@@ -212,6 +218,7 @@ export class PagesComponent implements OnInit {
                 this.page = page;
                 this.page.islamicGlobalEquityFeederStatus = true;
                 this.page.getParent = "sharia-investor";
+                this.page.isInstitutionFundRange = false;
                 console.log(this.page);
               });
             } else if (
@@ -223,6 +230,7 @@ export class PagesComponent implements OnInit {
               this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.ourfunds = true;
+                this.page.isInstitutionFundRange = false;
                 this.faq = this.page.acf["qa-ans"];
               });
             } else if (
@@ -311,6 +319,19 @@ export class PagesComponent implements OnInit {
               });
             } else if (
               currentUrl.parent == "institutional-investor" &&
+              currentUrl.child == "our-funds" &&
+              currentUrl.schild === "managed-equity-fund"
+            ) {
+              this.page.id = 12734;
+
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isManagedEquityFund = true;
+                this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "institutional-investor" &&
               this.page.slug == "our-funds"
             ) {
               this.page.id = 351;
@@ -318,7 +339,20 @@ export class PagesComponent implements OnInit {
               this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.ourfunds = true;
+                this.page.isInstitutionFundRange = true;
                 this.faq = this.page.acf["qa-ans"];
+              });
+            } else if (
+              currentUrl.parent == "institutional-investor" &&
+              currentUrl.child == "our-funds" &&
+              currentUrl.schild == "complete-fund-range"
+            ) {
+              this.page.id = 12738;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isInstitutionalCompleteFundRange = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
               });
             } else if (
               currentUrl.parent == "institutional-investor" &&
@@ -420,7 +454,7 @@ export class PagesComponent implements OnInit {
           //   this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
           //     this.page = page;
           //     this.page.ourfunds = true;
-          //     console.log(this.page);
+          // console.log(this.page);
           //   });
           // }
 

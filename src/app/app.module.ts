@@ -52,6 +52,11 @@ import { GraphComponent } from "./components/pages/balance-fund/graph/graph.comp
 import { FactSheetArchiveComponent } from "./components/pages/fact-sheet-archive/fact-sheet-archive.component";
 import { CompleteFundRangeComponent } from "./components/pages/complete-fund-range/complete-fund-range.component";
 import { CarousalComponent } from "./components/pages/carousal/carousal.component";
+import { ThinkingDeeplyComponent } from './components/pages/thinking-deeply/thinking-deeply.component';
+import { InstitutionalInvestmentApprochComponent } from './components/pages/institutional-investment-approch/institutional-investment-approch.component';
+import { InstutionalFinancialAdviserComponent } from './instutional-financial-adviser/instutional-financial-adviser.component';
+import { InstitutionalFundRangeComponent } from './components/pages/institutional-fund-range/institutional-fund-range.component';
+import { CommonInstitutionalFundComponent } from './components/pages/common-institutional-fund/common-institutional-fund.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +99,12 @@ import { CarousalComponent } from "./components/pages/carousal/carousal.componen
     GraphComponent,
     FactSheetArchiveComponent,
     CompleteFundRangeComponent,
-    CarousalComponent
+    CarousalComponent,
+    ThinkingDeeplyComponent,
+    InstitutionalInvestmentApprochComponent,
+    InstutionalFinancialAdviserComponent,
+    InstitutionalFundRangeComponent,
+    CommonInstitutionalFundComponent
   ],
   imports: [
     BrowserModule,

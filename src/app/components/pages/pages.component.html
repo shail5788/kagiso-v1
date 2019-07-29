@@ -54,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section class="corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
+  <section class="corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page && page.acf">
     <div class="container xs-no-padding-lr">
       <div class="col-md-10 col-md-offset-1">
         <app-common [social_corporate]="page.acf"></app-common>
@@ -168,6 +168,66 @@
 </div>
 
 <!-- End sharia page  -->
+<!--Institutional home page -->
+ <div *ngIf="page && page.investWithUs">
+      <section
+      class="wow fadeIn no-padding main-slider mobile-height top-space"
+      *ngIf="page && page.investWithUs"
+    >
+      <app-slider [sliders]="page.acf.home_slider"></app-slider>
+    </section>
+    <div class="container"  *ngIf="page && page.investWithUs">
+      <app-thinking-deeply [deeplyThink]="page.acf"></app-thinking-deeply>
+     <section style="padding:0px;">
+       <app-institutional-investment-approch [investmentApproch]="page.acf"></app-institutional-investment-approch>
+     </section>  
+     <section style="padding:0px">
+        <app-common [fundDesign]="page.acf"></app-common>
+      </section>  
+      <section class="button-section" style="padding:0px">
+          <div
+          class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top"
+         
+        >
+          <div class="text-center suscribe">
+             <a href="#" class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom"><span>OUR FUNDS</span></a
+            >
+            <a href="#" class="btn-news-literature"><span>PERFORMANCE SHEET</span></a>
+          </div>
+        </div>
+      </section>
+      <section style="padding:0px;padding-bottom: 15px;">
+           <app-instutional-financial-adviser [fadvisers]="page"></app-instutional-financial-adviser>
+      </section>
+      <section style="padding:0px;padding-bottom:10px;">
+        <div
+        class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top">
+
+        <div class="text-center suscribe">
+          <a href="#" class="btn-news-literature"><span>MORE ABOUT US</span></a>
+        </div>
+      </div>
+      </section>
+      <section style="padding:0px; padding-bottom:25px;">
+          <div
+          class="row padding-40px-tb  bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
+          *ngIf="page"
+        >
+          <div
+          class="col-md-4 col-sm-4 col-xs-12 sm-margin-four-bottom xs-margin-30px-bottom wow fadeInLeft img-size"
+          data-wow-delay="0.6s"
+          data-aos="fade-right"
+          *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
+        >
+          <a [routerLink]="'/' + fImagesecond.url"
+            ><img [src]="fImagesecond.second_image.url"
+          /></a>
+        </div>
+      </div>
+      </section>
+    </div>
+ </div>
+<!--End Institutional home page-->
 
 <!--Sharia Board start-->
 <div *ngIf="page && page.shariaBoardStatus">
@@ -187,7 +247,7 @@
 </section>
 <div class="container xs-no-padding-lr" *ngIf="page && page.ourfunds">
   <section class="no-padding-top">
-    <app-fund-range [FundRange]="page"></app-fund-range>
+    <app-institutional-fund-range [FundRange]="page"></app-institutional-fund-range> 
   </section>
   <section style="padding:0 !important;">
     <div class="col-md-12 col-sm-12" *ngIf="page && page.ourfunds">
@@ -715,3 +775,41 @@
   </div>
 </div>
 <!--End Fact sheet archive-->
+<!-- Institutional manage equity fund view-->
+<div class="container ">
+  <section class="margin-80px-top"  *ngIf="page && page.isManagedEquityFund">
+    <div class="get-view">
+        <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
+    </div>
+    </section>    
+</div>
+<!--Institutional Complete fund range-->
+
+ <section class="wow fadeIn bg-medium-gray-light " style="margin-top:110px" *ngIf="page && page.isInstitutionalCompleteFundRange">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 sm-margin-four-bottom xs-margin-15px-bottom wow fadeInUp unconventional-thinking blanced-fund-box" data-wow-delay="0.2s">
+            <div class="text-center">
+               <h2>{{page.title.rendered}}</h2>  
+               <div class="inner-match-height bg-white">
+                  <div class="padding-45px-all" >
+                      <div class="padding-100px-lr" [innerHTML]="page.content.rendered"></div>
+                        <app-complete-fund-range [tableDate]="page"></app-complete-fund-range>
+                  </div>
+              </div>    
+           </div>
+         </div>
+       </div>
+       <div class="col-md-12  margin-30px-bottom margin-60px-top padding-100px-lr">
+          <div class=" complete-fund-btn">
+              <!-- <a class="btn-meet-leaders" href="#" style="margin-right:10px;">PLATEFORMS</a> -->
+              <a  class="btn-meet-leaders" href="#" style="margin-right:10px;">INVESTMENTS APPROACH</a>
+              <!-- <a class="btn-meet-leaders" href="#">FUND ARCHIVES</a> -->
+          </div>
+      </div>
+     </div>
+  </section>
+
+<!--End Institution complete fund range  -->
+
+<!--end Instittutional manage equity fund view-->

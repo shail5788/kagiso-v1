@@ -2498,3 +2498,15 @@ input, select, textarea {
 .video-hide{
     display: none;
 }
+/* .text-decoration {
+    padding: 20px;
+    margin: 35px 1px 0px 182px;
+    text-align: justify;
+    line-height: 1.9 !important;
+  } */
+  .text-decoration p {
+    
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.9 !important;
+  }
