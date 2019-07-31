@@ -458,7 +458,7 @@ export class PagesComponent implements OnInit {
               currentUrl.child == "our-funds" &&
               currentUrl.schild == "domestic-balanced-fund"
             ) {
-              this.page.id = 12134;
+              this.page.id = 12730; // 12134;
               this.wpservice.pages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.isdomesticFundStatus = true;
@@ -470,7 +470,7 @@ export class PagesComponent implements OnInit {
               currentUrl.child == "our-funds" &&
               currentUrl.schild == "global-balanced-fund"
             ) {
-              this.page.id = 12136;
+              this.page.id = 12732; //12136;
               this.wpservice.pages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.isGlobalFundInstitutionalStatus = true;

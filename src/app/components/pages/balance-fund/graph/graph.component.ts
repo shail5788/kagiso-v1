@@ -19,6 +19,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
   @Input() dataSet;
   graphData = [];
   innerdata = [];
+  dateArr = [];
   // data = [];
   newData;
   dataObj = {
@@ -44,7 +45,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
     data.sort(function(_a, _b) {
       const a: any = _a.month;
       const b: any = _b.month;
-      return b - a;
+      return a - b;
     });
     return data;
   }
@@ -169,9 +170,9 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
           );
         },
         fillColor: "red",
-        showFirstLabel: false,
-        startOnAxis: false,
-        equalSpacing: true
+        showFirstLabel: true,
+        startOnAxis: false
+        //  equalSpacing: true
       },
       /*
 	  categoryAxesSettings: {

@@ -728,12 +728,12 @@
 <div class="balance-fund" *ngIf="page && page.topFortyTrackerStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
 </div>
-<div class="balance-fund" *ngIf="page && page.isdomesticFundStatus">
+<!-- <div class="balance-fund" *ngIf="page && page.isdomesticFundStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
-</div>
-<div class="balance-fund" *ngIf="page && page.isGlobalFundInstitutionalStatus">
+</div> -->
+<!-- <div class="balance-fund" *ngIf="page && page.isGlobalFundInstitutionalStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
-</div>
+</div> -->
 
 
 <!--End Equity alpha fund-->
@@ -805,6 +805,21 @@
           </div>  
           </section>    
       </div>
+      <div class="container ">
+          <section class="margin-80px-top"  *ngIf="page && page.isdomesticFundStatus">
+            <div class="get-view">
+                <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
+            </div>  
+            </section>    
+        </div>
+        <div class="container ">
+            <section class="margin-80px-top"  *ngIf="page && page.isGlobalFundInstitutionalStatus">
+              <div class="get-view">
+                  <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
+              </div>  
+              </section>    
+          </div>
+        
     
 <!--Institutional Complete fund range-->
 
