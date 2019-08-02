@@ -11,7 +11,7 @@ import { DatePipe } from "@angular/common";
 export class BalanceFundComponent implements OnInit {
   @Input() getStatus;
   @Input() getBalancedData;
-  getGraphData;
+  getGraphData; 
   currentRoute;
   selectedRoute;
   csvData;
@@ -59,7 +59,8 @@ export class BalanceFundComponent implements OnInit {
           .subscribe(data => {
             this.csvData = data;
             this.getGraphData = this.makeDataSets(data);
-          });          
+          });
+          
           break;
         case "all":
           console.log("all");

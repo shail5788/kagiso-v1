@@ -7,10 +7,6 @@
   padding: 14px !important;
   font-weight: 400;
 }
-a.btn-our-fund span {
-  padding: 7px 5px 10px 10px;
-  display: block;
-  background: #a9cfcc;
-  color: #656565;
-  font-weight: 500;
+a.btn-our-fund span{
+    background: #e3edec;
 }

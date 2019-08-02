@@ -2563,6 +2563,7 @@ header nav.nav-box-width {padding: 0 50px;}
 
 /* dropdown menu */
 nav.navbar.navbar-default ul.nav > li > a {padding:23px 0 12px; background: transparent; border-color: transparent; font-weight: 600}
+a.header-menu-selected.is-institutional-menu {margin-right: 88px;}
 header ul.first:nth-of-type(1) li:first-child a{margin-right: 16px;}
 nav.navbar.navbar-default ul.nav > li.dropdown > a.dropdown-toggle::after, nav.navbar.sidebar-nav ul.nav > li.dropdown > a.dropdown-toggle::after {content: ""; vertical-align: middle; position: relative; top: -1px; margin-top: 0; }
 nav.navbar.navbar-default ul li.dropdown ul.dropdown-menu > li:last-child {border-bottom: 0; border-bottom: 0;}
