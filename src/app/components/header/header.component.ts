@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
     primary: null,
     secondry: null
   };
+  spacialClass = "";
   secondMenus = null;
   activeStatus = false;
   parentMenu = [
@@ -222,7 +223,9 @@ export class HeaderComponent implements OnInit {
         this.childrenMenu[0]["name"] = "INVESTMENT APPROACH";
         this.childrenMenu[0]["slug"] = "investment-approach";
         this.childrenMenu[0]["display"] = true;
+        this.spacialClass = "is-institutional-menu";
       } else {
+        this.spacialClass = "";
         this.childrenMenu[0]["name"] = "INVEST WITH US";
         this.childrenMenu[0]["slug"] = "invest-with-us";
         this.childrenMenu[0]["display"] = true;

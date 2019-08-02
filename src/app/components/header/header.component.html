@@ -55,6 +55,9 @@
                         ? 'header-menu-selected'
                         : ''
                     "
+                    [ngClass]="
+                      menu.slug == 'institutional-investor' ? spacialClass : ''
+                    "
                     >{{ menu.name }}</a
                   >
                 </li>
