@@ -131,6 +131,10 @@ a.padding-10px-all.ul-tab.active {
 .img-size img {
   max-width: 224px !important;
 }
+.inst-img-center{
+    display: inline-block;
+    margin: 0 30px;
+}
 /* --------------- Mobile CSS ---*/
 @media screen and (max-width: 480px) {
   .up-image ul li {
@@ -152,3 +156,5 @@ a.padding-10px-all.ul-tab.active {
     margin-bottom: 20px;
   }
 }
+
+

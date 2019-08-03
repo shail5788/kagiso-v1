@@ -32,7 +32,7 @@
   /* max-height: 800px !important; */
 }
 .set-min-height {
-  min-height: 800px;
+  min-height: 700px;
 }
 /* --------------- Mobile CSS ---*/
 @media screen and (max-width: 480px) {
