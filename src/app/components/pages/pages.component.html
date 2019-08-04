@@ -249,14 +249,15 @@
   <section class="no-padding-top">
     <app-institutional-fund-range [FundRange]="page"></app-institutional-fund-range> 
   </section>
-  <section style="padding:0 !important;">
+  <section style="padding:0 !important;" [ngClass]="page.isInstitutionFundRange?'institutional-class':''">
     <div class="col-md-12 col-sm-12" *ngIf="page && page.ourfunds">
       <div class="col-md-offset-2">
         <div
           class="col-md-5 no-padding-lr"
           *ngFor="let image of page.acf.financial_adviser_image"
         >
-          <div class="xs-margin-20px-bottom xs-no-margin-lr margin-10px-lr">
+          <div class="xs-margin-20px-bottom xs-no-margin-lr margin-10px-lr"
+          [ngClass]="page.isInstitutionFundRange?'institutional-image-class':''">
             <div class="light-green-box">
               <!-- <img [src]="image.image1.url" /> -->
               <a [routerLink]="image.image1_url"
@@ -277,7 +278,7 @@
 </div>
 <section
   class="border-none no-padding wow fadeIn faq"
-  *ngIf="page && page.ourfunds"
+  *ngIf="page && page.ourfunds && !page.isInstitutionFundRange"
 >
   <div class="container">
     <app-faq [faqs]="faq"></app-faq>

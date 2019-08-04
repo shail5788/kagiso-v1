@@ -42,11 +42,11 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
         value1: +this.dataSet.fundReturn[i]
       });
     }
-    data.sort(function(_a, _b) {
-      const a: any = _a.month;
-      const b: any = _b.month;
-      return a - b;
-    });
+    // data.sort(function(_a, _b) {
+    //   const a: any = _a.month;
+    //   const b: any = _b.month;
+    //   return a - b;
+    // });
     return data;
   }
 
@@ -99,6 +99,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
       theme: "light",
       marginTop: 0,
       marginRight: 0,
+      // dataDateFormat: "YYYY-MM",
       dataProvider: dataProvider,
 
       valueAxes: [
@@ -151,8 +152,7 @@ export class GraphComponent implements OnInit, OnDestroy, OnChanges {
 
       categoryField: "month",
       categoryAxis: {
-        parseDates: false,
-
+        // parseDates: true,
         categoryFunction: function(category, dataItem, categoryAxis) {
           const m = getMonthNameByNum(dataItem.month.getMonth());
           return (
