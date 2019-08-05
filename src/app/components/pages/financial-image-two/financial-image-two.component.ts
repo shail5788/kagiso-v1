@@ -8,7 +8,10 @@ import { Component, OnInit, Input } from "@angular/core";
 export class FinancialImageTwoComponent implements OnInit {
   @Input() imageTwo;
   @Input() insightStatus;
+  isInstitutionalInvestor;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.isInstitutionalInvestor = this.imageTwo.isInstitutionFundRange;
+  }
 }
