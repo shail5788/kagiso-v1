@@ -272,9 +272,28 @@
       </div>
     </div>
   </section>
-  <section>
+  <section *ngIf="page && page.ourfunds && !page.isInstitutionFundRange">
     <app-financial-image-two [imageTwo]="page"></app-financial-image-two>
   </section>
+  <section style="padding:0px; padding-bottom:25px;"
+  *ngIf="page && page.ourfunds && page.isInstitutionFundRange"
+  >
+    <div
+    class="row padding-40px-tb  bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
+    *ngIf="page"
+  >
+    <div
+    class="xs-margin-30px-bottom wow fadeInLeft img-size inst-img-center"
+    data-wow-delay="0.6s"
+    data-aos="fade-right"
+    *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
+  >
+    <a [routerLink]="'/' + fImagesecond.url"
+      ><img [src]="fImagesecond.second_image.url"
+    /></a>
+  </div>
+</div>
+</section>
 </div>
 <section
   class="border-none no-padding wow fadeIn faq"
