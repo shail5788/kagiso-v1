@@ -455,6 +455,16 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
     background: url('/assets/images/meet-leader-btnbg.jpg') no-repeat left center #fff;
     font-weight: 500;
 }
+.btn-meet-leaders-tax {
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 20px 40px 20px 100px;
+    min-width: 175px;
+    text-align: center;
+    background: url('https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager.png') no-repeat left center #fff;
+    font-weight: 500;
+}
 /* button background */
 .btn.btn-white {background:#ffffff; border-color: #ffffff; color: #232323}
 .btn.btn-white:hover, .btn.btn-white:focus {background: transparent; color: #fff}

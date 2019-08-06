@@ -547,14 +547,16 @@
     </div>
     <div class="row">
       <div class="bg-white">
-        <div class="content-div" [innerHTML]="page.content.rendered"></div>
+        <div class="content-div no-margin-top" [innerHTML]="page.content.rendered"></div>
       </div>
     </div>
     <div class="row margin-20px-top">
       <h2>Tax-free Funds</h2>
     </div>
-    <div class="row margin-30px-bottom margin-5px-top ">
-      <div class="bg-white" style="padding-top:40px">
+    
+      <div class="bg-white row">
+          <div class="margin-60px-bottom padding-40px-top">
+          <div class="fund-range-graph-area margin-45px-lr xs-margin-20px-lr margin-100px-lr xs-no-margin-lr">
         <div
           class="col-md-4 bg-white  wow fadeInLeft"
           data-wow-delay="0.4s"
@@ -563,23 +565,28 @@
           <div class="fund-range-graph-title">
             {{ invest.tax_free_funds_title }}
           </div>
-          <div class=" bg-light-green margin-30px-bottom">
+          <div class="fund-range-graph bg-light-green margin-30px-bottom">
             <a href="#"><img [src]="invest.tax_free_funds_image_.url"/></a>
           </div>
         </div>
+          </div>
+              <div class="clearfix"></div>
       </div>
     </div>
     <div class="row margin-30px-top">
-      <div class="col-md-offset-3">
+      <div class="col-md-offset-2">
         <div
-          class="col-md-4"
+          class="col-md-5"
           *ngFor="
             let fadviserImage of page.acf.financial_adviser_image;
             let i = index
           "
         >
           <div class="light-green-box">
-            <img [src]="fadviserImage.image1.url" />
+            <!-- <img [src]="fadviserImage.image1.url" /> -->
+             <div class="padding-55px-top padding-30px-all">
+              <img src="https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/tax-free-img.png">
+             </div> 
 			<a [routerLink]="'/' + fadviserImage.image1_url">
               <div class="text-title">
                 {{ fadviserImage.title }}
