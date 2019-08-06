@@ -192,7 +192,7 @@
           <div class="text-center suscribe">
              <a routerLink="/institutional-investor/our-funds" class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom"><span>OUR FUNDS</span></a
             >
-            <a routerLink="/institutional-investor/our-funds/complete-fund-range" class="btn-inst-about"><span>PERFORMANCE SHEET</span></a>
+            <a routerLink="/institutional-investor/our-funds/complete-fund-range" class="btn-news-literature"><span>PERFORMANCE SHEET</span></a>
           </div>
         </div>
       </section>
@@ -204,7 +204,7 @@
         class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top">
 
         <div class="text-center suscribe">
-          <a routerLink="/about-us" class="btn-inst-about"><span>MORE ABOUT US</span></a>
+          <a routerLink="/about-us" class="btn-news-literature"><span>MORE ABOUT US</span></a>
         </div>
       </div>
       </section>
@@ -251,9 +251,9 @@
   </section>
   <section style="padding:0 !important;" [ngClass]="page.isInstitutionFundRange?'institutional-class':''">
     <div class="col-md-12 col-sm-12" *ngIf="page && page.ourfunds">
-      <div class="max-width-inst-326">
+      <div class="col-md-offset-2">
         <div
-          class="no-padding-lr"
+          class="col-md-5 no-padding-lr"
           *ngFor="let image of page.acf.financial_adviser_image"
         >
           <div class="xs-margin-20px-bottom xs-no-margin-lr margin-10px-lr"
@@ -272,28 +272,9 @@
       </div>
     </div>
   </section>
-  <section *ngIf="page && page.ourfunds && !page.isInstitutionFundRange">
+  <section>
     <app-financial-image-two [imageTwo]="page"></app-financial-image-two>
   </section>
-  <section style="padding:0px; padding-bottom:25px;"
-  *ngIf="page && page.ourfunds && page.isInstitutionFundRange"
-  >
-    <div
-    class="row padding-40px-tb  bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
-    *ngIf="page"
-  >
-    <div
-    class="xs-margin-30px-bottom wow fadeInLeft img-size inst-img-center"
-    data-wow-delay="0.6s"
-    data-aos="fade-right"
-    *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
-  >
-    <a [routerLink]="'/' + fImagesecond.url"
-      ><img [src]="fImagesecond.second_image.url"
-    /></a>
-  </div>
-</div>
-</section>
 </div>
 <section
   class="border-none no-padding wow fadeIn faq"
