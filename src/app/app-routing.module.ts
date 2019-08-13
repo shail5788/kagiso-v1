@@ -150,6 +150,27 @@ const routes: Routes = [
     path: "institutional-investor/our-funds/global-balanced-fund",
     component: PagesComponent
   },
+
+  {
+    path: "about-us/our-history",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
+    path: "about-us/responsible-investing",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
+    path: "about-us/our-culture",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
+    path: "about-us/ownership-structure",
+    pathMatch: "full",
+    component: PagesComponent
+  },
   {
     path: "pages/:slug",
     pathMatch: "full",

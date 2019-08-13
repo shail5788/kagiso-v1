@@ -57,6 +57,9 @@ import { InstitutionalInvestmentApprochComponent } from './components/pages/inst
 import { InstutionalFinancialAdviserComponent } from './instutional-financial-adviser/instutional-financial-adviser.component';
 import { InstitutionalFundRangeComponent } from './components/pages/institutional-fund-range/institutional-fund-range.component';
 import { CommonInstitutionalFundComponent } from './components/pages/common-institutional-fund/common-institutional-fund.component';
+import { AboutMenuComponent } from './components/about-menu/about-menu.component';
+import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
+import { AboutUsCommonComponent } from './components/about-us-common/about-us-common.component';
 
 @NgModule({
   declarations: [
@@ -104,7 +107,10 @@ import { CommonInstitutionalFundComponent } from './components/pages/common-inst
     InstitutionalInvestmentApprochComponent,
     InstutionalFinancialAdviserComponent,
     InstitutionalFundRangeComponent,
-    CommonInstitutionalFundComponent
+    CommonInstitutionalFundComponent,
+    AboutMenuComponent,
+    BreadCrumbComponent,
+    AboutUsCommonComponent
   ],
   imports: [
     BrowserModule,

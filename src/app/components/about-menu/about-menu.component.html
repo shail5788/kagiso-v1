@@ -1,0 +1,69 @@
+<div class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top">
+  <div class="text-center suscribe">
+    <div class="col-md-3">
+      <a
+        href="#"
+        class="btn-meet-leaders meet-leader margin-20px-right xs-no-margin-right xs-margin-20px-bottom"
+        ><span>INVESTMENT APPROACH</span></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a href="#" class="btn-meet-leaders meet-leader"
+        ><span>MEET OUR DIVERSE TEAM</span></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/ownership-structure"
+        class="btn-meet-leaders meet-leader"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'ownership structure' ? 'active' : 'none'
+          "
+          >OWNERSHIP STRUCTURE</span
+        ></a
+      >
+    </div>
+
+    <div class="col-md-3">
+      <a routerLink="/about-us/our-history" class="btn-news-literature"
+        ><span [ngClass]="CurrentTab.child == 'our history' ? 'active' : 'none'"
+          >OUR HISTORY</span
+        ></a
+      >
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 ">
+  <div class="text-center suscribe">
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/our-culture"
+        class="btn-news-literature xs-no-margin-right xs-margin-20px-bottom"
+        ><span [ngClass]="CurrentTab.child == 'our culture' ? 'active' : 'none'"
+          >OUR CULTURE</span
+        ></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/responsible-investing"
+        class="btn-meet-leaders meet-leader"
+        [ngClass]="
+          CurrentTab.child == 'responsible investing' ? 'active' : 'none'
+        "
+        ><span>RESPONSIBLE INVESTING</span></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a href="#" class="btn-meet-leaders meet-leader"
+        ><span>CORPORATE SOCIAL INVESTMENT</span></a
+      >
+    </div>
+
+    <div class="col-md-3">
+      <a href="#" class="btn-news-literature"><span>TRANSFORMATION</span></a>
+    </div>
+  </div>
+</div>

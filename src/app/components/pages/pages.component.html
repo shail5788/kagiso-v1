@@ -1,4 +1,124 @@
+<!--start new about us page-->
 <div *ngIf="page && page.aboutStatus">
+    <section
+      class="wow fadeIn no-padding main-slider mobile-height top-space"
+      *ngIf="page && page.aboutStatus"
+    >
+      <app-slider [sliders]="page.acf.home_slider"></app-slider>
+    </section>
+   <div class="col-md-12">
+       <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+   </div> 
+   <!-- <section *ngIf="page && page.aboutStatus"> -->
+     <div class="col-md-12 padding-10px-bottom">
+         <div class="col-md-8 sm-margin-four-bottom xs-no-margin-bottom wow fadeInUp padding-30px-top"
+       >
+          <app-about-us-common 
+          [deeplyThink]="page.acf"> </app-about-us-common>
+        </div>
+        <div class="col-md-4">
+           <div class="bg-white"  style="min-height:305px;font-size: 19px;"></div>
+        </div>
+     </div>
+
+        <div class="menu">
+            <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+        </div>
+        <div class="col-md-12 about-fund-design about-us-div-background margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom">
+          <div class="col-md-8 col-md-offset-2 margin-60px-top">
+            <app-common [fundDesign]="page.acf"></app-common>
+          </div>
+      </div>
+        
+    
+   
+  <!-- </section> -->
+    
+</div>
+<!--finsh new about us page -->
+ 
+<!--sub pages of about us-->
+
+<div class="sub-page" *ngIf="page && page.isAboutUsResponsibleInvesting">
+   
+     <div class="col-md-12 margin-120px-top">
+      <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+     </div>
+     <div class="menu">
+      <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+     </div>
+     <div class=" col-md-12 responsible-investing-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
+      <div class="container xs-no-padding-lr">
+        <div class="col-md-10 col-md-offset-1">
+          <app-common [responsible]="page.acf"></app-common>
+        </div>
+      </div>
+    </div>
+    
+
+</div>
+
+<div class="sub-page" *ngIf="page && page.isAboutUsOurHistroy">
+   
+  <div class="col-md-12 margin-120px-top">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div>
+  <div class="col-md-12 our-history-area margin-80px-top xs-margin-20px-top xs-padding-30px-tb">
+    <div class="container xs-no-padding-lr margin-50px-top margin-50px-bottom" *ngIf="page">
+      <div class="col-md-10 col-md-offset-1 col-xs-12">
+        <app-common [history]="page.acf"></app-common>
+        <div class="bg-white history-slider-area">
+          <app-carousal></app-carousal>
+        </div>  
+      </div>
+      
+    </div>
+  </div>
+ </div>
+
+ <div class="sub-page" *ngIf="page && page.isAboutUsOurCulture">
+   
+  <div class="col-md-12 margin-120px-top">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div>
+  <div class=" col-md-12 our-culture-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-20px-bottom">
+    <div class="container xs-no-padding-lr margin-50px-top margin-50px-bottom" *ngIf="page">
+      <div class="col-md-10 col-md-offset-1 col-xs-12">
+        <app-common [our_culture]="page.acf"></app-common>
+      </div>
+    </div>
+  </div>
+ </div>
+ <div class="sub-page" *ngIf="page && page.isAboutUsOwnership">
+   
+  <div class="col-md-12 margin-120px-top">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div>
+  <div class="col-md-10 col-md-offset-1">
+    <app-common [owners]="page.acf"></app-common>
+  </div>
+ </div>
+ 
+
+ 
+<!--finished sub pages of about us-->
+
+
+
+
+
+<!--Start Old About us page -->
+
+<!-- <div *ngIf="page && page.aboutStatus">
   <section
     class="wow fadeIn no-padding main-slider mobile-height top-space"
     *ngIf="page && page.aboutStatus"
@@ -71,7 +191,12 @@
       </div>
     </div>
   </section>
-</div>
+</div> -->
+
+<!-- End Old About us page  -->
+
+
+
 <!-- Saria Page section -->
 <div *ngIf="page" [ngStyle]="{ display: page.saria ? block : none }">
   <section

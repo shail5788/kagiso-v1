@@ -20,6 +20,7 @@ export class PagesComponent implements OnInit {
   getHomeSlider;
 
   activeClickedTab;
+  getCurrentTab;
 
   //textFreeInvesting = false;
   taxFreeInvestment;
@@ -48,7 +49,7 @@ export class PagesComponent implements OnInit {
           ? currentUrl.schild
           : currentUrl.child;
 
-        console.log(slug);
+        // console.log(slug);
         this.wpservice.pages(`?slug=${slug}`).subscribe(page => {
           this.page = page[0];
 
@@ -136,14 +137,68 @@ export class PagesComponent implements OnInit {
             //console.log(this.page);
           }
 
-          console.log(this.page);
+          console.log(currentUrl);
+          this.getCurrentTab = currentUrl;
           if (this.page) {
+            /*** Old About us page    */
+            // if (this.page.id == 10) {
+            //   this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
+            //     this.page = page;
+            //     this.page.aboutStatus = true;
+            //     console.log(this.page);
+            //   });
+            // }
+            /** finish old about up page  */
             if (this.page.id == 10) {
-              //this.page.formStatus = true;
+              this.page.id = 12927;
               this.wpservice.getPages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.aboutStatus = true;
                 this.contactUs = true;
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "responsible-investing"
+            ) {
+              this.page.id = 12935;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsResponsibleInvesting = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "our-history"
+            ) {
+              this.page.id = 12943;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsOurHistroy = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "our-culture"
+            ) {
+              this.page.id = 12939;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsOurCulture = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "ownership-structure"
+            ) {
+              this.page.id = 12946;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsOwnership = true;
+                // this.page.getParent = "institutional-investor";
                 console.log(this.page);
               });
             } else if (
