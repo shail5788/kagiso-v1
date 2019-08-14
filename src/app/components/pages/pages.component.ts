@@ -159,6 +159,50 @@ export class PagesComponent implements OnInit {
               });
             } else if (
               currentUrl.parent == "about-us" &&
+              currentUrl.child == "meet-our-leaders"
+            ) {
+              this.page.id = 12961;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsMeetLeaders = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "corporate-social-investment"
+            ) {
+              this.page.id = 12952;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsSocialInvestment = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "investment-approach"
+            ) {
+              this.page.id = 12958;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsInvestmentApproach = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
+              currentUrl.child == "committed-to-transformation"
+            ) {
+              this.page.id = 12955;
+              this.wpservice.pages(`${this.page.id}`).subscribe(page => {
+                this.page = page;
+                this.page.isAboutUsTransform = true;
+                // this.page.getParent = "institutional-investor";
+                console.log(this.page);
+              });
+            } else if (
+              currentUrl.parent == "about-us" &&
               currentUrl.child == "responsible-investing"
             ) {
               this.page.id = 12935;

@@ -11,18 +11,34 @@ export class BreadCrumbComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.CurrentUrl);
+    // console.log(this.CurrentUrl);
     var parent = this.CurrentUrl.parent.split("-");
     var menu = this.CurrentUrl.child.split("-");
-    this.CurrentUrl.child = menu[0] + " " + menu[1];
+    menu.length >= 3
+      ? (this.CurrentUrl.child = menu[0] + " " + menu[1] + " " + menu[2])
+      : (this.CurrentUrl.child = menu[0] + " " + menu[1]);
+
     this.CurrentUrl.parent = parent[0] + " " + parent[1];
 
     if (
       this.CurrentUrl.parent !== " undefined" &&
       this.CurrentUrl.parent !== ""
     ) {
-      this.breadCrumb =
-        parent[0] + " " + parent[1] + " >" + menu[0] + " " + menu[1];
+      if (menu.length >= 3) {
+        this.breadCrumb =
+          parent[0] +
+          " " +
+          parent[1] +
+          " >" +
+          menu[0] +
+          " " +
+          menu[1] +
+          " " +
+          menu[2];
+      } else {
+        this.breadCrumb =
+          parent[0] + " " + parent[1] + " >" + menu[0] + " " + menu[1];
+      }
     } else {
       this.breadCrumb = menu[0] + " " + menu[1];
     }

@@ -107,6 +107,57 @@
     <app-common [owners]="page.acf"></app-common>
   </div>
  </div>
+ <div class="sub-page" *ngIf="page && page.isAboutUsSocialInvestment">
+   
+  <div class="col-md-12 margin-120px-top">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div>
+  <div class="col-md-12 corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page && page.acf">
+    <div class="container xs-no-padding-lr">
+      <div class="col-md-10 col-md-offset-1">
+        <app-common [social_corporate]="page.acf"></app-common>
+        <div class="corporate-slider m-hide">
+          <!-- <app-slider [sliders]="page.acf.corporate_slider"></app-slider> -->
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <div class="sub-page" *ngIf="page && page.isAboutUsTransform">
+   
+  <div class="col-md-12 margin-120px-top">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div>
+  <div class="col-md-12 committed-transformation-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
+    <div class="container xs-no-padding-lr">
+      <div class="col-md-10 col-md-offset-1">
+        <app-common [transformation]="page.acf"></app-common>
+      </div>
+    </div>
+  </div>
+ </div>
+ 
+ <div class="sub-page" *ngIf="page && page.isAboutUsInvestmentApproach">
+   
+  <div class="col-md-12 margin-120px-top">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div>
+  <div class="col-md-10 col-md-offset-1" style="padding:0px;">
+    <app-investment-approch-about
+      [investments]="page.acf.about_us_investment_approach"
+    ></app-investment-approch-about>
+  </div>
+ </div>
  
 
  

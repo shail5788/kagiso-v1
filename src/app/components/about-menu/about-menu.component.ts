@@ -10,6 +10,6 @@ export class AboutMenuComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.CurrentTab);
+    //console.log(this.CurrentTab);
   }
 }

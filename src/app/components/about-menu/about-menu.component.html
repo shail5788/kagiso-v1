@@ -2,14 +2,24 @@
   <div class="text-center suscribe">
     <div class="col-md-3">
       <a
-        href="#"
+        routerLink="/about-us/investment-approach"
         class="btn-meet-leaders meet-leader margin-20px-right xs-no-margin-right xs-margin-20px-bottom"
-        ><span>INVESTMENT APPROACH</span></a
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'investment approach' ? 'active' : 'none'
+          "
+          >INVESTMENT APPROACH</span
+        ></a
       >
     </div>
     <div class="col-md-3">
-      <a href="#" class="btn-meet-leaders meet-leader"
-        ><span>MEET OUR DIVERSE TEAM</span></a
+      <a
+        routerLink="/about-us/meet-our-leaders"
+        class="btn-meet-leaders meet-leader"
+        ><span
+          [ngClass]="CurrentTab.child == 'meet our leaders' ? 'active' : 'none'"
+          >MEET OUR DIVERSE TEAM</span
+        ></a
       >
     </div>
     <div class="col-md-3">
@@ -57,13 +67,33 @@
       >
     </div>
     <div class="col-md-3">
-      <a href="#" class="btn-meet-leaders meet-leader"
-        ><span>CORPORATE SOCIAL INVESTMENT</span></a
+      <a
+        routerLink="/about-us/corporate-social-investment"
+        class="btn-meet-leaders meet-leader"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'corporate social investment'
+              ? 'active'
+              : 'none'
+          "
+          >CORPORATE SOCIAL INVESTMENT</span
+        ></a
       >
     </div>
 
     <div class="col-md-3">
-      <a href="#" class="btn-news-literature"><span>TRANSFORMATION</span></a>
+      <a
+        routerLink="/about-us/committed-to-transformation"
+        class="btn-news-literature"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'committed to transformation'
+              ? 'active'
+              : 'none'
+          "
+          >TRANSFORMATION</span
+        ></a
+      >
     </div>
   </div>
 </div>

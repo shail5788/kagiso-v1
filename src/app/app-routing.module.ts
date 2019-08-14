@@ -172,6 +172,26 @@ const routes: Routes = [
     component: PagesComponent
   },
   {
+    path: "about-us/corporate-social-investment",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
+    path: "about-us/committed-to-transformation",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
+    path: "about-us/investment-approach",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
+    path: "about-us/meet-our-leaders",
+    pathMatch: "full",
+    component: PagesComponent
+  },
+  {
     path: "pages/:slug",
     pathMatch: "full",
     component: PagesComponent
