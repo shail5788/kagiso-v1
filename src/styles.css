@@ -2529,3 +2529,10 @@ input, select, textarea {
     font-size: 20px;
     line-height: 1.9 !important;
   }
+  p.leader-image p img {
+    height: 545px;
+  }
+  p.leader-image{
+      padding:29px;
+      padding-right: 10px!important;
+  }

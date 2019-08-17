@@ -159,7 +159,24 @@
   </div>
  </div>
  
-
+ 
+ <div class="sub-page" *ngIf="page && page.isAboutUsMeetLeaders">
+   
+  <div class="col-md-12 margin-120px-top margin-30px-lr">
+   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
+  </div>
+  <!-- <div class="menu">
+   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
+  </div> -->
+  <div class="meetLeader margin-30px-lr">
+    <div class="col-md-12" style="padding:0px;">
+      <app-meet-our-leader
+        [meetOurLeaders]="page"
+      ></app-meet-our-leader>
+    </div>
+  </div>
+  
+ </div>
  
 <!--finished sub pages of about us-->
 
