@@ -1,9 +1,9 @@
-<div class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top">
+<div class="col-md-12 margin-30px-top margin-30px-bottom xs-no-margin-top xs-no-margin-bottom">
   <div class="text-center suscribe">
     <div class="col-md-3">
       <a
         routerLink="/about-us/investment-approach"
-        class="btn-meet-leaders meet-leader margin-20px-right xs-no-margin-right xs-margin-20px-bottom"
+        class="btn-meet-leaders investment-approach-bg margin-20px-right xs-no-margin-right xs-margin-20px-bottom"
         ><span
           [ngClass]="
             CurrentTab.child == 'investment approach' ? 'active' : 'none'
@@ -15,7 +15,7 @@
     <div class="col-md-3">
       <a
         routerLink="/about-us/meet-our-leaders"
-        class="btn-meet-leaders meet-leader"
+        class="btn-meet-leaders diverse-leader-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span
           [ngClass]="CurrentTab.child == 'meet our leaders' ? 'active' : 'none'"
           >MEET OUR DIVERSE TEAM</span
@@ -25,7 +25,7 @@
     <div class="col-md-3">
       <a
         routerLink="/about-us/ownership-structure"
-        class="btn-meet-leaders meet-leader"
+        class="btn-meet-leaders ownership-structure-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span
           [ngClass]="
             CurrentTab.child == 'ownership structure' ? 'active' : 'none'
@@ -36,7 +36,7 @@
     </div>
 
     <div class="col-md-3">
-      <a routerLink="/about-us/our-history" class="btn-news-literature"
+      <a routerLink="/about-us/our-history" class="btn-meet-leaders our-history-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span [ngClass]="CurrentTab.child == 'our history' ? 'active' : 'none'"
           >OUR HISTORY</span
         ></a
@@ -50,7 +50,7 @@
     <div class="col-md-3">
       <a
         routerLink="/about-us/our-culture"
-        class="btn-news-literature xs-no-margin-right xs-margin-20px-bottom"
+        class="btn-meet-leaders our-culture-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span [ngClass]="CurrentTab.child == 'our culture' ? 'active' : 'none'"
           >OUR CULTURE</span
         ></a
@@ -59,7 +59,7 @@
     <div class="col-md-3">
       <a
         routerLink="/about-us/responsible-investing"
-        class="btn-meet-leaders meet-leader"
+        class="btn-meet-leaders responsible-investing-bg xs-no-margin-right xs-margin-20px-bottom"
         [ngClass]="
           CurrentTab.child == 'responsible investing' ? 'active' : 'none'
         "
@@ -69,7 +69,7 @@
     <div class="col-md-3">
       <a
         routerLink="/about-us/corporate-social-investment"
-        class="btn-meet-leaders meet-leader"
+        class="btn-meet-leaders corporate-social-investment-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span
           [ngClass]="
             CurrentTab.child == 'corporate social investment'
@@ -84,7 +84,7 @@
     <div class="col-md-3">
       <a
         routerLink="/about-us/committed-to-transformation"
-        class="btn-news-literature"
+        class="btn-meet-leaders transformation-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span
           [ngClass]="
             CurrentTab.child == 'committed to transformation'

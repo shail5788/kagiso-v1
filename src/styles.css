@@ -2393,6 +2393,10 @@ input, select, textarea {
 .m-hide{
     display: block;
 }
+.bread-crumb {
+    padding: 20px;
+}
+
 /* --------------- Mobile CSS ---*/
 @media screen and (max-width: 480px) {
     .m-hide{

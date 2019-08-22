@@ -139,9 +139,28 @@ a.padding-10px-all.ul-tab.active {
     margin: 0 auto;
     width: 350px;
 }
-
-
-
+.insight-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/INSIGHTS-abt.png) 14px center no-repeat #9dc4c0; 
+}
+.insight-bg:hover{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/INSIGHTS-abt.png) 14px center no-repeat #5a9fc0; 
+}
+.about-leader-title{
+    padding: 30px 20px;
+    background: #c0d6d4;
+    line-height: 30px;
+    text-align: center;
+}
+.about-leader-title span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/arrow-icon-2.jpg) no-repeat;
+    vertical-align: bottom;
+}
+.about-leader-img img{
+    min-height: 250px;
+}
 
 /* --------------- Mobile CSS ---*/
 @media screen and (max-width: 480px) {

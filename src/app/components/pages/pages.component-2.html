@@ -6,8 +6,6 @@
     >
       <app-slider [sliders]="page.acf.home_slider"></app-slider>
     </section>
-    <div class="container">
-        <div class="row">
    <div class="col-md-12">
        <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
    </div> 
@@ -19,26 +17,21 @@
           [deeplyThink]="page.acf"> </app-about-us-common>
         </div>
         <div class="col-md-4">
-           <div class="about-leader-img">
-               <img src="https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/about-leder-img.jpg">
-               <div class="about-leader-title"><a routerLink="/about-us/meet-our-leaders"> MEET OUR LEADERS <span></span></a>
-               </div>
-            </div>
+           <div class="bg-white"  style="min-height:305px;font-size: 19px;"></div>
         </div>
      </div>
 
         <div class="menu">
             <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
         </div>
-            </div>
-</div>
-   
         <div class="col-md-12 about-fund-design about-us-div-background margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom">
           <div class="col-md-8 col-md-offset-2 margin-60px-top">
             <app-common [fundDesign]="page.acf"></app-common>
           </div>
       </div>
         
+    
+   
   <!-- </section> -->
     
 </div>
@@ -47,16 +40,13 @@
 <!--sub pages of about us-->
 
 <div class="sub-page" *ngIf="page && page.isAboutUsResponsibleInvesting">
-   <div class="container">
-        <div class="row">
-     <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+     <div class="col-md-12 margin-120px-top">
       <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
      </div>
      <div class="menu">
       <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
      </div>
-       </div>
-    </div>
      <div class=" col-md-12 responsible-investing-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
       <div class="container xs-no-padding-lr">
         <div class="col-md-10 col-md-offset-1">
@@ -69,16 +59,13 @@
 </div>
 
 <div class="sub-page" *ngIf="page && page.isAboutUsOurHistroy">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+  <div class="col-md-12 margin-120px-top">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
   <div class="menu">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
   </div>
-       </div>
-    </div>
   <div class="col-md-12 our-history-area margin-80px-top xs-margin-20px-top xs-padding-30px-tb">
     <div class="container xs-no-padding-lr margin-50px-top margin-50px-bottom" *ngIf="page">
       <div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -93,16 +80,13 @@
  </div>
 
  <div class="sub-page" *ngIf="page && page.isAboutUsOurCulture">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+  <div class="col-md-12 margin-120px-top">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
   <div class="menu">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
   </div>
-       </div>
-     </div>
   <div class=" col-md-12 our-culture-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-20px-bottom">
     <div class="container xs-no-padding-lr margin-50px-top margin-50px-bottom" *ngIf="page">
       <div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -112,32 +96,25 @@
   </div>
  </div>
  <div class="sub-page" *ngIf="page && page.isAboutUsOwnership">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+  <div class="col-md-12 margin-120px-top">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
   <div class="menu">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
   </div>
-       </div>
-     
-  <div class="col-md-12">
+  <div class="col-md-10 col-md-offset-1">
     <app-common [owners]="page.acf"></app-common>
   </div>
  </div>
-     </div>
  <div class="sub-page" *ngIf="page && page.isAboutUsSocialInvestment">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+  <div class="col-md-12 margin-120px-top">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
   <div class="menu">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
   </div>
-       </div>
-     </div>
   <div class="col-md-12 corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page && page.acf">
     <div class="container xs-no-padding-lr">
       <div class="col-md-10 col-md-offset-1">
@@ -151,16 +128,13 @@
  </div>
 
  <div class="sub-page" *ngIf="page && page.isAboutUsTransform">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+  <div class="col-md-12 margin-120px-top">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
   <div class="menu">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
   </div>
-       </div>
-     </div>
   <div class="col-md-12 committed-transformation-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
     <div class="container xs-no-padding-lr">
       <div class="col-md-10 col-md-offset-1">
@@ -171,53 +145,22 @@
  </div>
  
  <div class="sub-page" *ngIf="page && page.isAboutUsInvestmentApproach">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
+   
+  <div class="col-md-12 margin-120px-top">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
   <div class="menu">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
   </div>
-       </div>
-     <div class="row">
-  <div class="margin-30px-lr" style="padding:0px;">
+  <div class="col-md-10 col-md-offset-1" style="padding:0px;">
     <app-investment-approch-about
       [investments]="page.acf.about_us_investment_approach"
     ></app-investment-approch-about>
   </div>
-       </div>
- </div>
  </div>
  
- <div class="sub-page" *ngIf="page && page.isAboutUsMeetLeaders">
-   <div class="container">
-        <div class="row">
-  <div class="col-md-12 margin-120px-top xs-margin-75px-top">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-       
-  <div class="menu">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div> 
-    </div>
-  <div class="meetLeader margin-40px-top">
-    <div class="col-md-12" style="padding:0px;">
-      <!--<app-meet-our-leader [meetOurLeaders]="page"> </app-meet-our-leader>-->
-    </div>
-  </div>
-  </div>
- </div>
 
-
- <div class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top">
-     <div class="text-center suscribe">
-         <a class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom" href="#">
-             <span _ngcontent-c3="">OUR FUNDS</span></a>
-         <a class="btn-news-literature insight-bg" href="#">
-             <span>INSIGHTS</span></a>
-     </div>
-</div>
+ 
 <!--finished sub pages of about us-->
 
 
