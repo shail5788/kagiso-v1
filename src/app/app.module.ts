@@ -60,6 +60,7 @@ import { CommonInstitutionalFundComponent } from './components/pages/common-inst
 import { AboutMenuComponent } from './components/about-menu/about-menu.component';
 import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
 import { AboutUsCommonComponent } from './components/about-us-common/about-us-common.component';
+import { MeetOurLeaderComponent } from './components/meet-our-leader/meet-our-leader.component';
 
 @NgModule({
   declarations: [
@@ -110,7 +111,8 @@ import { AboutUsCommonComponent } from './components/about-us-common/about-us-co
     CommonInstitutionalFundComponent,
     AboutMenuComponent,
     BreadCrumbComponent,
-    AboutUsCommonComponent
+    AboutUsCommonComponent,
+    MeetOurLeaderComponent
   ],
   imports: [
     BrowserModule,

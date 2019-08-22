@@ -53,14 +53,14 @@ export class PagesComponent implements OnInit {
         this.wpservice.pages(`?slug=${slug}`).subscribe(page => {
           this.page = page[0];
 
-          if (slug == "meet-our-leaders") {
-            this.page.ourteamStatus = true;
-            this.page.acf.meet_our_leaders.forEach(leader => {
-              leader.video_url = this.santiser.bypassSecurityTrustHtml(
-                leader.video_url
-              );
-            });
-          }
+          // if (slug == "meet-our-leaders") {
+          //   this.page.ourteamStatus = true;
+          //   this.page.acf.meet_our_leaders.forEach(leader => {
+          //     leader.video_url = this.santiser.bypassSecurityTrustHtml(
+          //       leader.video_url
+          //     );
+          //   });
+          // }
           if (slug == "faq") {
             this.page.faqStatus = true;
           }
