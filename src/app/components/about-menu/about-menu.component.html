@@ -1,4 +1,6 @@
-<div class="col-md-12 margin-30px-top margin-30px-bottom xs-no-margin-top xs-no-margin-bottom">
+<div
+  class="col-md-12 margin-30px-top margin-30px-bottom xs-no-margin-top xs-no-margin-bottom"
+>
   <div class="text-center suscribe">
     <div class="col-md-3">
       <a
@@ -36,7 +38,9 @@
     </div>
 
     <div class="col-md-3">
-      <a routerLink="/about-us/our-history" class="btn-meet-leaders our-history-bg xs-no-margin-right xs-margin-20px-bottom"
+      <a
+        routerLink="/about-us/our-history"
+        class="btn-meet-leaders our-history-bg xs-no-margin-right xs-margin-20px-bottom"
         ><span [ngClass]="CurrentTab.child == 'our history' ? 'active' : 'none'"
           >OUR HISTORY</span
         ></a
@@ -96,4 +100,31 @@
       >
     </div>
   </div>
+</div>
+<!--menu for mobile devices-->
+<div class="col-md-12" id="mobile-menu" style="display:none">
+  <ul>
+    <li>
+      <a routerLink="/about-us/investment-approach">INVESTMENT APPROACH</a>
+    </li>
+    <li>
+      <a routerLink="/about-us/meet-our-leaders">MEET OUR DIVERSE TEAM</a>
+    </li>
+    <li>
+      <a routerLink="/about-us/ownership-structure">OWNERSHIP STRUCTURE</a>
+    </li>
+    <li><a routerLink="/about-us/our-history">OUR HISTORY</a></li>
+    <li><a routerLink="/about-us/our-culture">OUR CULTURE</a></li>
+    <li>
+      <a routerLink="/about-us/responsible-investing">RESPONSIBLE INVESTING</a>
+    </li>
+    <li>
+      <a routerLink="/about-us/corporate-social-investment"
+        >CORPORATE SOCIAL INVESTMENT</a
+      >
+    </li>
+    <li>
+      <a routerLink="/about-us/corporate-social-investment">TRANSFORMATION</a>
+    </li>
+  </ul>
 </div>
