@@ -165,4 +165,96 @@
     </div>
   </nav>
   <!-- end navigation -->
+
+  <!--main menu for mobile-->
+  <div class="main-menu-for-mobile" style="display:none">
+    <nav
+      class="navbar navbar-default bootsnav navbar-top header-light-transparent bg-transparent"
+    >
+      <div class="nav-header-container">
+        <!-- start logo -->
+        <div class="row">
+          <div class="col-md-3 col-xs-7 text-center">
+            <a
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              title="Kagiso Asset Management"
+              class="logo"
+              ><img
+                src="assets/images/logo.png"
+                data-rjs="assets/images/logo@2x.png"
+                class="logo-dark default"
+                alt="Kagiso Asset Management"
+            /></a>
+          </div>
+          <!-- end logo -->
+          <div class="col-md-8  col-xs-7">
+            <div class="row top-nav">
+              <div class="col-md-12">
+                <ul class="nav navbar-nav first pull-right">
+                  <li>
+                    <a routerLink="/individual-investor/invest-with-us"
+                      >Individual Investor</a
+                    >
+                    <ul>
+                      <li>
+                        <a routerLink="/individual-investor/invest-with-us"></a
+                        >INVEST WITH US
+                      </li>
+                      <li>
+                        <a routerLink="/individual-investor/our-funds"></a>OUR
+                        FUND
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a routerLink="/sharia-investor/invest-with-us"
+                      >Sharia Investor</a
+                    >
+                    <ul>
+                      <li>
+                        <a routerLink="/sharia-investor/invest-with-us"></a
+                        >INVEST WITH US
+                      </li>
+                      <li>
+                        <a routerLink="/sharia-investor/our-funds"></a>OUR FUND
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a routerLink="/institutional-investor/investment-approach"
+                      >Institutional Investor</a
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          routerLink="/institutional-investor/investment-approach"
+                        ></a
+                        >INVESTMENT APPROACH
+                      </li>
+                      <li>
+                        <a routerLink="/institutional-investor/our-funds"></a
+                        >OUR FUND
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a routerLink="/about-us">ABOUT US</a></li>
+                  <li><a routerLink="/insights">INSIGHTS</a></li>
+                  <li><a routerLink="/contact-us">CONTACT US</a></li>
+                  <li class="invester-login-btn">
+                    <a href="https://investoronline.kagisoam.co.za">
+                      <img src="assets/images/bag-iocn.png" />
+                      INVESTOR LOGIN</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Finished main menu for mobile-->
 </header>
