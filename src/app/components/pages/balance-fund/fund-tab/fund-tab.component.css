@@ -1,6 +1,6 @@
 ul.fund-tabs {
   margin: 0;
-  padding: 0;
+  padding: 0px 5px;
   list-style: none;
   margin-bottom: 25px;
 }
@@ -21,7 +21,7 @@ ul.fund-tabs li:first-child {
 ul.fund-tabs li.current {
   background: #fff;
   color: #b60c2f;
-  border-bottom: 2px dotted #b60c2f;
+  /*border-bottom: 2px dotted #b60c2f;*/
 }
 .fund-tab-content {
   display: none;
@@ -92,6 +92,22 @@ ul.fund-tabs li.current {
   color: red;
   font-family: inherit;
 }
-.more-btn {
+/*.more-btn {
   padding: 7px 59px 7px 20px !important;
+}*/
+.btn-download{
+    padding: 11px 45px 11px 0px;
+    background: #8abbb6 url('/assets/images/buttons-new/download.png') no-repeat right;
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
 }
+.btn-download span{
+   padding: 12px 20px;
+    background: #c5dad7;
+    text-align: center;
+}
+.btn-download span:hover
+{background: #c5d9e2}
+.btn-download:hover{background: #5b9dbe url('/assets/images/buttons-new/download.png') no-repeat right;}

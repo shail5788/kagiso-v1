@@ -1,6 +1,6 @@
 <!-- start blanced fund -->
 <section
-  class="wow fadeIn bg-gray-light margin-100px-top xs-margin-80px-top xs-margin-15px-lr"
+  class="wow fadeIn bg-gray-light  xs-margin-80px-top xs-margin-15px-lr"
 >
   <div class="container">
     <div class="row">
@@ -32,32 +32,31 @@
           <!-- btn-list -->
           <div class="inner-match-height bg-white">
             <div class="row">
-              <div class="col-md-5 padding-45px-all">
+              <div class="col-md-5 padding-45px-all graph-box1" >
                 <!-- Tab Menu -->
                 <app-fund-tab [getApiData]="getBalancedData"></app-fund-tab>
                 <!-- Tab Menu Closed -->
               </div>
-              <div class="col-md-7 graph-box padding-45px-all">
-                <ul class="year-list">
-                  <li [ngClass]="{ current: getCurrentTab == 5 }">
+               <!-- <div class="vertical-row"></div>-->
+              <div class="col-md-7  graph-box padding-45px-all" >
+                <ul class="year-list" style="float: left">
+                  <li class="current">
                     <a href="javascript:void(0)" (click)="getConditionalCSV(5)"
                       >5 Years</a
                     >
                   </li>
-                  <li [ngClass]="{ current: getCurrentTab == 7 }">
+                  <li>
                     <a href="javascript:void(0)" (click)="getConditionalCSV(7)"
                       >7 Years</a
                     >
                   </li>
-                  <li [ngClass]="{ current: getCurrentTab == 10 }">
+                  <li>
                     <a href="javascript:void(0)" (click)="getConditionalCSV(10)"
                       >10 Years</a
                     >
                   </li>
-                  <li [ngClass]="{ current: getCurrentTab == 'all' }">
-                    <a
-                      href="javascript:void(0)"
-                      (click)="getConditionalCSV('all')"
+                  <li>
+                    <a href="javascript:void(0)" (click)="getConditionalCSV()"
                       >Since Inception</a
                     >
                   </li>
@@ -69,7 +68,7 @@
                   ></app-graph>
                   <!--<img src="http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/balance-fundgraph.jpg">-->
                 </div>
-                <ul class="return-list">
+                <ul class="return-list" style="float: left">
                   <li>
                     <a href="#"
                       >Fund Return
@@ -91,18 +90,17 @@
                     >
                   </li>
                 </ul>
-                <p>{{ getBalancedData.acf.notes }}</p>
-                <div class="select-fund">
+                <p style="font-size: 12px; width: 90%">{{ getBalancedData.acf.notes }}</p>
+                <div class="select-fund" style="width: 92.5%">
                   <div class="row">
                     <div
-                      class="col-xs-12 col-md-6 xs-padding-20px-right"
+                     class="col-xs-12 col-md-6 xs-padding-20px-right"
                       style="padding-right:0"
                     >
-                      <span>Select Another funds</span>
+                      <span><b>Select Another funds</b></span>
                     </div>
                     <div
-                      class="col-xs-12 col-md-6 xs-padding-20px-left"
-                      style="padding-left:0"
+                      class="col-xs-12 col-md-6 select-funds"
                     >
                       <select (change)="getFundOnChange($event)">
                         <option value="">Please select Fund</option>
@@ -112,9 +110,9 @@
                           [attr.selected]="
                             currentRoute == fund.fund_url ? true : null
                           "
-                          >{{ fund.fund_title }}</option
-                        >
-                        <!-- <option>EQUITY ALPHA FUND</option>
+                          >{{ fund.fund_title }}</option>
+                          
+<!--                         <option>EQUITY ALPHA FUND</option>
                         <option>ISLAMIC EQUITY FUND</option>
                         <option>BALANCED FUND</option>
                         <option>ISLAMIC BALANCED FUND</option>
@@ -137,25 +135,25 @@
               <li class="col-md-3">
                 <a href="#" class="btn-tax-free">
                   <div class="link-img-box"></div>
-                  <div class="title">TAX FREE</div>
+                  <div class="title" style="">TAX FREE</div>
                 </a>
               </li>
               <li class="col-md-3">
                 <a href="#" class="btn-top-10-holdings">
                   <div class="link-img-box"></div>
-                  <div class="title">TOP 10 HOLDINGS</div>
+                  <div class="title" style="width: 150px; font-size: 14px">TOP 10 HOLDINGS</div>
                 </a>
               </li>
               <li class="col-md-3">
                 <a href="#" class="btn-form">
                   <div class="link-img-box"></div>
-                  <div class="title">FORMS</div>
+                  <div class="title" style="width: 150px;font-size: 14px">FORMS</div>
                 </a>
               </li>
               <li class="col-md-3">
                 <a href="#" class="btn-platforms">
                   <div class="link-img-box"></div>
-                  <div class="title">PLATEFORMS</div>
+                  <div class="title" style="width: 150px; font-size: 14px">PLATFORMS</div>
                 </a>
               </li>
               <div class="clearfix"></div>
@@ -181,7 +179,7 @@
           _ngcontent-c15=""
           class="text-center margin-50px-top xs-margin-30px-top"
         >
-          <div _ngcontent-c15="" class="blanced-fund-btn">
+          <div _ngcontent-c15="" class="text-center">
             <!-- <a
           _ngcontent-c15=""
           class="btn-meet-leaders"
@@ -192,21 +190,24 @@
         >-->
             <a
               _ngcontent-c15=""
-              class="btn-green-white btn-investment-approch"
+              class="btn-meet-leaders meet-leader margin-15px-right"
               routerLink="/about-us"
+              style="vertical-align: middle" 
               ><span>INVESTMENT APPROACH</span></a
             >
             <a
               _ngcontent-c15=""
-              class="btn-green-white btn-meet-fund-manager"
+              class="btn-meet-fund-manager margin-15px-right"
               routerLink="/meet-the-fund-manager"
+              style="vertical-align: middle"  
               ><span>MEET THE FUND MANAGER</span></a
             >
             <a
               _ngcontent-c15=""
-              class="btn-green-white btn-meet-faqs"
+              class="btn-meet-faq"
               routerLink="/faq"
-              ><span>FAQ’s</span></a
+              style="vertical-align: middle" 
+              ><span>FAQ's</span></a
             >
           </div>
         </div>

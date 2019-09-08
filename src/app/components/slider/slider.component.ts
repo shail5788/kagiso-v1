@@ -10,7 +10,7 @@ export class SliderComponent implements OnInit {
   @Input() insight;
   constructor() {}
   config: SwiperOptions = {
-    autoplay: 3000,
+    autoplay: 7000,
     pagination: ".swiper-pagination",
     paginationClickable: true,
     nextButton: ".swiper-button-next",
@@ -18,7 +18,7 @@ export class SliderComponent implements OnInit {
     spaceBetween: 30
   };
   getPaginationStatus() {
-    console.log(this.sliders);
+    console.log(this.insight);
     if (this.sliders.length > 1) {
       this.config.pagination = ".swiper-pagination";
     } else {

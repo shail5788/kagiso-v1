@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
       activeClass: ""
     },
 
-    {
+      {
       name: "Institutional Investor",
       slug: "institutional-investor",
       defulturl: "institutional-investor/investment-approach",
@@ -154,7 +154,7 @@ export class HeaderComponent implements OnInit {
       name: "Institutional Investor",
       slug: "institutional-investor",
       childrens: [
-        {
+ {
           name: "INVESTMENT APPROACH",
           slug: "investment-approach",
           parent: "individual-investor",

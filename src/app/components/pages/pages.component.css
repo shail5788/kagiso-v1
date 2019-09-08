@@ -89,13 +89,15 @@ input[type="submit"]:hover {
   padding: 0px;
 }
 .up-image ul li {
-  width: 33%;
+  width: 340px;
+    height: 375px;
   display: inline-block;
   /* padding: 20px 20px 20px 0px; */
   padding: 11px 36px 1px 0px;
+    vertical-align: middle
 }
 li.row-end {
-  padding-right: 0px !important;
+  padding-right: 30px !important;
 }
 .suscribe a {
   margin-right: 24px;
@@ -111,22 +113,21 @@ li.row-end {
 a.padding-10px-all.ul-tab.active {
   color: #b50c2f;
   font-weight: 600;
-  border-bottom: 3px dotted #b50c2f;
+  /*border-bottom: 3px dotted #b50c2f;*/
 }
 .insight-title {
-  background: #bfd6d4;
-  padding: 18px 0px;
-  color: #000;
+    background: #bfd6d4;
+    padding: 18px 0px;
+    color: #000;
 }
-.insight-title .text-title {
-  background: url(https://dev.omangom.com/kagiso/assets/images/arrow-icon-2.jpg)
-    no-repeat right;
-  padding-right: 32px;
-  height: 30px;
-  font-weight: 500;
-  font-size: 18px;
-  display: inline-block;
-  line-height: 30px;
+.insight-title .text-title{
+    background: url(https://dev.omangom.com/kagiso/assets/images/arrow-icon-2.jpg) no-repeat right;
+    padding-right: 32px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 30px;
 }
 .img-size img {
   max-width: 224px !important;
@@ -137,7 +138,8 @@ a.padding-10px-all.ul-tab.active {
 }
 .max-width-inst-326{
     margin: 0 auto;
-    width: 350px;
+    /*width: 350px;*/
+    
 }
 .insight-bg{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/INSIGHTS-abt.png) 14px center no-repeat #9dc4c0; 
@@ -146,42 +148,72 @@ a.padding-10px-all.ul-tab.active {
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/INSIGHTS-abt.png) 14px center no-repeat #5a9fc0; 
 }
 .about-leader-title{
-    padding: 30px 20px;
+    padding: 16px 20px;
     background: #c0d6d4;
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
 }
 .about-leader-title span{
     display: inline-block;
-    height: 30px;
+    height: 37px;
     width: 30px;
-    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/arrow-icon-2.jpg) no-repeat;
+    background: url(/assets/images/buttons-new/buttons_more.png) no-repeat;
     vertical-align: bottom;
+}
+.btn-investment-approch{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-investment-approch.png) left center no-repeat #80ada7;
+    vertical-align: middle;
+}
+.about-us-div-background {
+    background: url('/assets/images/buttons-new/funds designed.jpg') center top/cover no-repeat fixed;
+    padding-bottom: 80px;
+}
+.btn-green-white span{
+    padding: 5px 30px;
+    height: 50px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;
+}
+.btn-green-white{
+    display: inline-block;
+    padding-left: 60px;
+    margin:0 10px;
+    background-size:60px!important;
+}
+
+.btn-green-white span:hover{
+    background: #c8dbe5;
 }
 .about-leader-img img{
     min-height: 250px;
 }
-
 /* --------------- Mobile CSS ---*/
 @media screen and (max-width: 480px) {
-  .up-image ul li {
-    width: 100%;
-    display: block;
-    padding: 0;
-  }
-  .suscribe {
-    padding-bottom: 0px;
-  }
-  .suscribe a {
-    margin-right: 0px;
-    margin-bottom: 20px;
-  }
-  .up-image ul {
-    margin-bottom: 0px;
-  }
-  .insight-title {
-    margin-bottom: 20px;
-  }
+    .up-image ul li{
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+    .suscribe{
+        padding-bottom: 0px;
+    }
+    .suscribe a{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .up-image ul{
+        margin-bottom: 0px;
+    }
+    .insight-title{
+        margin-bottom: 20px;
+    }
 }
-
-
+.inst-img-center {
+    display: inline-block;
+    margin: 0 30px;
+}

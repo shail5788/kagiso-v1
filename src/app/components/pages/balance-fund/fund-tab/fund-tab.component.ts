@@ -90,6 +90,12 @@ export class FundTabComponent implements OnInit {
     ) {
       return "assets/data/prices/individual-global-equity-price.csv";
     }
+      else if (
+      data.globalEquityFeederStatus &&
+      data.getParent == "individual-investor"
+    ) {
+      return "assets/data/prices/individual-global-equity-price.csv";
+    }
     //sharia investors
     else if (data.islamicEquityStatus && data.getParent == "sharia-investor") {
       return "assets/data/prices/sharia-islamic-equity.csv";

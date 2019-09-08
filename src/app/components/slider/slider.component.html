@@ -63,8 +63,9 @@
               </h1>
               <div class="btn-dual m-center" *ngIf="slider.image_title2">
                 <a
-                  [routerLink]="slider.image_url"                  
-                  class="more-btn"
+                  href="{{ slider.image_url }}"
+                  target="_self"
+                  class="main-slider-btn"
                   >{{ slider.image_title2 }}</a
                 >
               </div>

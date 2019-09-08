@@ -12,9 +12,8 @@ export class CarousalComponent implements OnInit {
     console.log("SDfsdfsfsdfsdf");
     this.items = [
       {
-        
         content:
-          "<div class='hsi-title-1'>Our history</div><div class='hsi-details-1'>As an owner-managed firm, we are independent of any large institution and are not driven by corporate imperatives that may run counter to our clients long-term interests.</div>"
+          "<div class='hsi-details-1'>As an owner-managed firm, we are independent of any large institution and are not driven by corporate imperatives that may run counter to our clients long-term interests.</div>"
       },
       {
         icon:"<img src='http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/2001.png'>",

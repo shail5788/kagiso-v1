@@ -13,7 +13,7 @@ export class AgencyComponent implements OnInit {
     pagination: ".swiper-pagination",
     paginationClickable: true,
     nextButton: ".swiper-button-next",
-    prevButton: ".swiper-button-prev",
+    prevButton: '.swiper-button-prev',
     spaceBetween: 30
   };
 

@@ -11,8 +11,6 @@ export class WPAPIService {
   postEndpoint = "https://dev.omangom.com/kagiso/wordpress/wp-json/wp/v2";
   csvDataEndPoint =
     "http://dev.omangom.com/kagiso/wordpress/?custom_action=get_chart_data&csv_url=";
-  csvGraphDataEndPoint =
-    "http://dev.omangom.com/kagiso/wordpress/?custom_action=get_graph_data&csv_url=";
   emailSendUrl =
     "http://dev.omangom.com/kagiso/wordpress/?custom_action=save_contact";
 
@@ -54,12 +52,6 @@ export class WPAPIService {
   readCSVDataFromServer(csvUrl) {
     const apiUrl = `
   ${this.csvDataEndPoint}${csvUrl}?rand=${new Date().getTime()}`;
-    return this.http.get(apiUrl, { responseType: "text" });
-  }
-  readCSVGraphDataServer(csvUrl) {
-    const apiUrl = `${
-      this.csvGraphDataEndPoint
-    }${csvUrl}?rand=${new Date().getTime()}`;
     return this.http.get(apiUrl, { responseType: "text" });
   }
   saveContact(contact) {

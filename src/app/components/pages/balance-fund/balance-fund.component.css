@@ -4,12 +4,26 @@
   position: relative;
   width: 100%;
 }
+.blanced-fund-box .graph-box1 {
+  border-right: 0px solid #d1d1d1;
+}
+
+.blanced-fund-box .graph-box1:after{
+content: "";
+  background-color: #E7E7E7;
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0px;
+  left: 100%;
+  display: block;}
+
 .blanced-fund-box .graph-box {
-  border-left: 4px solid #d1d1d1; 
+  border-left: 4px solid #E7E7E7; 
 }
 .blanced-fund-box .graph-box .graph-content {
   margin: 0;
-  padding: 0 0 30px 0;
+  padding: 0 0 15px 0;
   position: relative;
   width: 100%;
 }
@@ -17,14 +31,14 @@
   width: 100%;
 }
 .blanced-fund-box .year-list {
-  margin: 0 0 30px 0;
+  /*margin: 0 0 30px 0;*/
   padding: 0;
   list-style: none;
   text-align: right;
   font-size: 0; padding-bottom: 30px;
 }
 .blanced-fund-box .year-list li {
-  margin: 0 10px;
+  margin: 0 10px 0 0;
   padding: 0;
   display: inline-block;
   font-size: 14px;
@@ -48,13 +62,13 @@
 }
 .blanced-fund-box .return-list {
   margin: 0;
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
   list-style: none;
   text-align: center;
   font-size: 0;
 }
 .blanced-fund-box .return-list li {
-  margin: 0 2px;
+  margin: 0 4.6px 0 0;
   padding: 0;
   display: inline-block;
   font-size: 14px;
@@ -75,28 +89,31 @@
   text-decoration: none;
 }
 .blanced-fund-box .graph-box .select-fund {
-  margin: 30px 0 0 0;
+  margin: 0!important;
   padding: 0;
   width: 100%;
   text-transform: uppercase;
 }
 .blanced-fund-box .graph-box .select-fund select {
   padding: 10px;
-  border: 1px solid #a8c3be;
+    border-radius: 0!important;
   width: 100%;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   height: 49px;
+  margin: 0!important;   
 }
+.select-funds{padding:0px;border: 1px solid #a8c3be;}
 .blanced-fund-box .graph-box .select-fund span {
   padding: 10px;
     border: 1px solid #a8c3be;
+    border-radius: 0!important;
     width: 100%;
     display: block;
     border-right: none;
-    height: 49px;
+    height: 51px;
 }
 .blanced-fund-box ul.fund-tabs {
   margin: 0;
@@ -186,6 +203,8 @@
   padding: 10px;
   color: #656565;
   text-transform: uppercase;
+    width: 150px;
+    font-size: 14px
 }
 
 .blanced-fund-btn .btn-meet-leaders {
@@ -221,6 +240,7 @@ a.btn-invest-now-red{
     display: inline-block;
     background: #b30b2e url(https://dev.omangom.com/kagiso/red-arrow-icon.6be28c54a0d555ff2462.jpg) no-repeat right center;
     padding-right: 50px;
+    width: 200px;
 }
 a.btn-invest-now-green span{
     padding: 10px 20px 10px 20px;
@@ -238,11 +258,12 @@ a.btn-invest-now-green{
     display: inline-block;
     background: #b30b2e url(https://dev.omangom.com/kagiso/arrow-icon.7df4ea734180f4c8726f.jpg) no-repeat right center;
     padding-right: 50px;
+    width: 200px;
 }
 
 .link-img-box{
-    width: 212px;
-    height: 212px;
+    width: 150px;
+    height: 150px;
     display: block;
     background-size: cover!important;
 }
@@ -279,12 +300,16 @@ a.btn-invest-now-green{
     background-size:60px!important;
 }
 .btn-green-white span{
-    padding: 16px 30px;
-    height: 60px;
-    display: block;
+    padding: 5px 30px;
+    height: 50px;
+    text-align: left;
+    display: inline-block;
     background: #fff;
     color: #656565;
     font-weight: 500;
+    width: 200px;
+    line-height: 20px;
+    
 }
 .btn-green-white span:hover{
     background: #c8dbe5;
@@ -292,11 +317,8 @@ a.btn-invest-now-green{
 .btn-investment-approch{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-investment-approch.png) left center no-repeat #80ada7;
 }
-.btn-meet-fund-manager{
+.btn-meet-fund-manager1{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager.png) left center no-repeat #80ada7;
-}
-.btn-meet-faqs{
-    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-faqs.png) left center no-repeat #80ada7;
 }
 .btn-meet-insights{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-insights.png) left center no-repeat #80ada7;
@@ -304,11 +326,8 @@ a.btn-invest-now-green{
 .btn-investment-approch:hover{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-investment-approch-over.png) left center no-repeat #5b9dbe;
 }
-.btn-meet-fund-manager:hover{
+.btn-meet-fund-manager1:hover{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager-over.png) left center no-repeat #5b9dbe;
-}
-.btn-meet-faqs:hover{
-    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-faqs-over.png) left center no-repeat #5b9dbe;
 }
 .btn-meet-insights:hover{
     background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-insights-over.png) left center no-repeat #5b9dbe;
@@ -340,16 +359,21 @@ a.btn-invest-now-green{
     .blanced-fund-box .graph-box .select-fund span{
         border-right: 1px solid #a8c3be;
         font-size: 16px;
+        border-radius: 0!important;
     }
     .blanced-fund-box .graph-box .select-fund select{
         margin-left: -10px;
         margin-top: 20px;
         font-size: 16px;
+        border-radius: 0!important;
     }
     .fund-img-box ul li{
         float: none;
         text-align: center;
         margin-bottom: 20px;
+    }
+    .title{
+        width: 100%!important;
     }
     .fund-img-box ul{
         padding: 45px;

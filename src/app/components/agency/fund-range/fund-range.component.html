@@ -5,7 +5,7 @@
   <div class="bg-white text-center" data-aos="fade-up">
     <h2 class="grey-bt-border">Our fund range</h2>
     <div
-      class="padding-45px-all sm-padding-15px-all inner-match-height margin-45px-lr xs-margin-20px-lr padding-100px-lr xs-no-padding-lr"
+      class="padding-45px-all sm-padding-15px-all inner-match-height xs-margin-20px-lr  xs-no-padding-lr"
     >
       <a
         href="javascript:void(0);"
@@ -15,8 +15,17 @@
           saFund.title
         }}</span></a
       >
-      |
+      <!--|
       <a
+        href="javascript:void(0);"
+        (click)="changeGView()"
+        class="padding-10px-all"
+        ><span [class]="viewSChangeFlag ? 'link_on' : 'link_off'">{{
+          msFund.title
+        }}</span></a
+      >-->
+        |
+        <a
         href="javascript:void(0);"
         (click)="changeGView()"
         class="padding-10px-all"
@@ -70,7 +79,7 @@
       </div>
       <!-- for global fund range  -->
       <div class="row" *ngIf="viewChangeflag">
-        <div class="col-md-4" style="width:16.6%">&nbsp;</div>
+        <!--<div class="col-md-4" style="width:16.6%">&nbsp;</div>-->
         <div
           class="col-md-4 wow fadeInLeft"
           data-wow-delay="0.4s"
@@ -98,10 +107,10 @@
         *ngIf="!isInstitutionalFund"
       >
         <div class="col-md-6 col-sm-6 col-xs-12 text-right padding-5px-bottom">
-          <a routerLink="/fund-range-test" class="plateform-btn">PLATFORMS</a>
+          <a routerLink="/fund-range-test" class="plateform-btn"><span>PLATFORMS</span></a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 text-left">
-          <a href="#" class="form-btn">FORMS</a>
+          <a href="#" class="form-btn"><span>FORMS</span></a>
         </div>
       </div>
       <div

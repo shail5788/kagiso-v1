@@ -11,7 +11,7 @@ export class FundRangeComponent implements OnInit {
   glFund = { title: "", desc: "", images: [] };
   viewChangeflag = false;
   viewSChangeFlag = true;
-  isInstitutionalFund = false;
+    isInstitutionalFund = false;
   animation = [
     "fade-left",
     "fade-up",

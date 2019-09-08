@@ -3,7 +3,7 @@
   data-wow-delay="0.6s"
   data-aos="fade-up"
 >
-  <div class="col-md-12" *ngIf="podcast">
+ <div class="col-md-12" *ngIf="podcast">
     <h2>
       Podcast
     </h2>
@@ -46,7 +46,7 @@
         *ngIf="screenProcess"
         [innerHTML]="screenProcess.acf.screening_process_content"
       ></p>
-      <div class="row" *ngIf="podcast">
+   <div class="row" *ngIf="podcast">
         <div
           class="col-md-12 podcost-div"
           [innerHTML]="podcast.acf.podcast[0].podcast_video"

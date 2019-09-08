@@ -54,13 +54,14 @@ import { CompleteFundRangeComponent } from "./components/pages/complete-fund-ran
 import { CarousalComponent } from "./components/pages/carousal/carousal.component";
 import { ThinkingDeeplyComponent } from './components/pages/thinking-deeply/thinking-deeply.component';
 import { InstitutionalInvestmentApprochComponent } from './components/pages/institutional-investment-approch/institutional-investment-approch.component';
-import { InstutionalFinancialAdviserComponent } from './instutional-financial-adviser/instutional-financial-adviser.component';
+import { InstutionalFinancialAdviserComponent } from './components/pages/instutional-financial-adviser/instutional-financial-adviser.component';
 import { InstitutionalFundRangeComponent } from './components/pages/institutional-fund-range/institutional-fund-range.component';
 import { CommonInstitutionalFundComponent } from './components/pages/common-institutional-fund/common-institutional-fund.component';
-import { AboutMenuComponent } from './components/about-menu/about-menu.component';
-import { BreadCrumbComponent } from './components/bread-crumb/bread-crumb.component';
-import { AboutUsCommonComponent } from './components/about-us-common/about-us-common.component';
-import { MeetOurLeaderComponent } from './components/meet-our-leader/meet-our-leader.component';
+import { AboutMenuComponent } from './about-menu/about-menu.component';
+import { AboutUsCommonComponent } from './about-us-common/about-us-common.component';
+import { BreadCrumbComponent } from './bread-crumb/bread-crumb.component';
+import { MeetOurLeaderComponent } from './meet-our-leader/meet-our-leader.component';
+import { HowToInvestComponent } from './how-to-invest/how-to-invest.component';
 
 @NgModule({
   declarations: [
@@ -110,9 +111,10 @@ import { MeetOurLeaderComponent } from './components/meet-our-leader/meet-our-le
     InstitutionalFundRangeComponent,
     CommonInstitutionalFundComponent,
     AboutMenuComponent,
-    BreadCrumbComponent,
     AboutUsCommonComponent,
-    MeetOurLeaderComponent
+    BreadCrumbComponent,
+    MeetOurLeaderComponent,
+    HowToInvestComponent
   ],
   imports: [
     BrowserModule,

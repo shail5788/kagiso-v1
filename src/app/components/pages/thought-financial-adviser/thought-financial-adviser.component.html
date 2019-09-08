@@ -1,15 +1,15 @@
 <div
-  class="row sm-margin-four-bottom xs-margin-30px-bottom wow fadeInUp  "
+  class="row sm-margin-four-bottom xs-margin-30px-bottom wow fadeInUp  margin-85px-lr"
   data-wow-delay="0.6s"
   data-aos="fade-up"
 >
-  <div class="col-md-12 col-sm-12 col-xs-12">
+<!--  <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="bg-white text-center">
       <h2 *ngIf="financialAdviser">
         {{ financialAdviser.acf.financial_adviser_title }}
       </h2>
     </div>
-  </div>
+  </div>-->
   <div class="col-md-12 col-sm-12 col-xs-12" *ngIf="financialAdviser">
     <div
       style="text-align:center;"
@@ -21,15 +21,15 @@
       </div> -->
   </div>
   
-  <div class="col-md-12 col-sm-12 margin-40px-top" *ngIf="financialAdviser">
-      <div class="col-md-1"></div>
+  <div class="col-md-12 col-sm-12" *ngIf="financialAdviser">
+      <div class="col-md-2"></div>
     <div
-      class="col-md-5"
-      *ngFor="let image of financialAdviser.acf.financial_adviser_image"
+      class="col-md-4"
+      *ngFor="let image of financialAdviser.acf.financial_adviser_image"  
     >
-      <div style="margin-left:0px;">
+      <div>
 	  <a [routerLink]="'/' + image.image1_url">
-        <div class="shariya-light-green">
+        <div class="light-green-box">
           <img [src]="image.image1.url" />
           <div class="text-title">
             {{ image.title }}
@@ -38,6 +38,7 @@
 		</a>
       </div>
     </div>
+    </div>  
   </div>
   
   
@@ -60,7 +61,7 @@
   
   <div class="col-md-12" *ngIf="financialAdviser">
     <div
-      class="row padding-40px-tb bg-medium-gray-light margin-40px-top  text-center"
+      class="row padding-40px-tb bg-medium-gray-light  margin-30px-top margin-100px-lr text-center"
       *ngIf="financialAdviser"
     >
       <div
@@ -77,7 +78,7 @@
         /></a>
       </div>
     </div>
-    <div class="row faq" *ngIf="financialAdviser" style="margin-top:12px;">
+    <div class="row faq margin-40px-top margin-100px-lr" *ngIf="financialAdviser">
       <!-- <div class="col-md-12"> -->
       <app-faq
         [faqs]="financialAdviser.acf['qa-ans']"
@@ -99,4 +100,4 @@
   </div> -->
     <!-- <div class="col-md-12 col-sm-12 col-xs-12" style="height:20px"></div> -->
   </div>
-</div>
+

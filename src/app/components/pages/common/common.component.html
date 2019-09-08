@@ -40,20 +40,20 @@
           style="padding-top: 0"
           [innerHTML]="independent.independent_thinkers_content"
         ></p>
-        <div
+        <!--<div
           style="margin:0 -45px -55px -45px " class="m-hide"
           [innerHTML]="independent.independent_thinkers_video"
-        ></div>
+        ></div>-->
       </div>
-      <div class="ownership-structure" *ngIf="owners">
+      <div class="" *ngIf="owners">
         <p
           *ngIf="owners"
-          class="o-text"
+          class=""
           [innerHTML]="owners.ownership_structure_content"
         ></p>
-        <div class="text-center xs-margin-20px-bottom">
+        <!--<div class="text-center xs-margin-20px-bottom">
           <a class="more-btn read-more" (click)="showData(istrue)"> MORE</a>
-        </div>
+        </div>-->
         <div class="show-more-data" *ngIf="istrue && showMoreData">
           <p class="text-deep-pink padding-40px-top">
             <strong>{{ showMoreData.kagiso_tiso_holdings_title }}</strong>
@@ -77,8 +77,9 @@
         class="o-text"
         [innerHTML]="our_culture.our_culture_content"
       ></p>
-      <a [href]="" class="more-btn read-more xs-margin-20px-bottom" *ngIf="our_culture"> MORE</a>
+      <!--<a [href]="" class="more-btn read-more xs-margin-20px-bottom" *ngIf="our_culture"> MORE</a>-->
       <div class="responsible-investing-content" *ngIf="responsible">
+        
         <p
           *ngIf="responsible"
           class="o-text"
@@ -97,7 +98,7 @@
                   /> -->
                 </div>
                 <div
-                    class="title"
+                    class="title margin-5px-bottom"
                     (click)="getTabData('UNPRI', isActive)"
                     [ngClass]="'UNPRI' == currentTab ? 'active' : 'none'"
                   >
@@ -105,16 +106,16 @@
               </div>
             </div>
           </li>
-          <li>
+          <!--<li>
             <div class="content-box">
                 <div class="btn-carbon">
-             <!--  <img
+               <img
                 class="alignnone size-full wp-image-445"
                 src="http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/carbon.jpg"
                 alt=""
                 width="134"
                 height="94"
-              /> -->
+              /> 
                 </div>
               <div
                 class="title"
@@ -126,7 +127,7 @@
                 CARBON DISCLOSURE
               </div>
             </div>
-          </li>
+          </li>-->
           <li>
             <div class="content-box">
                 <div class="btn-proxy-voting">
@@ -168,11 +169,11 @@
             </div>
           </li>
         </ul>
-        <div class="tab-data" *ngIf="tabData">
-          <p class="text-deep-pink padding-40px-top">
+        <div class="tab-data " *ngIf="tabData">
+          <p class="text-deep-pink padding-40px-top" style="padding-bottom: 0px; margin-bottom: 0px!important">
             <strong>{{ tabData.title }}</strong>
           </p>
-          <p [innerHTML]="tabData.content"></p>
+          <p [innerHTML]="tabData.content" style="padding-top: 0!important"></p>
         </div>
       </div>
 
@@ -181,7 +182,7 @@
         class="o-text"
         [innerHTML]="social_corporate.social_investment_content"
       ></p>
-      <a [href]="" class="more-btn read-more xs-margin-20px-bottom" *ngIf="social_corporate"> MORE</a>
+      <!--<a [href]="" class="more-btn read-more xs-margin-20px-bottom" *ngIf="social_corporate"> MORE</a>-->
       <p
         *ngIf="transformation"
         class="o-text"
@@ -192,18 +193,19 @@
         <app-slider [sliders]="social_corporate.corporate_slider"></app-slider>
       </div> -->
     </div>
+        
   </div>
     <div class="clearfix"></div>
-  <!--<div
+  <div
     class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top"
     *ngIf="transformation"
   >
     <div class="text-center suscribe">
-       <a href="#" class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom"><span>OUR FUNDS</span></a
-      >
-      <a href="#" class="btn-news-literature"><span>NEWS & LITERATURE</span></a>
+     <!--  <a href="#" class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom"><span>OUR FUNDS</span></a
+      >-->
+      <!--<a href="/insights" class="btn-news-literature"><span>INSIGHTS</span></a>-->
     </div>
-  </div>-->
+  </div>
   <!-- <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="bg-white text-center">
       <iframe

@@ -1,4 +1,4 @@
-<div class=" margin-100px-bottom">
+<div class=" margin-100px-bottom"   >
   <div
     [ngClass]="
       !fromStatusFaq && !insightStatus && !glossaryStatus && !fromNewInvesting
@@ -97,10 +97,10 @@
           </div>
           <div class="padding-30px-top  text-center">
             <a routerLink="/faq" class="more-btn" *ngIf="!glossaryStatus"
-              >MORE</a
+              ><span style="background-color: white">MORE</span></a
             >
             <a routerLink="/glossary" class="more-btn" *ngIf="glossaryStatus"
-              >MORE</a
+              ><span style="background-color: white">MORE</span></a
             >
           </div>
         </div>

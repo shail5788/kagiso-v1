@@ -51,7 +51,7 @@ a:hover, a:active{color: #b60c2f; text-decoration: none;}
 a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;}
 img {max-width:100%; height:auto; }
 video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
-input, textarea, select{ border: 1px solid #d1d1d1; font-size: 14px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; max-width: 100%; resize: none;}
+input, textarea, select{ border: 1px solid #d1d1d1; font-size: 14px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; max-width: 100%; resize: none; border-radius: 0!important;}
 input[type="submit"] { width: auto}
 input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none; outline: none;}
 input:focus, textarea:focus{ border-color: #585858; outline: none; }
@@ -61,6 +61,7 @@ iframe { border: 0;}
 p { font-size: 18px;
 	font-weight: 400;
   line-height: 1.5;
+    padding: 3px;
   text-align: left;
   color: #656565;}
 b, strong { font-weight: 600;}
@@ -116,6 +117,7 @@ h6 {font-size:25px; line-height:30px}
 .text-light-gray {color:#d6d5d5}
 .text-very-light-gray {color:#ededed}
 .text-deep-pink {color:#b60c2f}
+.bullet-type{color:#b60c2f; list-style-type:circle;}
 
 /* dropcap */
 .first-letter {float: left; font-size: 50px; line-height: auto; margin: 0 20px 0 0; text-align: center; padding: 10px 0; font-weight: 600}
@@ -253,7 +255,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
   line-height: 1.43;
   text-align: center;
   color: #b60c2f;
-border-bottom: dashed #b60c2f thin;
+/*border-bottom: dashed #b60c2f thin;*/
 }
 
 .link_off {
@@ -298,7 +300,7 @@ border-bottom: dashed #b60c2f thin;
 ====================================== */
 
 .center-col {float:none; margin-left:auto; margin-right:auto }
-section {padding: 50px 0; overflow: hidden;}
+section {padding: 30px 0; overflow: hidden;}
 section.big-section {padding:160px 0;}
 section.extra-big-section {padding:200px 0;}
 section.half-section {padding:80px 0;}
@@ -445,26 +447,18 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn-dual .btn {margin: 0 10px; }
 .btn i {margin-left: 6px; vertical-align: middle; position: relative; top:-1px}
 
-.btn-meet-leaders {
+.btn-meet-leaders-tax{
     display: inline-block;
     color: #323232;
     font-size: 18px;
     padding: 20px 40px 20px 100px;
     min-width: 175px;
     text-align: center;
-    background: url('/assets/images/meet-leader-btnbg.jpg') no-repeat left center #fff;
+    text-decoration: none;
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager.png) left center no-repeat #fff;
     font-weight: 500;
 }
-.btn-meet-leaders-tax {
-    display: inline-block;
-    color: #323232;
-    font-size: 18px;
-    padding: 20px 40px 20px 100px;
-    min-width: 175px;
-    text-align: center;
-    background: url('https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager.png') no-repeat left center #fff;
-    font-weight: 500;
-}
+.btn-meet-leaders-tax:hover{background:url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager-over.png) left center no-repeat #c8dbe5;color:#656565}
 /* button background */
 .btn.btn-white {background:#ffffff; border-color: #ffffff; color: #232323}
 .btn.btn-white:hover, .btn.btn-white:focus {background: transparent; color: #fff}
@@ -775,7 +769,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .margin-80px-top {margin-top:80px}
 .margin-90px-top {margin-top:90px}
 .margin-100px-top {margin-top:100px}
-
+.margin-120px-top{margin-top: 120px}
 /* margin bottom */
 .margin-one-bottom {margin-bottom:1%}
 .margin-one-half-bottom {margin-bottom:1.5%}
@@ -846,6 +840,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .margin-90px-bottom {margin-bottom:90px}
 .margin-95px-bottom {margin-bottom:95px}
 .margin-100px-bottom {margin-bottom:100px}
+.margin-120px-bottom {margin-bottom:120px}
 
 /* margin right */
 .margin-one-right {margin-right:1%}
@@ -1272,7 +1267,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .padding-25px-top {padding-top:25px;}
 .padding-30px-top {padding-top:30px;}
 .padding-35px-top {padding-top:35px;}
-.padding-40px-top {padding-top:40px;}
+.padding-40px-top {padding-top:18px;}
 .padding-45px-top {padding-top:45px;}
 .padding-50px-top {padding-top:50px;}
 .padding-55px-top {padding-top:55px;}
@@ -1285,6 +1280,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .padding-90px-top {padding-top:90px;}
 .padding-95px-top {padding-top:95px;}
 .padding-100px-top {padding-top:100px;}
+.padding-5px {padding: 15px 0px 5px 0px;}
 
 /* padding bottom */
 .padding-one-bottom {padding-bottom:1%;}
@@ -2889,7 +2885,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 
 .slider-text-middle-main {display: table; height: 100%; width: 100% }
 .slider-text-middle {display: table-cell; vertical-align: middle; }
-.slider-typography {width: 96%; height: 100%; position: absolute; right: 0; left: 1.5%; }
+.slider-typography {width: 100%; height: 100%; position: absolute; right: 0; left: 1.5%; }
 .slider-text-bottom {display: table-cell; vertical-align: bottom; padding-bottom: 150px;}
 .slider-text-top {display: table-cell; vertical-align: top;}
 .down-section {position: absolute; width: 100%; bottom:50px; left: 0; right: 0}
@@ -3900,7 +3896,7 @@ aside .latest-post li figure {width: 75px;}
 }
 .slider-typography h1 span {
     padding: 0px 20px;
-    background: #00000030;
+    background: #00000060;
     line-height: 65px;
     display: block;
     margin-bottom: 5px;
@@ -3934,26 +3930,55 @@ aside .latest-post li figure {width: 75px;}
 .fund-range-btn-holder{
     padding: 10px 0px 40px;
 }
+a.btn-our-fund-inst {
+    display: inline-block;
+    background: #9dc4c0 url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/institutional-investor-about.png) no-repeat 8px center;
+    padding-left: 70px;
+    margin: 0 10px;}
+a.btn-our-fund-inst span {
+    background: #e3edec;
+    padding: 20px 30px 20px 30px;
+    display: block;
+    color: #656565;
+    font-weight: 500;
+}
 .fund-range-btn-holder a {
     display: inline-block;
     color: #656565;
-    font-size: 16px;
-    padding: 10px 65px 10px 20px;
-    min-width: 175px;
+    font-size: 14px;
+    padding: 10px 50px 10px 0px;
+    width: 175px;
     text-align: center;
 }
-.plateform-btn{
-    background: #BCDAD7 url(../images/plateform-icon.jpg) no-repeat right;
-}
-.form-btn{
-    background: #BCDAD7 url(../images/form-icon.jpg) no-repeat right;
-}
-.how-to-investe .slider-typography{
-    width: 100%;
-}
-.how-to-investe .swiper-container-horizontal{
-    background: #ececec;
-}
+.bee-btn{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/buttons_bee.png') no-repeat left center #8abbb6;
+    font-weight: 500;  }
+
+.bee-btn span{
+    background-color:#c8dcda;
+    padding: 19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; }
+.bee-btn span:hover{background:#c8dbe5 }
+.bee-btn:hover{background: url('/assets/images/buttons-new/buttons_bee_b.png') no-repeat left center #5b9dbe;}
+
+.plateform-btn{background: #9ec5c1 url(../images/buttons-new/buttons_platforms.png) no-repeat right;}
+.plateform-btn span{background-color: #c8dcda; padding: 11px 26px}
+.form-btn{background: #9ec5c1 url(../images/buttons-new/buttons_forms.png) no-repeat right;}
+.form-btn span{background-color: #c8dcda; padding: 11px 42px 11px 39px}
+.how-to-investe .slider-typography{width: 100%;}
+.how-to-investe .swiper-container-horizontal{background: #ececec;}
 .how-to-investe .slider-typography h3 {
     font-size: 35px;
     line-height: 50px;
@@ -4078,15 +4103,47 @@ aside .latest-post li figure {width: 75px;}
 
 a.btn-suscribe{
     display: inline-block;
-    background: #9dc4c0 url(http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/floatnav_subscribe.png) no-repeat 15px center;
-    padding-left: 60px;
-    margin:0 10px; 
+    background: #8abbb6 url('/assets/images/buttons-new/subscribe_button.png') no-repeat left center;
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    font-weight: 500;
+}
+a.btn-suscribe span{
+    padding: 19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;  
 }
 a.btn-unsuscribe {
     display: inline-block;
-    background: #9dc4c0 url(http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/floatnav_unsubscribe.png) no-repeat 15px center;
-    padding-left: 60px;
-    margin:0 10px; 
+    background: #8abbb6 url('/assets/images/buttons-new/unsubscribe_button.png') no-repeat left center;
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    font-weight: 500;
+}
+a.btn-unsuscribe span{
+    padding: 19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;    
 }
 a.btn-video-archive {
     display: inline-block;
@@ -4106,36 +4163,20 @@ a.btn-our-fund {
 a.btn-our-fund:hover{
     background: #5a9fc0 url(http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/funds_b_button.png) no-repeat 8px center;
 }
-a.btn-our-fund-inst {
-    display: inline-block;
-    background: #9dc4c0 url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/institutional-investor-about.png) no-repeat 8px center;
-    padding-left: 70px;
-    margin:0 10px; 
-}
-a.btn-our-fund-inst:hover{
-    background: #5a9fc0 url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/institutional-investor-about.png) no-repeat 8px center;
-}
-a.btn-unsuscribe span, a.btn-suscribe span, a.btn-video-archive span, a.btn-our-fund span, a.btn-news-literature span, a.btn-inst-about span{
+a.btn-video-archive span, a.btn-our-fund span, a.btn-news-literature span{
     padding: 20px 30px 20px 30px;
     display: block;
     background: #fff;
     color: #656565;
     font-weight: 500;
 }
-a.btn-our-fund-inst span{
-    background: #e3edec;
-    padding: 20px 30px 20px 30px;
-    display: block;
-    color: #656565;
-    font-weight: 500;
-}
 a.btn-suscribe:hover{
-    background: #5a9fc0 url(http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/floatnav_subscribe.png) no-repeat 15px center;
+    background: #5a9fc0 url('/assets/images/buttons-new/subscribe_b_button.png') no-repeat left center;
 }
 a.btn-unsuscribe:hover{
-    background: #5a9fc0 url(http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/floatnav_unsubscribe.png) no-repeat 15px center;
+    background: #5a9fc0 url('/assets/images/buttons-new/unsubscribe_b_button.png') no-repeat left center;
 }
-a.btn-video-archive:hover span, a.btn-unsuscribe:hover span, a.btn-suscribe:hover span, a.btn-our-fund span:hover, a.btn-our-fund-inst span:hover, a.btn-news-literature span:hover, a.btn-inst-about span:hover{
+a.btn-video-archive:hover span, a.btn-unsuscribe:hover span, a.btn-suscribe:hover span, a.btn-our-fund span:hover, a.btn-news-literature span:hover{
     background: #c8dbe5;
 }
 a.btn-news-literature{
@@ -4147,19 +4188,10 @@ a.btn-news-literature{
 a.btn-news-literature:hover{
     background: #5a9fc0 url(http://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/news&literature.png) no-repeat 8px center;
 }
-a.btn-inst-about{
-    display: inline-block;
-    background: #9dc4c0 url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/institutional-investor-about.png) no-repeat 8px center;
-    padding-left: 70px;
-    margin:0 10px;
-}
-a.btn-inst-about:hover{
-    background: #5a9fc0 url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/institutional-investor-about.png) no-repeat 8px center;
-}
 
 .btn-unpri, .btn-carbon, .btn-proxy-voting, .btn-conflict{
-    height: 114px;
-    width: 163px; 
+    height: 84px;
+    width: 120px; 
 }
 
 .invest-list-img li .content-box .title{
@@ -4270,5 +4302,439 @@ a.btn-inst-about:hover{
         padding: 0px 32px 0px 0px!important;
     }
 }
+.ownership-structure{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/structure.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.ownership-structure:hover{
+    background: url('/assets/images/buttons-new/structure–b.png') no-repeat left center #5b9dbe;
+}
+.ownership-structure.active{
+    background: url('/assets/images/buttons-new/structure–b.png') no-repeat left center #5b9dbe;
+}
+.ownership-structure span{
+    padding: 9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.ownership-structure span:hover{
+    background: #c8dbe5;
+}
+.our-history{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/history.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.our-history:hover{
+    background: url('/assets/images/buttons-new/history–b.png') no-repeat left center #5b9dbe;
+}
+.our-history.active{
+    background: url('/assets/images/buttons-new/history–b.png') no-repeat left center #5b9dbe;
+}
+.our-history span{
+    padding: 19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.our-history span:hover{
+    background: #c8dbe5;
+}
+.our-culture{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/culture.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.our-culture:hover{
+   background: url('/assets/images/buttons-new/culture-b.png') no-repeat left center #5b9dbe; 
+}
+.our-culture.active{
+   background: url('/assets/images/buttons-new/culture-b.png') no-repeat left center #5b9dbe; 
+}
+.our-culture span{
+    padding: 19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;  
+}
+.our-culture span:hover{
+   background: #c8dbe5; 
+}
+.responsible-investing{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/responsible.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.responsible-investing:hover{
+    background: url('/assets/images/buttons-new/responsible–b.png') no-repeat left center #5b9dbe;
+}
+.responsible-investing.active{
+    background: url('/assets/images/buttons-new/responsible–b.png') no-repeat left center #5b9dbe;
+}
+.responsible-investing span{
+    padding: 9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.responsible-investing span:hover{
+    background: #c8dbe5;
+}
+.corporate-social-investing{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/csi.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.corporate-social-investing:hover{
+       background: url('/assets/images/buttons-new/csi-b.png') no-repeat left center #5b9dbe; 
+}
+.corporate-social-investing.active{
+       background: url('/assets/images/buttons-new/csi-b.png') no-repeat left center #5b9dbe; 
+}
+.corporate-social-investing span{
+    padding: 9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;  
+}
+.corporate-social-investing span:hover{
+    background: #c8dbe5;
+}
+.transformation{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/transformation.png') no-repeat left center #8abbb6;
+    font-weight: 500;  
+}
+.transformation:hover{
+    background: url('/assets/images/buttons-new/transformation-b.png') no-repeat left center #5b9dbe; 
+}
+.transformation.active{background: url('/assets/images/buttons-new/transformation-b.png') no-repeat left center #5b9dbe;}
+.transformation span{
+    padding:19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;  
+}
+.btn-our-funds span{
+    padding: 30px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 0px; 
+}
+.transformation span:hover{background: #c8dbe5;}
+.transformation span:active{background: #c8dbe5;}
 
+.bread-crumb {padding: 20px 30px 0px 85px;}
+.bread-crumb-about-us-home{padding: 20px 30px 0px 113px;}
 
+.btn-our-funds{    
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/funds_button.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.btn-our-funds:hover{background: url('/assets/images/buttons-new/funds_b_button.png') no-repeat left center #5b9dbe; }
+
+.btn-our-funds span:hover{ background: #c8dbe5;}
+
+.btn-insights{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/insights_button.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.btn-insights:hover{background: url('/assets/images/buttons-new/insights_b_button.png') no-repeat left center #5b9dbe; }
+.btn-insights span{
+    padding: 30px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 0px;}
+.btn-insights span:hover{ background: #c8dbe5;}
+.btn-meet-diverse-team {
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/leaders_button.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-meet-diverse-team:hover{
+   background: url('/assets/images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important; 
+}
+.btn-meet-leaders.active{
+   background: url('/assets/images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important; 
+}
+.btn-meet-diverse-team.active{ background: url('/assets/images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important;}
+
+.btn-meet-diverse-team span{
+  padding: 19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;  
+}
+.btn-meet-diverse-team span:hover{
+    background: #c8dbe5;
+}
+.btn-meet-leaders {
+    display: inline-block;
+    padding-left: 60px;
+    /*margin: 0 10px;*/
+    background-size: 60px!important;;
+}
+.btn-meet-leaders span {
+    padding:9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px;
+}
+.btn-meet-leaders span:hover{
+    background: #c8dbe5
+}
+.btn-meet-fund-manager{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/fundman_button.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-meet-fund-manager:hover{background: url('/assets/images/buttons-new/fundman_b_button.png') no-repeat left center #5b9dbe; }
+.btn-meet-fund-manager span{
+    padding: 9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.btn-meet-fund-manager span:hover{background: #c8dbe5}
+.btn-meet-faq{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/faq_button.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-meet-faq:hover{
+    background: url('/assets/images/buttons-new/faq_b_button.png') left center no-repeat #5b9dbe;
+}
+.btn-meet-faq span{
+    padding:19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.btn-meet-faq span:hover{ background: #c8dbe5;}
+.btn-performance-sheet{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/performance_sheet.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-performance-sheet:hover{
+    background: url('/assets/images/buttons-new/performance_sheet_b.png') left center no-repeat #5b9dbe;
+}
+.btn-performance-sheet span{
+    padding: 9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.btn-performance-sheet span:hover{
+    background: #c8dbe5
+}
+.btn-more-about-us{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/more_about_us.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-more-about-us:hover{
+    background: url('/assets/images/buttons-new/more_about_us_b.png') left center no-repeat #5b9dbe;
+}
+.btn-more-about-us span{
+    padding:19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.btn-more-about-us span:hover{
+    background: #c8dbe5
+}
+.btn-performance-sheet-on-white{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/performance_sheet.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-performance-sheet-on-white:hover{
+    background: url('/assets/images/buttons-new/performance_sheet_b.png') left center no-repeat #5b9dbe;
+}
+.btn-performance-sheet-on-white span{
+    padding: 9px 15px 10px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #e3edec;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.btn-performance-sheet-on-white span:hover{
+    background: #c8dbe5
+}
+.platform-on-grey{
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 0px 0px 0px 60px!important;
+    min-width: 175px;
+    text-align: center;
+    background: url('/assets/images/buttons-new/platform.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.platform-on-grey:hover{
+   background: url('/assets/images/buttons-new/platform.png') left center no-repeat #5b9dbe; 
+}
+.platform-on-grey span{
+    padding:19px 15px 22px 15px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    color: #656565;
+    font-weight: 500;
+    width: 200px;
+    line-height: 20px; 
+}
+.platform-on-grey span:hover{
+    background: #c8dbe5;
+}

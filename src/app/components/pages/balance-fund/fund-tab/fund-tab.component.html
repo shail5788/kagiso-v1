@@ -1,4 +1,4 @@
-<ul class="fund-tabs">
+<ul class="fund-tabs" style="float: left; margin-bottom: 0px">
   <li
     data-tab="overview"
     (click)="getTabData('overview', 'This is overview')"
@@ -6,13 +6,13 @@
   >
     Overview
   </li>
-  <li
+  <!--<li
     data-tab="details"
     (click)="getTabData('details', 'This is Detail')"
     [ngClass]="{ current: getSelected == 'details' }"
   >
     Details
-  </li>
+  </li>-->
   <li
     class=""
     [ngClass]="{ current: getSelected == 'prices' }"
@@ -23,7 +23,7 @@
   </li>
   <li
     class=""
-    data-tab="fess"
+    data-tab="fees"
     [ngClass]="{ current: getSelected == 'fees' }"
     (click)="getTabData('fees', 'This is fees')"
   >
@@ -31,23 +31,23 @@
   </li>
 </ul>
 
-<div *ngIf="getTabDateSet != null">
+<div *ngIf="getTabDateSet != null" style="float: left">
   <div
     class="get-tab-data fund-tab-content current"
     [innerHTML]="getTabDateSet"
   ></div>
 </div>
-
+<br><br>
 <div class="latest" *ngIf="getPriceData && getPriceData.isPrice">
   <ul>
-    <li style="margin-left:-70px;">
+    <li style="margin-left: -20px">
       <div class="month-start">
         Latest Price <span class="amt">892.90</span>
       </div>
     </li>
     <li class="right-li">
       <div class="month-latest-end1">
-        Monthend Price <span class="amt">892.90</span>
+        Month End Price <span class="amt">892.90</span>
       </div>
     </li>
   </ul>
@@ -68,7 +68,7 @@
   </table>
 </div>
 <div class=" margin-30px-top" *ngIf="getPriceData && getPriceData.isPrice">
-  <a href="" class="more-btn read-more"> DOWNLOAD</a>
+  <a href="" class="btn-download"><span>DOWNLOAD</span></a>
 </div>
 <!-- <div id="overview" class="fund-tab-content current">
   <p>

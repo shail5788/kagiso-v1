@@ -38,16 +38,16 @@ export class CommonComponent implements OnInit {
       this.tabData = this.responsible.responsible_investing_tab[0];
       this.currentTab = tabName;
       this.isActive = true;
-    } else if (tabName == "corban_disclosure") {
-      this.tabData = this.responsible.responsible_investing_tab[1];
-      this.currentTab = tabName;
-      this.isActive = true;
-    } else if (tabName == "proxy-voting") {
+    }/* else if (tabName == "corban_disclosure") {
       this.tabData = this.responsible.responsible_investing_tab[2];
       this.currentTab = tabName;
       this.isActive = true;
+    }*/ else if (tabName == "proxy-voting") {
+      this.tabData = this.responsible.responsible_investing_tab[1];
+      this.currentTab = tabName;
+      this.isActive = true;
     } else if (tabName == "conflict") {
-      this.tabData = this.responsible.responsible_investing_tab[3];
+      this.tabData = this.responsible.responsible_investing_tab[2];
       this.currentTab = tabName;
       this.isActive = true;
     }

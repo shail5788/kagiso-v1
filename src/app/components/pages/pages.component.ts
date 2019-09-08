@@ -107,6 +107,11 @@ export class PagesComponent implements OnInit {
             this.activeClickedTab = "unitTrust";
             this.getHowToInvestSlider = this.page.acf.what_is_a_unit_trust;
           }
+            if (slug == "how-to-invest") {
+            this.page.howToInvestStatus = true;
+            this.activeClickedTab = "doInvest";
+            this.getHowToInvestSlider = this.page.acf.how_do_i_invest;
+          }
           if (slug == "forms-documents") {
             this.page.formDocumentStatus = true;
           }
@@ -509,7 +514,7 @@ export class PagesComponent implements OnInit {
               currentUrl.child == "our-funds" &&
               currentUrl.schild == "bond-fund"
             ) {
-              this.page.id = 11802;
+              this.page.id = 12769;
               this.wpservice.pages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.isInstitutionalBondStatus = true;
@@ -521,7 +526,7 @@ export class PagesComponent implements OnInit {
               currentUrl.child == "our-funds" &&
               currentUrl.schild == "money-market-fund"
             ) {
-              this.page.id = 11804;
+              this.page.id = 12764;
               this.wpservice.pages(`${this.page.id}`).subscribe(page => {
                 this.page = page;
                 this.page.isInstitutionalMoneyStatus = true;
