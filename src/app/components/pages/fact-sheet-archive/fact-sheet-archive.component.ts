@@ -16,7 +16,7 @@ export class FactSheetArchiveComponent implements OnInit {
   constructor(private wpservice: WPAPIService) {}
 
   ngOnInit() {
-    this.wpservice.getCategory("?parent=127").subscribe(categories => {
+    this.wpservice.getCategory("?parent=127&per_page=20").subscribe(categories => {
       this.getCategories = categories;
     });
   }
