@@ -89,11 +89,11 @@ input[type="submit"]:hover {
   padding: 0px;
 }
 .up-image ul li {
-  width: 340px;
-    height: 375px;
+  width: 372px;
+   /* height: 375px;*/
   display: inline-block;
   /* padding: 20px 20px 20px 0px; */
-  padding: 11px 36px 1px 0px;
+  padding: 11px 36px 1px 36px;
     vertical-align: middle
 }
 li.row-end {

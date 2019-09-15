@@ -238,7 +238,7 @@ a.btn-invest-now-red span:hover{
 }
 a.btn-invest-now-red{
     display: inline-block;
-    background: #b30b2e url(https://dev.omangom.com/kagiso/red-arrow-icon.6be28c54a0d555ff2462.jpg) no-repeat right center;
+    background: #b30b2e url('/assets/images/buttons-new/buttons_more.png') no-repeat right center;
     padding-right: 50px;
     width: 200px;
 }
@@ -256,7 +256,11 @@ a.btn-invest-now-green span:hover{
 }
 a.btn-invest-now-green{
     display: inline-block;
+<<<<<<< HEAD
     background: #b30b2e url(https://dev.omangom.com/kagiso/red-arrow-icon.6be28c54a0d555ff2462.jpg) no-repeat right center;
+=======
+    background: #8abbb6 url('/assets/images/buttons-new/buttons_more.png') no-repeat right center;
+>>>>>>> 66c44e09a386445cf4e6ecf3b8296f5298dc3cd7
     padding-right: 50px;
     width: 200px;
 }

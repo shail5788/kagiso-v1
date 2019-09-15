@@ -72,23 +72,24 @@ export class FundTabComponent implements OnInit {
     return mainObj;
   }
   getCSVByParent(data) {
+      //Individual Investor
     if (data.equityAlphaStatus && data.getParent == "individual-investor") {
-      return "assets/data/prices/individual-equity-price.csv";
+      return "assets/data/prices/Kagiso-Equity-Alpha.csv";
     } else if (
       data.balaceFundStatus &&
       data.getParent == "individual-investor"
     ) {
-      return "assets/data/prices/sample_export_15593344736071.csv";
+      return "assets/data/prices/Individual-Kagiso-Balanced.csv";
     } else if (
       data.protectorStatus &&
       data.getParent == "individual-investor"
     ) {
-      return "assets/data/prices/individual-protector.csv";
+      return "assets/data/prices/Individual-Kagiso-Protector.csv";
     } else if (
       data.globalEquityStatus &&
       data.getParent == "individual-investor"
     ) {
-      return "assets/data/prices/individual-global-equity-price.csv";
+      return "assets/data/prices/Individual-Kagiso-Global-Equity.csv";
     }
       else if (
       data.globalEquityFeederStatus &&
@@ -96,29 +97,41 @@ export class FundTabComponent implements OnInit {
     ) {
       return "assets/data/prices/individual-global-equity-price.csv";
     }
-    //sharia investors
+    else if (
+      data.topFortyTrackerStatus &&
+      data.getParent == "individual-investor"
+    ) {
+      return "assets/data/prices/Individual-Kagiso-Top-40-Tracker.csv";
+    }
+      else if (
+      data.individualStableFundStatus &&
+      data.getParent == "individual-investor"
+    ) {
+      return "assets/data/prices/Individual-Kagiso-Stable.csv";
+    }
+    //sharia investors  
     else if (data.islamicEquityStatus && data.getParent == "sharia-investor") {
-      return "assets/data/prices/sharia-islamic-equity.csv";
+      return "assets/data/prices/Sharia-Islamic-Equity-Fund.csv";
     } else if (
       data.islamicbalancedStatus &&
       data.getParent == "sharia-investor"
     ) {
-      return "assets/data/prices/sharia-islamic-balanced-fund.csv";
+      return "assets/data/prices/Sharia-Islamic-Balanced-Fund.csv";
     } else if (
       data.islamicHighYieldStatus &&
       data.getParent == "sharia-investor"
     ) {
-      return "assets/data/prices/sharia-islamic-high-yeild-fund.csv";
+      return "assets/data/prices/Sharia-Islamic-High-Yield-Fund.csv";
     } else if (
       data.islamicGlobalEquityStatus &&
       data.getParent == "sharia-investor"
     ) {
-      return "assets/data/prices/sharia-islamic-global-equity-price.csv";
+      return "assets/data/prices/Sharia-Global-Islamic-Equity-Fund.csv";
     } else if (
       data.islamicGlobalEquityFeederStatus &&
       data.getParent == "sharia-investor"
     ) {
-      return "assets/data/prices/sharia-islamic-global-equity-feeder-price.csv";
+      return "assets/data/prices/Sharia-Islamic-Global Feeder-Fund.csv";
     }
     // Institutional fund
     else if (

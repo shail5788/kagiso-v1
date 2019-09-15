@@ -22,7 +22,7 @@ export class BalanceFundComponent implements OnInit {
       console.log("readCSVDataFromServer========", data);
     });*/
     this.wpservice
-      .getCSVData("assets/images/balance_fund.csv")
+      .getCSVData("assets/images/Eq-Alpha.csv")
       .subscribe(data => {
         this.csvData = data;
         this.getGraphData = this.makeDataSets(data);
