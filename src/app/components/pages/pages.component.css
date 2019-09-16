@@ -89,11 +89,19 @@ input[type="submit"]:hover {
   padding: 0px;
 }
 .up-image ul li {
+<<<<<<< HEAD
   width: 372px;
    /* height: 375px;*/
   display: inline-block;
   /* padding: 20px 20px 20px 0px; */
   padding: 11px 36px 1px 36px;
+=======
+  width: 340px;
+    height: 375px;
+  display: inline-block;
+  /* padding: 20px 20px 20px 0px; */
+  padding: 11px 36px 1px 0px;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     vertical-align: middle
 }
 li.row-end {
@@ -165,7 +173,11 @@ a.padding-10px-all.ul-tab.active {
     vertical-align: middle;
 }
 .about-us-div-background {
+<<<<<<< HEAD
     background: url('/kagiso/assets/images/buttons-new/funds designed.jpg') center top/cover no-repeat fixed;
+=======
+    background: url('/assets/images/buttons-new/funds designed.jpg') center top/cover no-repeat fixed;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     padding-bottom: 80px;
 }
 .btn-green-white span{

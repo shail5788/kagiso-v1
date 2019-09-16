@@ -97,7 +97,11 @@ ul.fund-tabs li.current {
 }*/
 .btn-download{
     padding: 11px 45px 11px 0px;
+<<<<<<< HEAD
     background: #8abbb6 url('/kagiso/assets/images/buttons-new/download.png') no-repeat right;
+=======
+    background: #8abbb6 url('/assets/images/buttons-new/download.png') no-repeat right;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     color: #000;
     display: inline-block;
     font-size: 14px;
@@ -110,4 +114,8 @@ ul.fund-tabs li.current {
 }
 .btn-download span:hover
 {background: #c5d9e2}
+<<<<<<< HEAD
 .btn-download:hover{background: #5b9dbe url('/kagiso/assets/images/buttons-new/download.png') no-repeat right;}
+=======
+.btn-download:hover{background: #5b9dbe url('/assets/images/buttons-new/download.png') no-repeat right;}
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab

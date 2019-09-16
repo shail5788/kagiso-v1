@@ -3957,7 +3957,11 @@ a.btn-our-fund-inst span {
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/buttons_bee.png') no-repeat left center #8abbb6;
+=======
+    background: url('/assets/images/buttons-new/buttons_bee.png') no-repeat left center #8abbb6;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     font-weight: 500;  }
 
 .bee-btn span{
@@ -3971,7 +3975,11 @@ a.btn-our-fund-inst span {
     width: 200px;
     line-height: 20px; }
 .bee-btn span:hover{background:#c8dbe5 }
+<<<<<<< HEAD
 .bee-btn:hover{background: url('../images/buttons-new/buttons_bee_b.png') no-repeat left center #5b9dbe;}
+=======
+.bee-btn:hover{background: url('/assets/images/buttons-new/buttons_bee_b.png') no-repeat left center #5b9dbe;}
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 
 .plateform-btn{background: #9ec5c1 url(../images/buttons-new/buttons_platforms.png) no-repeat right;}
 .plateform-btn span{background-color: #c8dcda; padding: 11px 26px}
@@ -4103,7 +4111,11 @@ a.btn-our-fund-inst span {
 
 a.btn-suscribe{
     display: inline-block;
+<<<<<<< HEAD
     background: #8abbb6 url('../images/buttons-new/subscribe_button.png') no-repeat left center;
+=======
+    background: #8abbb6 url('/assets/images/buttons-new/subscribe_button.png') no-repeat left center;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     display: inline-block;
     color: #323232;
     font-size: 18px;
@@ -4125,7 +4137,11 @@ a.btn-suscribe span{
 }
 a.btn-unsuscribe {
     display: inline-block;
+<<<<<<< HEAD
     background: #8abbb6 url('../images/buttons-new/unsubscribe_button.png') no-repeat left center;
+=======
+    background: #8abbb6 url('/assets/images/buttons-new/unsubscribe_button.png') no-repeat left center;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     display: inline-block;
     color: #323232;
     font-size: 18px;
@@ -4171,10 +4187,17 @@ a.btn-video-archive span, a.btn-our-fund span, a.btn-news-literature span{
     font-weight: 500;
 }
 a.btn-suscribe:hover{
+<<<<<<< HEAD
     background: #5a9fc0 url('../images/buttons-new/subscribe_b_button.png') no-repeat left center;
 }
 a.btn-unsuscribe:hover{
     background: #5a9fc0 url('../images/buttons-new/unsubscribe_b_button.png') no-repeat left center;
+=======
+    background: #5a9fc0 url('/assets/images/buttons-new/subscribe_b_button.png') no-repeat left center;
+}
+a.btn-unsuscribe:hover{
+    background: #5a9fc0 url('/assets/images/buttons-new/unsubscribe_b_button.png') no-repeat left center;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 a.btn-video-archive:hover span, a.btn-unsuscribe:hover span, a.btn-suscribe:hover span, a.btn-our-fund span:hover, a.btn-news-literature span:hover{
     background: #c8dbe5;
@@ -4309,6 +4332,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/structure.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
@@ -4317,6 +4341,16 @@ a.btn-news-literature:hover{
 }
 .ownership-structure.active{
     background: url('../images/buttons-new/structure–b.png') no-repeat left center #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/structure.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.ownership-structure:hover{
+    background: url('/assets/images/buttons-new/structure–b.png') no-repeat left center #5b9dbe;
+}
+.ownership-structure.active{
+    background: url('/assets/images/buttons-new/structure–b.png') no-repeat left center #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .ownership-structure span{
     padding: 9px 15px 10px 15px;
@@ -4339,6 +4373,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/history.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
@@ -4347,6 +4382,16 @@ a.btn-news-literature:hover{
 }
 .our-history.active{
     background: url('../images/buttons-new/history–b.png') no-repeat left center #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/history.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.our-history:hover{
+    background: url('/assets/images/buttons-new/history–b.png') no-repeat left center #5b9dbe;
+}
+.our-history.active{
+    background: url('/assets/images/buttons-new/history–b.png') no-repeat left center #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .our-history span{
     padding: 19px 15px 22px 15px;
@@ -4369,6 +4414,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/culture.png') no-repeat left center #8abbb6;
     font-weight: 500; 
 }
@@ -4377,6 +4423,16 @@ a.btn-news-literature:hover{
 }
 .our-culture.active{
    background: url('../images/buttons-new/culture-b.png') no-repeat left center #5b9dbe; 
+=======
+    background: url('/assets/images/buttons-new/culture.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.our-culture:hover{
+   background: url('/assets/images/buttons-new/culture-b.png') no-repeat left center #5b9dbe; 
+}
+.our-culture.active{
+   background: url('/assets/images/buttons-new/culture-b.png') no-repeat left center #5b9dbe; 
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .our-culture span{
     padding: 19px 15px 22px 15px;
@@ -4399,6 +4455,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/responsible.png') no-repeat left center #8abbb6;
     font-weight: 500; 
 }
@@ -4407,6 +4464,16 @@ a.btn-news-literature:hover{
 }
 .responsible-investing.active{
     background: url('../images/buttons-new/responsible–b.png') no-repeat left center #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/responsible.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.responsible-investing:hover{
+    background: url('/assets/images/buttons-new/responsible–b.png') no-repeat left center #5b9dbe;
+}
+.responsible-investing.active{
+    background: url('/assets/images/buttons-new/responsible–b.png') no-repeat left center #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .responsible-investing span{
     padding: 9px 15px 10px 15px;
@@ -4429,6 +4496,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/csi.png') no-repeat left center #8abbb6;
     font-weight: 500; 
 }
@@ -4437,6 +4505,16 @@ a.btn-news-literature:hover{
 }
 .corporate-social-investing.active{
        background: url('../images/buttons-new/csi-b.png') no-repeat left center #5b9dbe; 
+=======
+    background: url('/assets/images/buttons-new/csi.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.corporate-social-investing:hover{
+       background: url('/assets/images/buttons-new/csi-b.png') no-repeat left center #5b9dbe; 
+}
+.corporate-social-investing.active{
+       background: url('/assets/images/buttons-new/csi-b.png') no-repeat left center #5b9dbe; 
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .corporate-social-investing span{
     padding: 9px 15px 10px 15px;
@@ -4459,6 +4537,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/transformation.png') no-repeat left center #8abbb6;
     font-weight: 500;  
 }
@@ -4466,6 +4545,15 @@ a.btn-news-literature:hover{
     background: url('../images/buttons-new/transformation-b.png') no-repeat left center #5b9dbe; 
 }
 .transformation.active{background: url('../images/buttons-new/transformation-b.png') no-repeat left center #5b9dbe;}
+=======
+    background: url('/assets/images/buttons-new/transformation.png') no-repeat left center #8abbb6;
+    font-weight: 500;  
+}
+.transformation:hover{
+    background: url('/assets/images/buttons-new/transformation-b.png') no-repeat left center #5b9dbe; 
+}
+.transformation.active{background: url('/assets/images/buttons-new/transformation-b.png') no-repeat left center #5b9dbe;}
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 .transformation span{
     padding:19px 15px 22px 15px;
     height: 60px;
@@ -4501,10 +4589,17 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/funds_button.png') no-repeat left center #8abbb6;
     font-weight: 500; 
 }
 .btn-our-funds:hover{background: url('../images/buttons-new/funds_b_button.png') no-repeat left center #5b9dbe; }
+=======
+    background: url('/assets/images/buttons-new/funds_button.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.btn-our-funds:hover{background: url('/assets/images/buttons-new/funds_b_button.png') no-repeat left center #5b9dbe; }
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 
 .btn-our-funds span:hover{ background: #c8dbe5;}
 
@@ -4515,10 +4610,17 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/insights_button.png') no-repeat left center #8abbb6;
     font-weight: 500; 
 }
 .btn-insights:hover{background: url('../images/buttons-new/insights_b_button.png') no-repeat left center #5b9dbe; }
+=======
+    background: url('/assets/images/buttons-new/insights_button.png') no-repeat left center #8abbb6;
+    font-weight: 500; 
+}
+.btn-insights:hover{background: url('/assets/images/buttons-new/insights_b_button.png') no-repeat left center #5b9dbe; }
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 .btn-insights span{
     padding: 30px 15px;
     height: 60px;
@@ -4537,6 +4639,7 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/leaders_button.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
@@ -4547,6 +4650,18 @@ a.btn-news-literature:hover{
    background: url('../images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important; 
 }
 .btn-meet-diverse-team.active{ background: url('../images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important;}
+=======
+    background: url('/assets/images/buttons-new/leaders_button.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-meet-diverse-team:hover{
+   background: url('/assets/images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important; 
+}
+.btn-meet-leaders.active{
+   background: url('/assets/images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important; 
+}
+.btn-meet-diverse-team.active{ background: url('/assets/images/buttons-new/leaders_b_button.png') no-repeat left center #5b9dbe!important;}
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 
 .btn-meet-diverse-team span{
   padding: 19px 15px 22px 15px;
@@ -4589,10 +4704,17 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/fundman_button.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
 .btn-meet-fund-manager:hover{background: url('../images/buttons-new/fundman_b_button.png') no-repeat left center #5b9dbe; }
+=======
+    background: url('/assets/images/buttons-new/fundman_button.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-meet-fund-manager:hover{background: url('/assets/images/buttons-new/fundman_b_button.png') no-repeat left center #5b9dbe; }
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 .btn-meet-fund-manager span{
     padding: 9px 15px 10px 15px;
     height: 60px;
@@ -4612,11 +4734,19 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/faq_button.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
 .btn-meet-faq:hover{
     background: url('../images/buttons-new/faq_b_button.png') left center no-repeat #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/faq_button.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-meet-faq:hover{
+    background: url('/assets/images/buttons-new/faq_b_button.png') left center no-repeat #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .btn-meet-faq span{
     padding:19px 15px 22px 15px;
@@ -4637,11 +4767,19 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/performance_sheet.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
 .btn-performance-sheet:hover{
     background: url('../images/buttons-new/performance_sheet_b.png') left center no-repeat #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/performance_sheet.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-performance-sheet:hover{
+    background: url('/assets/images/buttons-new/performance_sheet_b.png') left center no-repeat #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .btn-performance-sheet span{
     padding: 9px 15px 10px 15px;
@@ -4664,11 +4802,19 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/more_about_us.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
 .btn-more-about-us:hover{
     background: url('../images/buttons-new/more_about_us_b.png') left center no-repeat #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/more_about_us.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-more-about-us:hover{
+    background: url('/assets/images/buttons-new/more_about_us_b.png') left center no-repeat #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .btn-more-about-us span{
     padding:19px 15px 22px 15px;
@@ -4691,11 +4837,19 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/performance_sheet.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
 .btn-performance-sheet-on-white:hover{
     background: url('../images/buttons-new/performance_sheet_b.png') left center no-repeat #5b9dbe;
+=======
+    background: url('/assets/images/buttons-new/performance_sheet.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.btn-performance-sheet-on-white:hover{
+    background: url('/assets/images/buttons-new/performance_sheet_b.png') left center no-repeat #5b9dbe;
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .btn-performance-sheet-on-white span{
     padding: 9px 15px 10px 15px;
@@ -4718,11 +4872,19 @@ a.btn-news-literature:hover{
     padding: 0px 0px 0px 60px!important;
     min-width: 175px;
     text-align: center;
+<<<<<<< HEAD
     background: url('../images/buttons-new/platform.png') no-repeat left center #8abbb6;
     font-weight: 500;
 }
 .platform-on-grey:hover{
    background: url('../images/buttons-new/platform.png') left center no-repeat #5b9dbe; 
+=======
+    background: url('/assets/images/buttons-new/platform.png') no-repeat left center #8abbb6;
+    font-weight: 500;
+}
+.platform-on-grey:hover{
+   background: url('/assets/images/buttons-new/platform.png') left center no-repeat #5b9dbe; 
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 }
 .platform-on-grey span{
     padding:19px 15px 22px 15px;

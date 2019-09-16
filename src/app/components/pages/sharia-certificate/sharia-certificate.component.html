@@ -4,7 +4,11 @@
       <div
         class="col-md-4 col-sm-4 col-xs-12 sm-margin-four-bottom xs-margin-30px-bottom text-center wow fadeInLeft"
         *ngFor="let sharia of shariaCerticate.acf.sharia_image"
+<<<<<<< HEAD
       > <a [href]="'/' + sharia.sharia_image_url">
+=======
+      > <a [routerLink]="'/' + sharia.sharia_image_url">
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
         <div class="light-green-box">         
             <img [src]="sharia.sharia_image.url" />
             <div class="text-title">{{ sharia.title }}</div>         

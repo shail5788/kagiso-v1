@@ -51,7 +51,7 @@ a:hover, a:active{color: #b60c2f; text-decoration: none;}
 a:focus, a:active, button:focus, button:active,.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {outline: none;}
 img {max-width:100%; height:auto; }
 video { background-size: cover; display: table-cell; vertical-align: middle; width: 100%; }
-input, textarea, select{ border: 1px solid #d1d1d1; font-size: 14px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; max-width: 100%; resize: none; border-radius: 0!important}
+input, textarea, select{ border: 1px solid #d1d1d1; font-size: 14px;  padding: 8px 15px; width: 100%; margin: 0 0 20px 0; max-width: 100%; resize: none;}
 input[type="submit"] { width: auto}
 input[type="button"], input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"] { -webkit-appearance: none; outline: none;}
 input:focus, textarea:focus{ border-color: #585858; outline: none; }
@@ -262,7 +262,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
   line-height: 1.6;
   text-align: center;
   color: #b60c2f;
-/*border-bottom: dashed #b60c2f thin;*/
+border-bottom: dashed #b60c2f thin;
 }
 
 .link_off {
@@ -307,7 +307,7 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
 ====================================== */
 
 .center-col {float:none; margin-left:auto; margin-right:auto }
-section {padding: 30px 0; overflow: hidden;}
+section {padding: 50px 0; overflow: hidden;}
 section.big-section {padding:160px 0;}
 section.extra-big-section {padding:200px 0;}
 section.half-section {padding:80px 0;}
@@ -327,7 +327,7 @@ section.half-section {padding:80px 0;}
 .input-border-bottom:-ms-input-placeholder { font-weight: 300; font-size: 14px;}
 
 .extra-big-input, .extra-big-textarea, .extra-big-select select { padding: 18px 25px; font-size: 14px; line-height: 24px; height: 62px;}
-.big-input, .big-textarea, .big-select select { padding: 18px 25px; font-size: 14px; border-radius: 0!important;}
+.big-input, .big-textarea, .big-select select { padding: 18px 25px; font-size: 14px; border-radius: 0;}
 
 .medium-input, .medium-textarea, .medium-select select { padding: 12px 20px; font-size: 14px; line-height: normal; border-radius: 0;}
 .small-input, .small-textarea { padding: 12px 15px; font-size: 11px; line-height: normal}
@@ -336,11 +336,7 @@ section.half-section {padding:80px 0;}
 
 .extra-small-input, .extra-small-textarea, .extra-small-select select { padding: 9px 17px; font-size: 12px; line-height: normal}
 
-<<<<<<< HEAD
-.select-style { width: 100%; overflow: hidden; background: url("/kagiso/assets/images/select-arrow.png") no-repeat 97% 50%; border: 1px solid #d1d1d1; margin-bottom: 20px }
-=======
 .select-style { width: 100%; overflow: hidden; background: url("./assets/images/select-arrow.png") no-repeat 97% 50%; border: 1px solid #d1d1d1; margin-bottom: 20px }
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 .select-style select { width: 100%; border: none; box-shadow: none; background-color: transparent; background-image: none; -webkit-appearance: none; -moz-appearance: none; appearance: none;  cursor: pointer; }
 .select-style select:focus { outline: none; border: none; box-shadow: none }
 
@@ -377,44 +373,24 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 #success-project-contact-form-4 { clear: both; margin: 0 15px 15px; text-align: center; border: 1px solid #1a940a; color: #1a940a;  padding: 2px 0; display: none; font-size: 11px}
 
 .more-btn {
-    padding: 10px 40px 10px 0px;
-<<<<<<< HEAD
-    background: #9ec5c1 url('/kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right;
-=======
-    background: #9ec5c1 url('./assets/images/buttons-new/buttons_more.png') no-repeat right;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+    padding: 11px 80px 11px 20px;
+    background: #BCDAD7 url('./assets/images/arrow-icon.jpg') no-repeat right;
     color: #656565;
     display: inline-block;
     font-size: 14px;
     font-weight: 400;
-    width: 175px;
 }
-.more-btn span{background-color: #c8dcda;padding: 11px 50px 11px 45px}
-.more-btn span:hover{background-color: #c8dbe5}
-<<<<<<< HEAD
-.more-btn:hover{background:  #9ec5d9 url('/kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right;}
-
-.main-slider .more-btn {
-    padding: 11px 80px 11px 20px;
-    background: #FFFFFF80 url('/kagiso/assets/images/black-arrow-icon.jpg') no-repeat right;
-=======
-.more-btn:hover{background:  #9ec5d9 url('./assets/images/buttons-new/buttons_more.png') no-repeat right;}
+.more-btn:hover{background: #c8dbe5 url('./assets/images/arrow-icon-hover.jpg') no-repeat right;}
 
 .main-slider .more-btn {
     padding: 11px 80px 11px 20px;
     background: #FFFFFF80 url('./assets/images/black-arrow-icon.jpg') no-repeat right;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     color: #656565;
     display: inline-block;
     font-size: 14px;
     font-weight: 400;
-    width: auto
 }
-<<<<<<< HEAD
-.main-slider .more-btn:hover{background: #FFF url('/kagiso/assets/images/black-arrow-icon-hover.jpg') no-repeat right;}
-=======
 .main-slider .more-btn:hover{background: #FFF url('./assets/images/black-arrow-icon-hover.jpg') no-repeat right;}
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
 .fund-range-btn-holder a:hover{color:#323232;}
 
 /* separator */
@@ -497,7 +473,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn.btn-extra-large { font-size: 16px; line-height: 0.93; text-align: center;color: #323232;}
 .btn-dual .btn {margin: 0 10px; }
 .btn i {margin-left: 6px; vertical-align: middle; position: relative; top:-1px}
-/*.btn-meet-leaders {
+.btn-meet-leaders {
     display: inline-block;
     color: #656565;
     font-size: 18px;
@@ -507,14 +483,20 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
     background: url('./assets/images/meet-leader-btnbg.jpg') no-repeat left center #fff;
     font-weight: 500;
 }
-.btn-meet-leaders:hover{background: url('./assets/images/meet-leader-btnbg-hover.jpg') no-repeat left center #c8dbe5; color: #656565;}*/
-<<<<<<< HEAD
-.meet-leader.btn-meet-leaders{background: url('/kagiso/assets/images/buttons-new/invapp_button.png') no-repeat left center #8abbb6;}
-.meet-leader.btn-meet-leaders:hover{background: url('/kagiso/assets/images/buttons-new/invapp_b_button.png') no-repeat left center #5b9dbe; color: #656565;}
-=======
-.meet-leader.btn-meet-leaders{background: url('/assets/images/buttons-new/invapp_button.png') no-repeat left center #8abbb6;}
-.meet-leader.btn-meet-leaders:hover{background: url('/assets/images/buttons-new/invapp_b_button.png') no-repeat left center #5b9dbe; color: #656565;}
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+.btn-meet-leaders-tax {
+    display: inline-block;
+    color: #323232;
+    font-size: 18px;
+    padding: 20px 40px 20px 100px;
+    min-width: 175px;
+    text-align: center;
+    background: url('https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager.png') no-repeat left center #fff;
+    font-weight: 500;
+}
+.btn-meet-leaders-tax:hover{background: url('https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/06/meet-fund-manager-over.png') no-repeat left center #c8dbe5; color: #656565;}
+.btn-meet-leaders:hover{background: url('./assets/images/meet-leader-btnbg-hover.jpg') no-repeat left center #c8dbe5; color: #656565;}
+.meet-leader.btn-meet-leaders{background: url('./assets/images/meet1-leader-btnbg.jpg') no-repeat left center #fff;}
+.meet-leader.btn-meet-leaders:hover{background: url('./assets/images/meet1-leader-btnbg-hover.jpg') no-repeat left center #c8dbe5; color: #656565;}
 
 
 
@@ -829,6 +811,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .margin-80px-top {margin-top:80px}
 .margin-90px-top {margin-top:90px}
 .margin-100px-top {margin-top:100px}
+.margin-120px-top{margin-top: 120px;}
 
 /* margin bottom */
 .margin-one-bottom {margin-bottom:1%}
@@ -1326,7 +1309,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .padding-25px-top {padding-top:25px;}
 .padding-30px-top {padding-top:30px;}
 .padding-35px-top {padding-top:35px;}
-.padding-40px-top {padding-top:18px;}
+.padding-40px-top {padding-top:40px;}
 .padding-45px-top {padding-top:45px;}
 .padding-50px-top {padding-top:50px;}
 .padding-55px-top {padding-top:55px;}
@@ -1910,123 +1893,73 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
     margin: 0;
     list-style: none;
 }
-.padding-5px {padding: 15px 0px 5px 0px;}
 
 .diverse-team-list li {
     list-style: none;
     padding: 5px 10px 5px 30px;
     text-align: left;
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/bullet.png') no-repeat left 11px; color:#656565;
-}
-
-.our-history-area {
-    background: url('/kagiso/assets/images/branch.jpg') no-repeat;
-=======
     background: url('./assets/images/bullet.png') no-repeat left 11px; color:#656565;
 }
 
 .our-history-area {
     background: url('./assets/images/branch.jpg') no-repeat;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     background-size: cover;
     background-attachment: fixed;
 }
 .our-culture-area {
-    background: url('/assets/images/buttons-new/our culture.jpg') no-repeat center;
+    background: url('./assets/images/stamps.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 80px;
 }
 
 .riba-background{
-<<<<<<< HEAD
-    background: url("/kagiso/assets/images/buttons-new/funds designed.jpg") no-repeat center;
-=======
-    background: url("/assets/images/buttons-new/funds designed.jpg") no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+    background: url('./assets/images/stamps.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     
 }
+.about-us-div-background {
+    background: url('./assets/images/stamps.jpg') no-repeat center top;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
 .sharia-investment-background{
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/branch.jpg') no-repeat center;
-=======
     background: url('./assets/images/branch.jpg') no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     background-size: cover;
     background-attachment: fixed;
 }
 .sharia-investment-process-background{
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/kaleidoscope.jpg') no-repeat center;
-=======
     background: url('./assets/images/kaleidoscope.jpg') no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     background-size: cover;
     background-attachment: fixed;
 }
 .screen-process-background{
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/dirham.jpg') no-repeat center;
-=======
     background: url('./assets/images/dirham.jpg') no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     background-size: cover;
     background-attachment: fixed;
 }
 
 .responsible-investing-area {
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/dirham.jpg') no-repeat center;
-=======
     background: url('./assets/images/dirham.jpg') no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     background-size: cover;
     background-attachment: fixed;
     padding-bottom: 80px;
 }
 .corporate-social-area {
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/buttons-new/corporate social.jpg') no-repeat top center;
-=======
-    background: url('/assets/images/buttons-new/corporate social.jpg') no-repeat top center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+    background: url('./assets/images/children.jpg') no-repeat top center;
     padding-bottom: 80px;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .committed-transformation-area {
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/buttons-new/commited to trans.jpg') no-repeat center top;
-=======
-    background: url('/assets/images/buttons-new/commited to trans.jpg') no-repeat center top;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+    background: url('./assets/images/kaleidoscope.jpg') no-repeat center top;
     padding-bottom: 80px;
     background-size: cover;
     background-attachment: fixed;
-}
-.investment-approach-area{
-<<<<<<< HEAD
-    background: url('/kagiso/assets/images/buttons-new/commited to trans.jpg') no-repeat center;
-=======
-    background: url('/assets/images/buttons-new/commited to trans.jpg') no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: 80px;
-}
-.ownership-structure-area{
-<<<<<<< HEAD
-    background:  url('/kagiso/assets/images/buttons-new/ownership structure.jpg') no-repeat center;
-=======
-    background:  url('/assets/images/buttons-new/ownership structure.jpg') no-repeat center;
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: 80px;
 }
 
 /*================================ 
@@ -2152,10 +2085,10 @@ header ul.first:nth-of-type(1) li:first-child a{margin-left:0}
 .padding-left_0{padding-left:0 !important}
 .star{color:#b60c2f}
 .clearfix{clear:both}
-.invest-list-img{margin:0; padding:0px 0px; list-style-type:none; font-size:0}
+.invest-list-img{margin:0; padding:0 30px; list-style-type:none; font-size:0}
 .invest-list-img li{display:inline-block; margin:0; padding:0 15px; width:25%; font-size:18px; vertical-align:top}
-.invest-list-img li .content-box {background:#e3efed; text-align:center; width: 120px;}
-.invest-list-img li .content-box .title{padding:10px 5px; min-height:65px; color: #656565;line-height: 20px;}
+.invest-list-img li .content-box {background:#e3efed; text-align:center}
+.invest-list-img li .content-box .title{padding:10px; min-height:75px; color: #656565;}
 .invest-list-img li .content-box .active{color:#b60c2f;}
 .invest-list-img li .content-box p{display:none}
 .invest-list-img li img{width:100%; max-width:100%; margin:0; padding:0}
@@ -2247,14 +2180,14 @@ h1.black{color: #000 !important}
     font-weight: 800;
 } 
 .content-div {
-    padding: 45px;
-
+    padding: 40px;
+    margin: 4px 104px 0px 104px;
   }
   .content-div p {
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.5;
-    text-align: left;
+    line-height: 1.9;
+    text-align: justify;
   }
   .content-div ul li {
       font-size:18px;
@@ -2271,16 +2204,9 @@ h1.black{color: #000 !important}
 .swiper-container .swiper-pagination-bullet-active{background-color:#b60c2f !important; width:16px; height:16px;}
 .swiper-container .swiper-pagination-bullet{width:16px; height:16px; opacity: 1 !important; background: #80b4d2}
 .swiper-container .swiper-pagination{text-align:right;}
-<<<<<<< HEAD
-.plateform-btn:hover{background:#9ec5d9 url('/kagiso/assets/images/buttons-new/buttons_platforms.png') no-repeat right;}
-.plateform-btn span:hover{background: #c8dbe5}
-.form-btn:hover{background: #9ec5d9 url('/kagiso/assets/images/buttons-new/buttons_forms.png') no-repeat right;}
-=======
-.plateform-btn:hover{background:#9ec5d9 url(./assets/images/buttons-new/buttons_platforms.png) no-repeat right;}
-.plateform-btn span:hover{background: #c8dbe5}
-.form-btn:hover{background: #9ec5d9 url(./assets/images/buttons-new/buttons_forms.png) no-repeat right;}
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-.form-btn span:hover{background: #c8dbe5}
+.plateform-btn:hover{background:#c8dbe5 url(./assets/images/plateform-icon-hover.jpg) no-repeat right;}
+.form-btn:hover{background: #c8dbe5 url(./assets/images/form-icon-hover.jpg) no-repeat right;}
+
 .faq-pan {
     text-align: justify;
     line-height: 1.7!important;
@@ -2291,40 +2217,24 @@ h1.black{color: #000 !important}
 .unconventional-thinking-right .min-height-440.bg-light-green-v2 img:hover{transform: scale(1.1)}
 
 .unconventional-thinking-right .bg-light-green-v2{background: #e3edec}
-<<<<<<< HEAD
-.unconventional-thinking-right .more-btn, .unconventional-thinking-right .more-btn:hover{background: #e3edec url('/kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right;}
-=======
-.unconventional-thinking-right .more-btn, .unconventional-thinking-right .more-btn:hover{background: #e3edec url(./assets/images/buttons-new/buttons_more.png) no-repeat right;}
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+.unconventional-thinking-right .more-btn, .unconventional-thinking-right .more-btn:hover{background: #e3edec url(./assets/images/arrow-icon-1.jpg) no-repeat right;}
 /* .light-green-box a{background: #e3edec; padding: 15px; display: block; text-align: center} */
-.light-green-box {background: #d0e0df; padding: 20px; display: block; text-align: center;overflow: hidden; height: 348px;}
+.light-green-box {background: #e3edec; padding: 30px; display: block; text-align: center;overflow: hidden; height: 348px;}
 .light-green-box img{margin:0 auto; display: block;}
 /*.light-green-box:hover img{
     width: 120%;
 }*/
 .light-green-box img:hover{transform: scale(1.1)}
-<<<<<<< HEAD
-.light-green-box .text-title{color:#656565; font-weight:400; font-size: 14px;line-height: 21px; background: #d0e0df url('kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 15px 0 0 0}
-.unconventional-thinking-right .text-title{color:#656565; font-size: 14px;line-height: 21px; background: #d0e0df url(.'/kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 20px 0 0 0}
+.light-green-box .text-title{color:#656565; font-weight:400; font-size: 14px;line-height: 21px; background: #e3edec url(./assets/images/simple-arrow-icon.jpg) no-repeat right center; display: inline-block; padding-right: 20px; text-transform: uppercase; margin: 15px 0 0 0}
+.unconventional-thinking-right .text-title{color:#656565; font-size: 18px;line-height: 21px; background: #e3edec url(./assets/images/simple-arrow-icon.jpg) no-repeat right center; display: inline-block; padding-right: 20px; text-transform: uppercase; margin: 20px 0 0 0}
 
 .our-funds-light-green{background: #e3edec; padding: 30px; }
 .our-funds-light-green img{max-height: 200px}
-.our-funds-light-green a .text-title{color:#000; font-size: 16px;line-height: 21px; background: #d0e0df url('/kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 15px 0 0 0}
+.our-funds-light-green a .text-title{color:#000; font-size: 16px;line-height: 21px; background: #e3edec url(./assets/images/simple-arrow-icon.jpg) no-repeat right center; display: inline-block; padding-right: 20px; text-transform: uppercase; margin: 15px 0 0 0}
 .shariya-light-green img:hover{transform: scale(1.1)}
 
-.shariya-light-green .text-title{color:#656565; font-size: 14px;line-height: 21px; background: #d0e0df url('/kagiso/assets/images/buttons-new/buttons_more.png') no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 20px 0 0 0}
-=======
-.light-green-box .text-title{color:#656565; font-weight:400; font-size: 14px;line-height: 21px; background: #d0e0df url(./assets/images/buttons-new/buttons_more.png) no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 15px 0 0 0}
-.unconventional-thinking-right .text-title{color:#656565; font-size: 14px;line-height: 21px; background: #d0e0df url(./assets/images/buttons-new/buttons_more.png) no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 20px 0 0 0}
-
-.our-funds-light-green{background: #e3edec; padding: 30px; }
-.our-funds-light-green img{max-height: 200px}
-.our-funds-light-green a .text-title{color:#000; font-size: 16px;line-height: 21px; background: #d0e0df url(./assets/images/buttons-new/buttons_more.png) no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 15px 0 0 0}
-.shariya-light-green img:hover{transform: scale(1.1)}
-
-.shariya-light-green .text-title{color:#656565; font-size: 14px;line-height: 21px; background: #d0e0df url(./assets/images/buttons-new/buttons_more.png) no-repeat right center; display: inline-block; padding-right: 30px; text-transform: uppercase; margin: 20px 0 0 0}
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-.shariya-light-green{background: #d0e0df; padding: 30px; text-align: center;}
+.shariya-light-green .text-title{color:#656565; font-size: 18px;line-height: 21px; background: #e3edec url(./assets/images/simple-arrow-icon.jpg) no-repeat right center; display: inline-block; padding-right: 20px; text-transform: uppercase; margin: 20px 0 0 0}
+.shariya-light-green{background: #e3edec; padding: 30px; text-align: center;}
 .shariya-light-green img{max-height: 230px}
 
 .home-light-bg .col-sm-4{padding-left: 20px; padding-right: 20px}
@@ -2409,7 +2319,6 @@ input, select, textarea {
     margin: 0 0 20px;
     max-width: 100%;
     resize: none;
-    border-radius: 0!important;
 }
  .modal-header .close {
     height: 45px;
@@ -2462,8 +2371,8 @@ input, select, textarea {
     width: 100%!important;
 }
 .history-slider-area .controls{
-    left: -55px!important;
-    width: 110%!important;
+    left: 1%!important;
+    width: 98%!important;
     z-index: 9999;
 }
 .hsi-title-1 {
@@ -2484,6 +2393,10 @@ input, select, textarea {
 .m-hide{
     display: block;
 }
+.bread-crumb {
+    padding: 20px;
+}
+
 /* --------------- Mobile CSS ---*/
 @media screen and (max-width: 480px) {
     .m-hide{
@@ -2608,11 +2521,22 @@ input, select, textarea {
 .video-hide{
     display: none;
 }
- p.leader-image p img {
-    height: auto;
-    width: 100%;
+/* .text-decoration {
+    padding: 20px;
+    margin: 35px 1px 0px 182px;
+    text-align: justify;
+    line-height: 1.9 !important;
+  } */
+  .text-decoration p {
+    
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.9 !important;
+  }
+  p.leader-image p img {
+    height: 545px;
   }
   p.leader-image{
-    padding: 20px 0px;
-    padding-right: 10px!important;
+      padding:29px;
+      padding-right: 10px!important;
   }

@@ -1,237 +1,4 @@
-<!--start new about us page-->
 <div *ngIf="page && page.aboutStatus">
-    <section
-      class="wow fadeIn no-padding main-slider mobile-height top-space"
-      *ngIf="page && page.aboutStatus"
-    >
-      <app-slider [sliders]="page.acf.home_slider"></app-slider>
-    </section>
-        <div class="col-md-12 bread-crumb-about-us-home">
-            <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-        </div> 
-   <!-- <section *ngIf="page && page.aboutStatus"> -->
-        <div class="container">
-        
-        <div class="col-md-12 padding-40px-bottom" style="padding-left: 0px!important; padding-right: 0px!important">
-            <div class="col-md-8 sm-margin-four-bottom xs-no-margin-bottom wow fadeInUp">
-               <app-about-us-common 
-                    [deeplyThink]="page.acf"> </app-about-us-common>
-            </div>
-        <div class="col-md-4">
-           <div class="about-leader-img">
-<<<<<<< HEAD
-               <img src="assets/images/buttons-new/gavin_roland.png">
-=======
-               <img src="/assets/images/buttons-new/gavin&roland.png">
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-               <div class="about-leader-title"><a routerLink="/about-us/meet-our-leaders"> MEET OUR LEADERS <span></span></a>
-               </div>
-            </div>
-        </div>
-        </div>
-        <div class="padding-15px-left">
-            <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-        </div>
-                                 
-    </div>
-        <div class="col-md-12 about-fund-design about-us-div-background margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" >
-
-            <div class="container">
-                <div class="row"> 
-                    <div class="col-md-8 col-md-offset-2 margin-60px-top">
-            <app-common [fundDesign]="page.acf"></app-common>
-          </div>
-           </div>
-        </div>
-      </div> 
-    
-</div>
-<!--finsh new about us page -->
- 
-<!--sub pages of about us-->
-
-<div class="sub-page" *ngIf="page && page.isAboutUsResponsibleInvesting">
-     <div class="col-md-12 margin-120px-top xs-margin-75px-top bread-crumb">
-      <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-     </div>
-           
-     <div class="container">
-      <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-     </div>
-     <div class="container col-md-12 responsible-investing-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
-         <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <app-common [responsible]="page.acf"></app-common>
-        </div>
-      </div>
-             </div>
-    </div>
-</div>
-<div class="sub-page" *ngIf="page && page.isAboutUsOurHistroy">
-   
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-  <div class="col-md-12 our-history-area margin-80px-top xs-margin-20px-top xs-padding-30px-tb">
-    <div class="container xs-no-padding-lr margin-50px-top margin-50px-bottom" *ngIf="page">
-      <div class="col-md-12 col-xs-12">
-          <h1 class="bg-white text-deep-pink text-center padding-15px-all">Our History</h1>
-        <!--<app-common [history]="page.acf"></app-common>-->
-        <div class="bg-white history-slider-area">
-          <app-carousal></app-carousal>
-        </div>  
-      </div>
-      
-    </div>
-  </div>
- </div>
-
- <div class="sub-page" *ngIf="page && page.isAboutUsOurCulture">
-   
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-  <div class=" col-md-12 our-culture-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-20px-bottom">
-    <div class="container xs-no-padding-lr margin-50px-top margin-50px-bottom" *ngIf="page">
-      <div class="col-md-8 col-md-offset-2 col-xs-12">
-        <app-common [our_culture]="page.acf"></app-common>
-      </div>
-    </div>
-  </div>
- </div>
- <div class="sub-page" *ngIf="page && page.isAboutUsOwnership">
-  
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-    
-  <div class="col-md-12 ownership-structure-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
-      <div class="container">
-          <div class="col-md-8 col-md-offset-2">
-    <app-common [owners]="page.acf"></app-common>
-      </div>
-          </div>
-  </div>
- 
-     </div>
-
-<!--end of ownership structure-->
- <div class="sub-page" *ngIf="page && page.isAboutUsSocialInvestment">
-   
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-  <div class="col-md-12 corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page && page.acf">
-    <div class="container xs-no-padding-lr">
-      <div class="col-md-8 col-md-offset-2">
-        <app-common [social_corporate]="page.acf"></app-common>
-        <div class="corporate-slider m-hide">
-          <!-- <app-slider [sliders]="page.acf.corporate_slider"></app-slider> -->
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
-
- <div class="sub-page" *ngIf="page && page.isAboutUsTransform">
-   
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-  <div class="col-md-12 committed-transformation-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
-    <div class="container xs-no-padding-lr">
-      <div class="col-md-8 col-md-offset-2">
-        <app-common [transformation]="page.acf"></app-common>
-      </div>
-    </div>
-  </div>
- </div>
- 
- <div class="sub-page" *ngIf="page && page.isAboutUsInvestmentApproach">
-   
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-  <div class="col-md-12 investment-approach-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
-    <app-investment-approch-about
-      [investments]="page.acf.about_us_investment_approach"
-    ></app-investment-approch-about>
-  </div>
- </div>
- 
- 
- <div class="sub-page" *ngIf="page && page.isAboutUsMeetLeaders">
-   
-  <div class="col-md-12 margin-120px-top bread-crumb">
-   <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
-  </div>
-<<<<<<< HEAD
-  <div class="container">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div>
-  <div class="meetLeader margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom">
-    
-      <app-meet-our-leader
-        [meetOurLeaders]="page"
-      ></app-meet-our-leader>
-    
-=======
-  <!-- <div class="menu">
-   <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div> -->
-  <div class="meetLeader margin-30px-lr">
-    <div class="col-md-12" style="padding:0px;">
-      <app-meet-our-leader
-        [meetOurLeaders]="page"
-      ></app-meet-our-leader>
-    </div>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-  </div>
-  
- </div>
-
-<<<<<<< HEAD
- <!--<div class="col-md-12 margin-25px-top margin-30px-bottom ">
-     <div class="text-center">
-         <a class="btn-our-funds margin-10px-right" routerLink="/individual-investor/our-funds">
-             <span>OUR FUNDS</span></a>
-         <a class="btn-insights margin-10px-left" routerLink="/insights">
-             <span>INSIGHTS</span></a>
-     </div>
-</div>-->
-=======
- <div class="col-md-12 margin-25px-top margin-30px-bottom ">
-     <div class="text-center">
-         <a class="btn-our-funds margin-10px-right" href="#">
-             <span>OUR FUNDS</span></a>
-         <a class="btn-insights margin-10px-left" href="#">
-             <span>INSIGHTS</span></a>
-     </div>
-</div>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-<!--finished sub pages of about us-->
-
-
-<!--<div *ngIf="page && page.aboutStatus">
   <section
     class="wow fadeIn no-padding main-slider mobile-height top-space"
     *ngIf="page && page.aboutStatus"
@@ -287,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section class="corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page">
+  <section class="corporate-social-area margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom" *ngIf="page && page.acf">
     <div class="container xs-no-padding-lr">
       <div class="col-md-10 col-md-offset-1">
         <app-common [social_corporate]="page.acf"></app-common>
@@ -304,17 +71,17 @@
       </div>
     </div>
   </section>
-</div>-->
+</div>
 <!-- Saria Page section -->
-<div *ngIf="page"  [ngStyle]="{ display: page.saria ? block : none }">
-  <div
-    class="wow fadeIn no-padding main-slider mobile-height top-space margin-120px-bottom"
+<div *ngIf="page" [ngStyle]="{ display: page.saria ? block : none }">
+  <section
+    class="wow fadeIn no-padding main-slider mobile-height top-space"
     *ngIf="page && page.saria"
   >
     <app-slider [sliders]="page.acf.home_slider"></app-slider>
-  </div>
+  </section>
   <div class="container">
-    <section class="wow fadeIn row margin-30px-top" *ngIf="page && page.saria">
+    <section class="wow fadeIn row" *ngIf="page && page.saria">
       <app-feature-box [DataSets]="page"></app-feature-box>
     </section>
   </div>
@@ -327,12 +94,12 @@
     <section  style="margin-top:40px; padding-top: 0">
       <app-fund-range [FundRange]="page"></app-fund-range>
     </section>
-<!--    <section class="how-to-invest bg-white" style="margin-top:40px;">
+    <section class="how-to-invest bg-white" style="margin-top:40px;">
       <app-invest-slider
         [dataset]="page"
         style="padding:0px;"
       ></app-invest-slider>
-    </section>-->
+    </section>
   </div>
   <section
     class="sharia-investment-background"
@@ -362,10 +129,12 @@
     </div>
   </section>
 
-  <section *ngIf="page && page.saria" style="padding-bottom: 25px;padding-top: 40px">
+  <section *ngIf="page && page.saria">
+    <div class="container">
       <app-sharia-certificate [shariaCerticate]="page"></app-sharia-certificate>
+    </div>
   </section>
-<!--  <section *ngIf="page && page.saria">
+  <section *ngIf="page && page.saria">
     <div class="container">
       <div class="col-md-12">
         <h2>Podcast</h2>
@@ -383,21 +152,22 @@
         >
       </div>
 
-       <app-saria-common [podcast]="page"></app-saria-common> 
+      <!-- <app-saria-common [podcast]="page"></app-saria-common> -->
     </div>
-  </section>-->
+  </section>
 
- <section *ngIf="page && page.saria" style="padding: 0px;">
+  <section *ngIf="page && page.saria" style="padding: 0px;">
     <div class="container">
+      <div class="col-md-12">
         <app-thought-financial-adviser
           [financialAdviser]="page"
         ></app-thought-financial-adviser>
+      </div>
     </div>
   </section>
 </div>
 
 <!-- End sharia page  -->
-
 <!--Institutional home page -->
  <div *ngIf="page && page.investWithUs">
       <section
@@ -414,47 +184,33 @@
      <section style="padding:0px">
         <app-common [fundDesign]="page.acf"></app-common>
       </section>  
-      <section class="button-section padding-30pxall">
+      <section class="button-section" style="padding:0px">
           <div
-          class="col-md-12"
+          class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top"
          
         >
-          <div class="text-center">
-<<<<<<< HEAD
-             <a routerLink="/institutional-investor/our-funds" 
-                class="btn-our-funds  margin-20px-right"
-                style="vertical-align: middle"><span>OUR FUNDS</span></a
+          <div class="text-center suscribe">
+             <a routerLink="/institutional-investor/our-funds" class="btn-our-fund margin-20px-right xs-no-margin-right xs-margin-20px-bottom"><span>OUR FUNDS</span></a
             >
-            <a href="wordpress/wp-content/uploads/performance/fundperformance.pdf" 
-               class="btn-performance-sheet"
-               style="vertical-align: middle" target="_blank"><span>PERFORMANCE SHEET</span></a>
-=======
-             <a href="#" 
-                class="btn-our-funds  margin-20px-right"
-                style="vertical-align: middle"><span>OUR FUNDS</span></a
-            >
-            <a href="#" 
-               class="btn-performance-sheet"
-               style="vertical-align: middle"><span>PERFORMANCE SHEET</span></a>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+            <a routerLink="/institutional-investor/our-funds/complete-fund-range" class="btn-news-literature"><span>PERFORMANCE SHEET</span></a>
           </div>
         </div>
       </section>
       <section style="padding:0px;padding-bottom: 15px;">
            <app-instutional-financial-adviser [fadvisers]="page"></app-instutional-financial-adviser>
       </section>
-      <section style="padding:0px;">
+      <section style="padding:0px;padding-bottom:10px;">
         <div
         class="col-md-12 margin-30px-top margin-30px-bottom xs-margin-30px-top">
 
         <div class="text-center suscribe">
-          <a href="/about-us" class="btn-more-about-us"><span>MORE ABOUT US</span></a>
+          <a routerLink="/about-us" class="btn-news-literature"><span>MORE ABOUT US</span></a>
         </div>
       </div>
       </section>
-      <section style="padding:0px; " class="margin-40px-bottom">
+      <section style="padding:0px; padding-bottom:25px;">
           <div
-          class="row padding-40px-tb  margin-100px-lr bg-medium-gray-light home-light-bg xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
+          class="row padding-40px-tb  bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
           *ngIf="page"
         >
           <div
@@ -464,7 +220,7 @@
           *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
         >
           <a [routerLink]="'/' + fImagesecond.url"
-            ><img style="max-width: 224px!important" [src]="fImagesecond.second_image.url"
+            ><img [src]="fImagesecond.second_image.url"
           /></a>
         </div>
       </div>
@@ -489,83 +245,20 @@
 >
   <app-slider [sliders]="page.acf.home_slider"></app-slider>
 </section>
-<!--Individual and Sharia fund range-->
-<div class="container xs-no-padding-lr" *ngIf="page && page.ourfunds && !page.isInstitutionFundRange">
+<div class="container xs-no-padding-lr" *ngIf="page && page.ourfunds">
   <section class="no-padding-top">
-    <app-fund-range [FundRange]="page"></app-fund-range>
-  </section>
-     <section style="padding:0 !important;" [ngClass]="page.isInstitutionFundRange?'institutional-class':''">
-    <div class="row margin-85px-lr " *ngIf="page && page.ourfunds ">
-        <div class="col-md-2"></div>
-      <div class="max-width-inst-326">
-        <div
-          class="no-padding-lr"
-          *ngFor="let image of page.acf.financial_adviser_image"
-        >
-            
-          <div class="xs-margin-20px-bottom margin-50px-left"
-          [ngClass]="page.isInstitutionFundRange?'institutional-image-class':''"> 
-             
-            <div class=" light-green-box col-md-4 margin-20px-left" >
-<<<<<<< HEAD
-              <!-- <img [src]="image.image1.url" /> -->
-              <a [href]="image.image1_url"
-                >
-                <img [src]="image.image1.url" />
-                <div class="text-title">{{ image.title }}</div>
-                </a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section *ngIf="page && page.ourfunds && !page.isInstitutionFundRange">
-    <app-financial-image-two [imageTwo]="page"></app-financial-image-two>
-  </section>
-<section style="padding:0px; padding-bottom:25px;"
-  *ngIf="page && page.ourfunds && page.isInstitutionFundRange"
-  >
-    <div
-    class="row padding-40px-tb  bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
-    *ngIf="page"
-  >
-    <div
-    class="xs-margin-30px-bottom wow fadeInLeft img-size inst-img-center"
-    data-wow-delay="0.6s"
-    data-aos="fade-right"
-    *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
-  >
-    <a [routerLink]="'/' + fImagesecond.url"
-      ><img [src]="fImagesecond.second_image.url"
-    /></a>
-  </div>
-</div>
-</section>
-</div>
-<!--end of individual and sharia fund range-->
-
-<!--start of institutional fund range-->
-<div class="container xs-no-padding-lr" *ngIf="page && page.ourfunds && page.isInstitutionFundRange">
-  <section class="no-padding-top">
-    <app-institutional-fund-range [FundRange]="page"></app-institutional-fund-range>
+    <app-institutional-fund-range [FundRange]="page"></app-institutional-fund-range> 
   </section>
   <section style="padding:0 !important;" [ngClass]="page.isInstitutionFundRange?'institutional-class':''">
-    <div class="row margin-100px-lr" *ngIf="page && page.ourfunds ">
-        <div class="col-md-4"></div>
-      <div class="max-width-inst-326 margin-30px-lr">
+    <div class="col-md-12 col-sm-12" *ngIf="page && page.ourfunds">
+      <div class="col-md-offset-2">
         <div
-          class="no-padding-lr"
+          class="col-md-5 no-padding-lr"
           *ngFor="let image of page.acf.financial_adviser_image"
         >
-            
-          <div class="xs-margin-20px-bottom margin-50px-left"
-          [ngClass]="page.isInstitutionFundRange?'institutional-image-class':''"> 
-             
-            <div class=" light-green-box col-md-4 margin-20px-left" >
-=======
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+          <div class="xs-margin-20px-bottom xs-no-margin-lr margin-10px-lr"
+          [ngClass]="page.isInstitutionFundRange?'institutional-image-class':''">
+            <div class="light-green-box">
               <!-- <img [src]="image.image1.url" /> -->
               <a [routerLink]="image.image1_url"
                 >
@@ -579,93 +272,13 @@
       </div>
     </div>
   </section>
-  <section *ngIf="page && page.ourfunds && !page.isInstitutionFundRange">
+  <section>
     <app-financial-image-two [imageTwo]="page"></app-financial-image-two>
   </section>
-<section style="padding:0px; padding-bottom:25px;"
-  *ngIf="page && page.ourfunds && page.isInstitutionFundRange"
-  >
-    <div
-<<<<<<< HEAD
-=======
-    class="row padding-40px-tb  bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
-    *ngIf="page"
-  >
-    <div
-    class="xs-margin-30px-bottom wow fadeInLeft img-size inst-img-center"
-    data-wow-delay="0.6s"
-    data-aos="fade-right"
-    *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
-  >
-    <a [routerLink]="'/' + fImagesecond.url"
-      ><img [src]="fImagesecond.second_image.url"
-    /></a>
-  </div>
 </div>
-</section>
-</div>
-<!--end of individual and sharia fund range-->
-
-<!--start of institutional fund range-->
-<div class="container xs-no-padding-lr" *ngIf="page && page.ourfunds && page.isInstitutionFundRange">
-  <section class="no-padding-top">
-    <app-institutional-fund-range [FundRange]="page"></app-institutional-fund-range>
-  </section>
-  <section style="padding:0 !important;" [ngClass]="page.isInstitutionFundRange?'institutional-class':''">
-    <div class="row margin-100px-lr" *ngIf="page && page.ourfunds ">
-        <div class="col-md-4"></div>
-      <div class="max-width-inst-326 margin-30px-lr">
-        <div
-          class="no-padding-lr"
-          *ngFor="let image of page.acf.financial_adviser_image"
-        >
-            
-          <div class="xs-margin-20px-bottom margin-50px-left"
-          [ngClass]="page.isInstitutionFundRange?'institutional-image-class':''"> 
-             
-            <div class=" light-green-box col-md-4 margin-20px-left" >
-              <!-- <img [src]="image.image1.url" /> -->
-              <a [routerLink]="image.image1_url"
-                >
-                <img [src]="image.image1.url" />
-                <div class="text-title">{{ image.title }}</div>
-                </a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section *ngIf="page && page.ourfunds && !page.isInstitutionFundRange">
-    <app-financial-image-two [imageTwo]="page"></app-financial-image-two>
-  </section>
-<section style="padding:0px; padding-bottom:25px;"
-  *ngIf="page && page.ourfunds && page.isInstitutionFundRange"
-  >
-    <div
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-    class="row padding-40px-tb  margin-100px-lr bg-medium-gray-light home-light-bg margin-40px-top xs-no-margin-top xs-no-padding-lr  xs-no-margin-lr text-center adviser-image"
-    *ngIf="page"
-  >
-    <div
-    class="xs-margin-30px-bottom wow fadeInLeft img-size inst-img-center"
-    data-wow-delay="0.6s"
-    data-aos="fade-right"
-    *ngFor="let fImagesecond of page.acf.financial_adviser_image_second"
-  >
-    <a [routerLink]="'/' + fImagesecond.url"
-      ><img [src]="fImagesecond.second_image.url"
-    /></a>
-  </div>
-</div>
-</section>
-</div>
-<!--start of institutional fund range-->
-
 <section
-  class="border-none no-padding wow fadeIn faq" 
-  *ngIf="page && page.ourfunds"
+  class="border-none no-padding wow fadeIn faq"
+  *ngIf="page && page.ourfunds && !page.isInstitutionFundRange"
 >
   <div class="container">
     <app-faq [faqs]="faq"></app-faq>
@@ -694,7 +307,7 @@
 </div>
 <div class="container" *ngIf="page && page.insightStatus">
   <div
-    class="row margin-85px-lr sm-margin-four-bottom xs-no-margin-bottom wow fadeInUp padding-30px-top margin-40px-top xs-margin-15px-top"
+    class="row sm-margin-four-bottom xs-no-margin-bottom wow fadeInUp padding-30px-top margin-40px-top xs-margin-15px-top"
     data-wow-delay="0.6s"
     data-aos="fade-up"
   >
@@ -726,25 +339,23 @@
       [insightStatus]="page.insightStatus"
     ></app-financial-image-two>
   </div>
-    <div class="row margin-100px-lr">
   <div class="col-md-12 remove-margin m-hide">
     <app-faq
       [faqs]="page.acf['qa-ans']"
       [insightStatus]="page.insightStatus"
     ></app-faq>
   </div>
-    </div>
 </div>
 <!-- end insight-->
 <!-- Annual Report -->
 <div class="container" *ngIf="page && page.annualReport">
-
+  <br /><br /><br /><br /><br />
   <div
-    class="row sm-margin-four-bottom xs-margin-15px-bottom wow fadeInUp "
+    class="row sm-margin-four-bottom xs-margin-15px-bottom wow fadeInUp padding-30px-top"
     data-wow-delay="0.6s"
     data-aos="fade-up"
   >
-    <div class="col-md-12 col-sm-12 col-xs-12 margin-30px-top">
+    <div class="col-md-12 col-sm-12 col-xs-12">
       <h2 [innerHTML]="page.title.rendered"></h2>
     </div>
   </div>
@@ -759,11 +370,11 @@
       </div>
     </div>
     <div class="col-md-12">
-      <div class="bg-white annual-link text-deep-pink">
+      <div class="bg-white annual-link">
         <a [href]="annualReportUrl">Download</a>
       </div>
     </div>
-    <div class="col-md-12 margin-30px-bottom">
+    <div class="col-md-12">
       <div class="bg-white">
         <div class="bg-white text-center year-list year-report-list">
           <ul>
@@ -786,7 +397,7 @@
 <!---Quaterly Status-->
 <div class="container xs-margin-50px-top" *ngIf="page && page.quaterlyStatus">
   <div
-    class="row margin-30px-top sm-margin-four-bottom xs-margin-15px-bottom wow fadeInUp padding-30px-top"
+    class="row margin-twelve-top sm-margin-four-bottom xs-margin-15px-bottom wow fadeInUp padding-30px-top"
     data-wow-delay="0.6s"
     data-aos="fade-up"
   >
@@ -796,7 +407,7 @@
   </div>
   <div class="clearfix"></div>
 
-  <div class="up-image margin-30px-top xs-no-margin-top">
+  <div class="up-image margin-40px-top xs-no-margin-top">
     <ul>
       <li
         *ngFor="let quaterlyData of page.acf.up_quarterly; let i = index"
@@ -809,8 +420,8 @@
   <div class="row margin-40px-top xs-no-margin-top">
     <div class="col-md-12 text-center">
       <div class="suscribe">
-        <a href="#" class="btn-suscribe"><span>SUBSCRIBE</span></a>
-        <a href="#" class="btn-unsuscribe"><span>UNSUBSCRIBE</span></a>
+        <a href="#" class="btn-suscribe"><span>SUSCRIBE</span></a>
+        <a href="#" class="btn-unsuscribe"><span>UNSUSCRIBE</span></a>
       </div>
     </div>
   </div>
@@ -836,7 +447,7 @@
 <!-- Start up Quaterly Library -->
 
 <div class="container" *ngIf="page && page.quaterlyLibraryStatus">
-  <div class="row margin-30px-top xs-margin-70px-top">
+  <div class="row margin-twelve-top xs-margin-70px-top">
     <h2>{{ page.title.rendered }}</h2>
   </div>
   <div class="row margin-30px-bottom">
@@ -865,7 +476,7 @@
 
 <!-- Glossary page start -->
 <div class="container" *ngIf="page && page.glossaryStatus">
-  <div class="row margin-30px-top">
+  <div class="row margin-twelve-top">
     <h2>Glossary</h2>
   </div>
   <div class="row margin-30px-bottom">
@@ -887,27 +498,22 @@
   </div>
 </div>
 <!-- End Fund Range test -->
-
 <!-- Meet Fund  Manager -->
 <div class="silder-div" *ngIf="page && page.meetFundManager">
- <!-- <app-slider [sliders]="page.acf.home_slider"></app-slider>-->
+  <app-slider [sliders]="page.acf.home_slider"></app-slider>
   <div class="container">
     <div class="row margin-40px-top">
       <h2>{{ page.title.rendered }}</h2>
     </div>
     <div class="row margin-5px-top">
-      <div class="bg-white padding-25px-bottom">
-        <div class="padding-45px-all" [innerHTML]="page.content.rendered"></div>
+      <div class="bg-white">
+        <div class="content-div" [innerHTML]="page.content.rendered"></div>
       </div>
     </div>
     <div class="row margin-30px-bottom  margin-30px-top">
-      <div class=" col-md-8 col-md-offset-2 text-center suscribe">
-        <a href="#" class="platform-on-grey" style="vertical-align: middle"><span>PLATFORMS</span></a>
-<<<<<<< HEAD
-        <a routerLink="/about-us/investment-approach" class="btn-meet-leaders meet-leader" style="vertical-align: middle"><span>INVESTMENT APPROACH</span></a>
-=======
-        <a href="#" class="btn-meet-leaders meet-leader" style="vertical-align: middle"><span>INVESTMENT APPROACH</span></a>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+      <div class=" col-md-8 col-md-offset-2 suscribe">
+        <a href="#" class="btn-meet-leaders">PLATFORMS</a>
+        <a href="#" class="btn-meet-leaders">INVESTMENT APPROCH</a>
       </div>
     </div>
   </div>
@@ -922,31 +528,30 @@
     </div>
     <div class="row">
       <div class="bg-white">
-        <div class="padding-45px-all" [innerHTML]="page.content.rendered"></div>
+        <div class="content-div" [innerHTML]="page.content.rendered"></div>
       </div>
     </div>
     <div class="row margin-20px-top">
       <h2>Tax-free Funds</h2>
     </div>
-    <div class="row margin-30px-bottom margin-5px-top bg-white padding-45px-all">
-      <div class="bg-white">
+    <div class="row margin-30px-bottom margin-5px-top ">
+      <div class="bg-white" style="padding-top:40px">
         <div
-          class="col-md-4   wow fadeInLeft"
+          class="col-md-4 bg-white  wow fadeInLeft"
           data-wow-delay="0.4s"
           *ngFor="let invest of page.acf.tax_free_funds; let i = index"
         >
           <div class="fund-range-graph-title">
             {{ invest.tax_free_funds_title }}
           </div>
-          <div class="fund-range-graph bg-light-green margin-30px-bottom">
+          <div class=" bg-light-green margin-30px-bottom">
             <a href="#"><img [src]="invest.tax_free_funds_image_.url"/></a>
           </div>
         </div>
       </div>
     </div>
     <div class="row margin-30px-top">
-        <div class="col-md-2"></div>
-      <div class="text-center">
+      <div class="col-md-offset-3">
         <div
           class="col-md-4"
           *ngFor="
@@ -966,15 +571,11 @@
       </div>
     </div>
     <div class="row margin-30px-top margin-50px-bottom">
-      <div class=" col-md-8 col-md-offset-2 text-center suscribe">
-        <a href="#" class="platform-on-grey" style="vertical-align: middle"
-          ><span>PLATFORMS</span></a
+      <div class=" col-md-8 col-md-offset-2 suscribe">
+        <a href="#" class="btn-meet-leaders" style="margin-left:70px;"
+          >PLATFORMS</a
         >
-<<<<<<< HEAD
-        <a routerLink="/about-us/investment-approach" class="btn-meet-leaders meet-leader" style="vertical-align: middle"><span>INVESTMENT APPROCH</span></a>
-=======
-        <a href="#" class="btn-meet-leaders meet-leader" style="vertical-align: middle"><span>INVESTMENT APPROCH</span></a>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+        <a href="#" class="btn-meet-leaders">INVESTMENT APPROCH</a>
       </div>
     </div>
   </div>
@@ -1050,42 +651,6 @@
 </div>
 
 <!-- End New to Investing -->
-
-<!--How to Invest -->
-<div class="container" *ngIf="page && page.howToInvestStatus">
-  <div class="row margin-30px-top 7 xs-margin-30px-top">
-    <h2>{{ page.title.rendered }}</h2>
-  </div>
-  <div class="row margin-20px-bottom xs-margin-30px-bottom">
-    <div class="bg-white">
-      <div class="content-div" [innerHTML]="page.content.rendered"></div>
-    </div>
-  </div>
-  <div class="row m-hide margin-30px-bottom">
-    <div
-      class=" bg-white padding-45px-lr sm-padding-15px-all inner-match-height xs-no-padding-lr"
-    >
-      <div class="text-center">
-<!--        <a
-        href="javascript:void(0);"
-          (click)="changeSliderData(page.acf.how_do_i_invest, 'doInvest')"
-          class="padding-10px-all ul-tab"
-          [ngClass]="activeClickedTab == 'doInvest' ? 'active' : 'none'"
-          ><span>HOW DO I INVEST? </span></a
-        >-->
-      </div>
-      <div class="row" *ngIf="page && page.howToInvestStatus">
-        <app-how-to-invest
-          [dataset]="getHowToInvestSlider"
-          [fromHowToInvest]="page.howToInvestStatus"
-        ></app-how-to-invest>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- End How to Invest -->
-
 <!--FormDocument start -->
 <div class="container" *ngIf="page && page.formDocumentStatus">
   <div class="row margin-twelve-top">
@@ -1101,27 +666,13 @@
       <app-form-document [formHeading]="page"></app-form-document>
     </div>
   </div>
-<<<<<<< HEAD
-  <div class="row margin-30px-top margin-50px-bottom">
-      <div class=" col-md-8 col-md-offset-2 text-center suscribe">
-        <a href="#" class="platform-on-grey" style="vertical-align: middle"
-          ><span>PLATFORMS</span></a
-        >
-        <a routerLink="/about-us/investment-approach" class="btn-meet-leaders meet-leader" style="vertical-align: middle"><span>INVESTMENT APPROCH</span></a>
-      </div>
-    </div>
-  
-  
-  <!--<div class="col-md-10 col-md-offset-1 margin-60px-bottom margin-60px-top padding-100px-lr">
-      <div class="complete-fund-btn">
-=======
   <div class="col-md-10 col-md-offset-1 margin-60px-bottom margin-60px-top padding-100px-lr">
       <div class=" complete-fund-btn">
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
-          <a class="btn-meet-leaders" href="#" style="margin-right:35px;margin-left:36px">PLATFORMS</a>
+          <a class="btn-meet-leaders" href="#" style="margin-right:35px;margin-left:36px">PLATEFORMS</a>
           <a  class="btn-meet-leaders" href="#" style="margin-right:10px;">INVESTMENTS APPROACH</a>
+          
       </div>
-  </div>-->
+  </div>
 </div>
 
 <!--End FormDocument start-->
@@ -1145,9 +696,6 @@
 <div class="balance-fund" *ngIf="page && page.globalEquityStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
 </div>
-<div class="balance-fund" *ngIf="page && page.globalEquityFeederStatus">
-  <app-balance-fund [getBalancedData]="page"></app-balance-fund>
-</div>
 <div class="balance-fund" *ngIf="page && page.islamicEquityStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
 </div>
@@ -1166,6 +714,12 @@
 <div class="balance-fund" *ngIf="page && page.isInstitutionalEquityStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
 </div>
+<div class="balance-fund" *ngIf="page && page.isInstitutionalBondStatus">
+  <app-balance-fund [getBalancedData]="page"></app-balance-fund>
+</div>
+<div class="balance-fund" *ngIf="page && page.isInstitutionalMoneyStatus">
+  <app-balance-fund [getBalancedData]="page"></app-balance-fund>
+</div>
 <div class="balance-fund" *ngIf="page && page.isInstitutionalProtectorStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
 </div>
@@ -1175,7 +729,12 @@
 <div class="balance-fund" *ngIf="page && page.topFortyTrackerStatus">
   <app-balance-fund [getBalancedData]="page"></app-balance-fund>
 </div>
-
+<!-- <div class="balance-fund" *ngIf="page && page.isdomesticFundStatus">
+  <app-balance-fund [getBalancedData]="page"></app-balance-fund>
+</div> -->
+<!-- <div class="balance-fund" *ngIf="page && page.isGlobalFundInstitutionalStatus">
+  <app-balance-fund [getBalancedData]="page"></app-balance-fund>
+</div> -->
 
 
 <!--End Equity alpha fund-->
@@ -1188,7 +747,7 @@
              <h2>{{page.title.rendered}}</h2>  
              <div class="inner-match-height bg-white">
                 <div class="padding-45px-all" >
-                    <div [innerHTML]="page.content.rendered"></div>
+                    <div class="padding-100px-lr" [innerHTML]="page.content.rendered"></div>
                       <app-complete-fund-range [tableDate]="page"></app-complete-fund-range>
                 </div>
             </div>    
@@ -1197,14 +756,9 @@
      </div>
      <div class="col-md-12  margin-30px-bottom margin-60px-top padding-100px-lr">
         <div class=" complete-fund-btn">
-            <a class="platform-on-grey margin-20px-right" href="#" style="vertical-align: middle"><span>PLATFORMS</span></a>
-<<<<<<< HEAD
-            <a  class="meet-leader btn-meet-leaders margin-20px-right" routerLink="/fact-sheets-archive" style="vertical-align: middle"><span>INVESTMENTS APPROACH</span></a>
-            <a class="transformation" routerLink="/about-us/investment-approach" style="vertical-align: middle"><span>FUND ARCHIVES</span></a>
-=======
-            <a  class="meet-leader btn-meet-leaders margin-20px-right" href="#" style="vertical-align: middle"><span>INVESTMENTS APPROACH</span></a>
-            <a class="transformation" href="#" style="vertical-align: middle"><span>FUND ARCHIVES</span></a>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+            <a class="btn-meet-leaders" href="#" style="margin-right:10px;">PLATEFORMS</a>
+            <a  class="btn-meet-leaders" href="#" style="margin-right:10px;">INVESTMENTS APPROACH</a>
+            <a class="btn-meet-leaders" href="#">FUND ARCHIVES</a>
         </div>
     </div>
    </div>
@@ -1214,7 +768,7 @@
 
 <!--Fact Sheet Archive-->
 <div class="container" *ngIf="page && page.factsheetStatus">
-  <div class="row margin-30px-top">
+  <div class="row margin-twelve-top">
     <h2>{{ page.title.rendered }}</h2>
   </div>
   <div class="row">
@@ -1222,31 +776,16 @@
   </div>
 </div>
 <!--End Fact sheet archive-->
-
 <!-- Institutional manage equity fund view-->
 <div class="container ">
-  <section class="margin-30px-top"  *ngIf="page && page.isManagedEquityFund">
+  <section class="margin-80px-top"  *ngIf="page && page.isManagedEquityFund">
     <div class="get-view">
         <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
     </div>
     </section>    
 </div>
 <div class="container ">
-    <section  *ngIf="page && page.isInstitutionalMoneyStatus">
-      <div class="get-view">
-          <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
-      </div>  
-      </section>    
-  </div>
-<div class="container ">
-    <section  *ngIf="page && page.isInstitutionalBondStatus">
-      <div class="get-view">
-          <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
-      </div>  
-      </section>    
-  </div>
-<div class="container ">
-    <section  *ngIf="page && page.iscoredEquityFund">
+    <section class="margin-80px-top"  *ngIf="page && page.iscoredEquityFund">
       <div class="get-view">
           <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
       </div>  
@@ -1254,28 +793,28 @@
   </div>
   
   <div class="container ">
-      <section  *ngIf="page && page.isManagedEquityCappedFund">
+      <section class="margin-80px-top"  *ngIf="page && page.isManagedEquityCappedFund">
         <div class="get-view">
             <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
         </div>  
         </section>    
     </div>
     <div class="container ">
-        <section  *ngIf="page && page.isManagedEquitySwixFund">
+        <section class="margin-80px-top"  *ngIf="page && page.isManagedEquitySwixFund">
           <div class="get-view">
               <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
           </div>  
           </section>    
       </div>
       <div class="container ">
-          <section  *ngIf="page && page.isdomesticFundStatus">
+          <section class="margin-80px-top"  *ngIf="page && page.isdomesticFundStatus">
             <div class="get-view">
                 <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
             </div>  
             </section>    
         </div>
         <div class="container ">
-            <section  *ngIf="page && page.isGlobalFundInstitutionalStatus">
+            <section class="margin-80px-top"  *ngIf="page && page.isGlobalFundInstitutionalStatus">
               <div class="get-view">
                   <app-common-institutional-fund [fundDatas]="page"></app-common-institutional-fund>
               </div>  
@@ -1285,7 +824,7 @@
     
 <!--Institutional Complete fund range-->
 
- <section class="wow fadeIn bg-light-gray "  *ngIf="page && page.isInstitutionalCompleteFundRange">
+ <section class="wow fadeIn bg-medium-gray-light " style="margin-top:110px" *ngIf="page && page.isInstitutionalCompleteFundRange">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 sm-margin-four-bottom xs-margin-15px-bottom wow fadeInUp unconventional-thinking blanced-fund-box" data-wow-delay="0.2s">
@@ -1293,7 +832,7 @@
                <h2>{{page.title.rendered}}</h2>  
                <div class="inner-match-height bg-white">
                   <div class="padding-45px-all" >
-                      <div  [innerHTML]="page.content.rendered"></div>
+                      <div class="padding-100px-lr" [innerHTML]="page.content.rendered"></div>
                         <app-complete-fund-range [tableDate]="page"></app-complete-fund-range>
                   </div>
               </div>    
@@ -1303,11 +842,7 @@
        <div class="col-md-12  margin-30px-bottom margin-60px-top padding-100px-lr text-center">
           <div class=" complete-fund-btn">
               <!-- <a class="btn-meet-leaders" href="#" style="margin-right:10px;">PLATEFORMS</a> -->
-<<<<<<< HEAD
-              <a  class="btn-meet-leaders meet-leader" routerLink="/about-us/investment-approach" style="margin-right:10px;"><span>INVESTMENTS APPROACH</span></a>
-=======
-              <a  class="btn-meet-leaders meet-leader" href="about-us/investment-approach" style="margin-right:10px;"><span>INVESTMENTS APPROACH</span></a>
->>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
+              <a  class="btn-meet-leaders" href="#" style="margin-right:10px;">INVESTMENTS APPROACH</a>
               <!-- <a class="btn-meet-leaders" href="#">FUND ARCHIVES</a> -->
           </div>
       </div>

@@ -97,6 +97,7 @@ export class FundTabComponent implements OnInit {
     ) {
       return "assets/data/prices/individual-global-equity-price.csv";
     }
+<<<<<<< HEAD
     else if (
       data.topFortyTrackerStatus &&
       data.getParent == "individual-investor"
@@ -110,6 +111,15 @@ export class FundTabComponent implements OnInit {
       return "assets/data/prices/Individual-Kagiso-Stable.csv";
     }
     //sharia investors  
+=======
+      else if (
+      data.globalEquityFeederStatus &&
+      data.getParent == "individual-investor"
+    ) {
+      return "assets/data/prices/individual-global-equity-price.csv";
+    }
+    //sharia investors
+>>>>>>> 305832afb573fdb7d133a4b86092bf4a378746ab
     else if (data.islamicEquityStatus && data.getParent == "sharia-investor") {
       return "assets/data/prices/Sharia-Islamic-Equity-Fund.csv";
     } else if (

@@ -1,0 +1,130 @@
+<div
+  class="col-md-12 margin-30px-top margin-30px-bottom xs-no-margin-top xs-no-margin-bottom"
+>
+  <div class="text-center suscribe">
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/investment-approach"
+        class="btn-meet-leaders investment-approach-bg margin-20px-right xs-no-margin-right xs-margin-20px-bottom"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'investment approach' ? 'active' : 'none'
+          "
+          >INVESTMENT APPROACH</span
+        ></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/meet-our-leaders"
+        class="btn-meet-leaders diverse-leader-bg xs-no-margin-right xs-margin-20px-bottom"
+        ><span
+          [ngClass]="CurrentTab.child == 'meet our leaders' ? 'active' : 'none'"
+          >MEET OUR DIVERSE TEAM</span
+        ></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/ownership-structure"
+        class="btn-meet-leaders ownership-structure-bg xs-no-margin-right xs-margin-20px-bottom"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'ownership structure' ? 'active' : 'none'
+          "
+          >OWNERSHIP STRUCTURE</span
+        ></a
+      >
+    </div>
+
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/our-history"
+        class="btn-meet-leaders our-history-bg xs-no-margin-right xs-margin-20px-bottom"
+        ><span [ngClass]="CurrentTab.child == 'our history' ? 'active' : 'none'"
+          >OUR HISTORY</span
+        ></a
+      >
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 ">
+  <div class="text-center suscribe">
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/our-culture"
+        class="btn-meet-leaders our-culture-bg xs-no-margin-right xs-margin-20px-bottom"
+        ><span [ngClass]="CurrentTab.child == 'our culture' ? 'active' : 'none'"
+          >OUR CULTURE</span
+        ></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/responsible-investing"
+        class="btn-meet-leaders responsible-investing-bg xs-no-margin-right xs-margin-20px-bottom"
+        [ngClass]="
+          CurrentTab.child == 'responsible investing' ? 'active' : 'none'
+        "
+        ><span>RESPONSIBLE INVESTING</span></a
+      >
+    </div>
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/corporate-social-investment"
+        class="btn-meet-leaders corporate-social-investment-bg xs-no-margin-right xs-margin-20px-bottom"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'corporate social investment'
+              ? 'active'
+              : 'none'
+          "
+          >CORPORATE SOCIAL INVESTMENT</span
+        ></a
+      >
+    </div>
+
+    <div class="col-md-3">
+      <a
+        routerLink="/about-us/committed-to-transformation"
+        class="btn-meet-leaders transformation-bg xs-no-margin-right xs-margin-20px-bottom"
+        ><span
+          [ngClass]="
+            CurrentTab.child == 'committed to transformation'
+              ? 'active'
+              : 'none'
+          "
+          >TRANSFORMATION</span
+        ></a
+      >
+    </div>
+  </div>
+</div>
+<!--menu for mobile devices-->
+<div class="col-md-12" id="mobile-menu" style="display:none">
+  <ul>
+    <li>
+      <a routerLink="/about-us/investment-approach">INVESTMENT APPROACH</a>
+    </li>
+    <li>
+      <a routerLink="/about-us/meet-our-leaders">MEET OUR DIVERSE TEAM</a>
+    </li>
+    <li>
+      <a routerLink="/about-us/ownership-structure">OWNERSHIP STRUCTURE</a>
+    </li>
+    <li><a routerLink="/about-us/our-history">OUR HISTORY</a></li>
+    <li><a routerLink="/about-us/our-culture">OUR CULTURE</a></li>
+    <li>
+      <a routerLink="/about-us/responsible-investing">RESPONSIBLE INVESTING</a>
+    </li>
+    <li>
+      <a routerLink="/about-us/corporate-social-investment"
+        >CORPORATE SOCIAL INVESTMENT</a
+      >
+    </li>
+    <li>
+      <a routerLink="/about-us/corporate-social-investment">TRANSFORMATION</a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,41 @@
+.btn-meet-leaders {
+  padding: 10px 20px 10px 90px !important;
+  text-align: left;
+}
+.active {
+  color: #b60c2f !important;
+  font-weight: 400;
+}
+.btn-meet-leaders{
+    width: 100%;
+    font-size: 15px;
+    height: 64px;
+    display: inline-block;
+}
+.btn-meet-leaders span{
+    vertical-align: middle;
+}
+.transformation-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/TRANSFORMATION-abt.jpg) no-repeat left center #fff;
+}
+.corporate-social-investment-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/CORPORATE-SOCIAL-abt.jpg) no-repeat left center #fff;
+}
+.responsible-investing-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/RESPONSIBLE-abt.jpg) no-repeat left center #fff;
+}
+.our-culture-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/OUR-CULTURE-abt.jpg) no-repeat left center #fff;
+}
+.our-history-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/OUR-HISTORY-abt.jpg) no-repeat left center #fff;
+}
+.ownership-structure-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/STRUCTURE-abt.jpg) no-repeat left center #fff;
+}
+.diverse-leader-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/DIVERSE-TEAM-abt.jpg) no-repeat left center #fff;
+}
+.investment-approach-bg{
+    background: url(https://dev.omangom.com/kagiso/wordpress/wp-content/uploads/2019/05/INVESTMENT-abt.jpg) no-repeat left center #fff;
+}
