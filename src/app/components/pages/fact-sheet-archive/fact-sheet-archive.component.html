@@ -1,19 +1,25 @@
- <div class=" margin-30px-bottom-insight">
+<div class=" margin-30px-bottom-insight">
   <div class=" xs-no-margin-lr">
-    <!-- <h2>{{ faqs.title.rendered }}</h2> -->
-    <div class="row ">
-      <div class="col-md-12 col-sm-12 col-xs-12 display-table wow fadeInUp">
+    <!-- <h2 *ngFor="let category">{{ categoryDatas[0].parentName }}</h2> -->
+    <div class="row" *ngIf="categoryDatas">
+      <div
+        class="col-md-12 col-sm-12 col-xs-12 display-table wow fadeInUp"
+        *ngFor="let categoryD of categoryDatas"
+      >
+        <div class="parent-name">
+          <p>{{ categoryD.parentName }}</p>
+        </div>
         <div
           class="display-table-cell-vertical-middle md-padding-ten-all sm-padding-six-all xs-no-padding-tb xs-no-padding-lr"
         >
           <div
             class="panel-group accordion-style2"
             id="accordion"
-            *ngIf="getCategories"
+            *ngIf="categoryD.getCategories"
           >
             <div
               class="panel panel-default"
-              *ngFor="let category of getCategories; let i = index"
+              *ngFor="let category of categoryD.getCategories; let i = index"
             >
               <div class="panel-heading">
                 <a

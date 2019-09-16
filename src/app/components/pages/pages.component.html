@@ -180,27 +180,27 @@
   <div class="col-md-12 margin-120px-top bread-crumb">
    <app-bread-crumb [CurrentUrl]="getCurrentTab"></app-bread-crumb>
   </div>
-  <!-- <div class="menu">
+  <div class="container">
    <app-about-menu [CurrentTab]="getCurrentTab"></app-about-menu>
-  </div> -->
-  <div class="meetLeader margin-30px-lr">
-    <div class="col-md-12" style="padding:0px;">
+  </div>
+  <div class="meetLeader margin-40px-top xs-no-margin-top xs-padding-30px-top xs-padding-15px-bottom">
+    
       <app-meet-our-leader
         [meetOurLeaders]="page"
       ></app-meet-our-leader>
-    </div>
+    
   </div>
   
  </div>
 
- <div class="col-md-12 margin-25px-top margin-30px-bottom ">
+ <!--<div class="col-md-12 margin-25px-top margin-30px-bottom ">
      <div class="text-center">
          <a class="btn-our-funds margin-10px-right" routerLink="/individual-investor/our-funds">
              <span>OUR FUNDS</span></a>
          <a class="btn-insights margin-10px-left" routerLink="/insights">
              <span>INSIGHTS</span></a>
      </div>
-</div>
+</div>-->
 <!--finished sub pages of about us-->
 
 
@@ -393,13 +393,13 @@
          
         >
           <div class="text-center">
-             <a href="#" 
+             <a routerLink="/institutional-investor/our-funds" 
                 class="btn-our-funds  margin-20px-right"
                 style="vertical-align: middle"><span>OUR FUNDS</span></a
             >
-            <a href="#" 
+            <a href="wordpress/wp-content/uploads/performance/fundperformance.pdf" 
                class="btn-performance-sheet"
-               style="vertical-align: middle"><span>PERFORMANCE SHEET</span></a>
+               style="vertical-align: middle" target="_blank"><span>PERFORMANCE SHEET</span></a>
           </div>
         </div>
       </section>
@@ -471,7 +471,7 @@
              
             <div class=" light-green-box col-md-4 margin-20px-left" >
               <!-- <img [src]="image.image1.url" /> -->
-              <a [routerLink]="image.image1_url"
+              <a [href]="image.image1_url"
                 >
                 <img [src]="image.image1.url" />
                 <div class="text-title">{{ image.title }}</div>
@@ -994,13 +994,22 @@
       <app-form-document [formHeading]="page"></app-form-document>
     </div>
   </div>
-  <div class="col-md-10 col-md-offset-1 margin-60px-bottom margin-60px-top padding-100px-lr">
-      <div class=" complete-fund-btn">
+  <div class="row margin-30px-top margin-50px-bottom">
+      <div class=" col-md-8 col-md-offset-2 text-center suscribe">
+        <a href="#" class="platform-on-grey" style="vertical-align: middle"
+          ><span>PLATFORMS</span></a
+        >
+        <a routerLink="/about-us/investment-approach" class="btn-meet-leaders meet-leader" style="vertical-align: middle"><span>INVESTMENT APPROCH</span></a>
+      </div>
+    </div>
+  
+  
+  <!--<div class="col-md-10 col-md-offset-1 margin-60px-bottom margin-60px-top padding-100px-lr">
+      <div class="complete-fund-btn">
           <a class="btn-meet-leaders" href="#" style="margin-right:35px;margin-left:36px">PLATFORMS</a>
           <a  class="btn-meet-leaders" href="#" style="margin-right:10px;">INVESTMENTS APPROACH</a>
-          
       </div>
-  </div>
+  </div>-->
 </div>
 
 <!--End FormDocument start-->
@@ -1077,8 +1086,8 @@
      <div class="col-md-12  margin-30px-bottom margin-60px-top padding-100px-lr">
         <div class=" complete-fund-btn">
             <a class="platform-on-grey margin-20px-right" href="#" style="vertical-align: middle"><span>PLATFORMS</span></a>
-            <a  class="meet-leader btn-meet-leaders margin-20px-right" href="#" style="vertical-align: middle"><span>INVESTMENTS APPROACH</span></a>
-            <a class="transformation" href="#" style="vertical-align: middle"><span>FUND ARCHIVES</span></a>
+            <a  class="meet-leader btn-meet-leaders margin-20px-right" routerLink="/fact-sheets-archive" style="vertical-align: middle"><span>INVESTMENTS APPROACH</span></a>
+            <a class="transformation" routerLink="/about-us/investment-approach" style="vertical-align: middle"><span>FUND ARCHIVES</span></a>
         </div>
     </div>
    </div>
@@ -1177,7 +1186,7 @@
        <div class="col-md-12  margin-30px-bottom margin-60px-top padding-100px-lr text-center">
           <div class=" complete-fund-btn">
               <!-- <a class="btn-meet-leaders" href="#" style="margin-right:10px;">PLATEFORMS</a> -->
-              <a  class="btn-meet-leaders meet-leader" href="about-us/investment-approach" style="margin-right:10px;"><span>INVESTMENTS APPROACH</span></a>
+              <a  class="btn-meet-leaders meet-leader" routerLink="/about-us/investment-approach" style="margin-right:10px;"><span>INVESTMENTS APPROACH</span></a>
               <!-- <a class="btn-meet-leaders" href="#">FUND ARCHIVES</a> -->
           </div>
       </div>
