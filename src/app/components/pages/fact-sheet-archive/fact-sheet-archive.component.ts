@@ -7,18 +7,37 @@ import { WPAPIService } from "../../../../services/wpapi.service";
   styleUrls: ["./fact-sheet-archive.component.css"]
 })
 export class FactSheetArchiveComponent implements OnInit {
+  getParentCategory;
   getCategories;
   subCategory;
   getSelected;
   categoryData;
   currentSubCate;
+  categoryDatas = [];
   isfirst = false;
   constructor(private wpservice: WPAPIService) {}
 
   ngOnInit() {
-    this.wpservice.getCategory("?parent=127&per_page=20").subscribe(categories => {
-      this.getCategories = categories;
-    });
+    this.wpservice
+      .getCategory("?parent=127&per_page=20")
+      .subscribe(pcategories => {
+        this.getParentCategory = pcategories;
+
+        this.getParentCategory.forEach(pCategory => {
+          var categoryData = {
+            parentName: null,
+            getCategories: null
+          };
+          this.wpservice
+            .getCategory("?parent=" + pCategory.id)
+            .subscribe(category => {
+              categoryData.parentName = pCategory.name;
+              categoryData.getCategories = category;
+              this.getCategories = category;
+              this.categoryDatas.push(categoryData);
+            });
+        });
+      });
   }
   getYearPost(category, e, toggle) {
     if (this.currentSubCate) {
