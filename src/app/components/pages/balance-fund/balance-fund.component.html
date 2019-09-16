@@ -133,19 +133,19 @@
 
             <ul class="fund-subcatagory-box">
               <li class="col-md-3">
-                <a href="/tax-free-investing" class="btn-tax-free">
+                <a routerLink="/tax-free-investing" class="btn-tax-free">
                   <div class="link-img-box"></div>
                   <div class="title" style="">TAX FREE</div>
                 </a>
               </li>
               <li class="col-md-3">
-                <a href="#" class="btn-top-10-holdings">
+                <a [href]="getBalancedData.acf.top_10_holdings_url" class="btn-top-10-holdings" target="_blank">
                   <div class="link-img-box"></div>
                   <div class="title" style="width: 150px; font-size: 14px">TOP 10 HOLDINGS</div>
                 </a>
               </li>
               <li class="col-md-3">
-                <a href="/forms-documents" class="btn-form">
+                <a routerLink="/forms-documents" class="btn-form">
                   <div class="link-img-box"></div>
                   <div class="title" style="width: 150px;font-size: 14px">FORMS</div>
                 </a>
