@@ -22,7 +22,7 @@
     "angular2-useful-swiper": "^5.0.1",
     "aos": "^2.3.4",
     "core-js": "^2.5.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "rxjs": "~6.3.3",
     "swiper": "^3.4.2",
     "tslib": "^1.9.0",
